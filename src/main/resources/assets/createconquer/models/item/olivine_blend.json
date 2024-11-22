@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "createconquer:item/olivine_blend"
-  }
-}

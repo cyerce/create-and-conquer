@@ -6,7 +6,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -104,8 +103,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ZINC_WIRE.get());
                         pOutput.accept(ModItems.MOLTEN_ZINC_BUCKET.get());
 
-                        pOutput.accept(ModItems.COPPER_POWDER.get());;
-                        pOutput.accept(ModItems.COPPER_GEAR.get());;
+                        pOutput.accept(ModItems.COPPER_POWDER.get());
+                        pOutput.accept(ModItems.COPPER_GEAR.get());
                         pOutput.accept(ModItems.COPPER_WIRE.get());
                         pOutput.accept(ModItems.COPPER_ROD.get());
                         pOutput.accept(ModItems.MOLTEN_COPPER_BUCKET.get());
@@ -252,13 +251,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SILVER_WIRE.get());
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get());
                         pOutput.accept(ModItems.MOLTEN_SILVER_BUCKET.get());
-
-                        pOutput.accept(ModItems.MAGNESIUM_INGOT.get());
-                        pOutput.accept(ModItems.MAGNESIUM_PLATE.get());
-                        pOutput.accept(ModItems.MAGNESIUM_NUGGET.get());
-                        pOutput.accept(ModItems.MAGNESIUM_POWDER.get());
-                        pOutput.accept(ModBlocks.MAGNESIUM_BLOCK.get());
-                        pOutput.accept(ModItems.MOLTEN_MAGNESIUM_BUCKET.get());
 
                         pOutput.accept(ModItems.IRON_POWDER.get());
                         pOutput.accept(ModItems.IRON_ROD.get());
@@ -439,13 +431,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CRUSHED_RAW_CASSITERITE.get());
                         pOutput.accept(ModItems.CASSITERITE_BLEND.get());
 
-                        pOutput.accept(ModBlocks.OLIVINE_ORE.get());
-                        pOutput.accept(ModBlocks.DEEPSLATE_OLIVINE_ORE.get());
-                        pOutput.accept(ModBlocks.RAW_OLIVINE_BLOCK.get());
-                        pOutput.accept(ModItems.RAW_OLIVINE.get());
-                        pOutput.accept(ModItems.CRUSHED_RAW_OLIVINE.get());
-                        pOutput.accept(ModItems.OLIVINE_BLEND.get());
-
                         pOutput.accept(ModBlocks.BORAX_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_BORAX_ORE.get());
                         pOutput.accept(ModBlocks.FLUORITE_ORE.get());
@@ -625,7 +610,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.IRON_INGOT_CAST.get());
                         pOutput.accept(ModItems.GOLD_INGOT_CAST.get());
                         pOutput.accept(ModItems.NETHERITE_INGOT_CAST.get());
-                        pOutput.accept(ModItems.MAGNESIUM_INGOT_CAST.get());
 
                         pOutput.accept(ModItems.URANIUM_PLATE_CAST.get());
                         pOutput.accept(ModItems.PLUTONIUM_PLATE_CAST.get());
@@ -667,7 +651,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.IRON_PLATE_CAST.get());
                         pOutput.accept(ModItems.GOLD_PLATE_CAST.get());
                         pOutput.accept(ModItems.NETHERITE_PLATE_CAST.get());
-                        pOutput.accept(ModItems.MAGNESIUM_PLATE_CAST.get());
 
                         pOutput.accept(ModItems.URANIUM_NUGGET_CAST.get());
                         pOutput.accept(ModItems.PLUTONIUM_NUGGET_CAST.get());
@@ -708,7 +691,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SILVER_NUGGET_CAST.get());
                         pOutput.accept(ModItems.IRON_NUGGET_CAST.get());
                         pOutput.accept(ModItems.GOLD_NUGGET_CAST.get());
-                        pOutput.accept(ModItems.MAGNESIUM_NUGGET_CAST.get());
 
                         pOutput.accept(ModItems.COPPER_GEAR_CAST.get());
                         pOutput.accept(ModItems.BRASS_GEAR_CAST.get());

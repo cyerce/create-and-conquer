@@ -215,10 +215,6 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_NETHERITE = FLUIDS.register("flowing_molten_netherite",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_NETHERITE_FLUID_PROPERTIES));
 
-    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_MAGNESIUM = FLUIDS.register("molten_magnesium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_MAGNESIUM_FLUID_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_MAGNESIUM = FLUIDS.register("flowing_molten_magnesium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_MAGNESIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_REDSTONE = FLUIDS.register("molten_redstone_fluid",
             () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_REDSTONE_FLUID_PROPERTIES));
@@ -507,10 +503,6 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties MOLTEN_NETHERITE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             NetheriteFluidType.MOLTEN_NETHERITE_FLUID_TYPE, SOURCE_MOLTEN_NETHERITE, FLOWING_MOLTEN_NETHERITE)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_NETHERITE_BLOCK).bucket(ModItems.MOLTEN_NETHERITE_BUCKET).tickRate(30);
-
-    public static final ForgeFlowingFluid.Properties MOLTEN_MAGNESIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
-            MagnesiumFluidType.MOLTEN_MAGNESIUM_FLUID_TYPE, SOURCE_MOLTEN_MAGNESIUM, FLOWING_MOLTEN_MAGNESIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_MAGNESIUM_BLOCK).bucket(ModItems.MOLTEN_MAGNESIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_REDSTONE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             RedstoneFluidType.MOLTEN_REDSTONE_FLUID_TYPE, SOURCE_MOLTEN_REDSTONE, FLOWING_MOLTEN_REDSTONE)

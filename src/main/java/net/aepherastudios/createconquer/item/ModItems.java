@@ -46,7 +46,6 @@ public class ModItems {
     public static final RegistryObject<Item> POLONIUM_INGOT = ITEMS.register("polonium_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_20_INGOT = ITEMS.register("fissile_uranium_20_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_90_INGOT = ITEMS.register("fissile_uranium_90_ingot", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAGNESIUM_INGOT = ITEMS.register("magnesium_ingot", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_PLATE = ITEMS.register("uranium_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_PLATE = ITEMS.register("plutonium_plate", () -> new Item(new Item.Properties()));
@@ -84,7 +83,6 @@ public class ModItems {
     public static final RegistryObject<Item> POLONIUM_PLATE = ITEMS.register("polonium_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_20_PLATE = ITEMS.register("fissile_uranium_20_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_90_PLATE = ITEMS.register("fissile_uranium_90_plate", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAGNESIUM_PLATE = ITEMS.register("magnesium_plate", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_NUGGET = ITEMS.register("uranium_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_NUGGET = ITEMS.register("plutonium_nugget", () -> new Item(new Item.Properties()));
@@ -120,7 +118,6 @@ public class ModItems {
     public static final RegistryObject<Item> POLONIUM_NUGGET = ITEMS.register("polonium_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_20_NUGGET = ITEMS.register("fissile_uranium_20_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_90_NUGGET = ITEMS.register("fissile_uranium_90_nugget", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAGNESIUM_NUGGET = ITEMS.register("magnesium_nugget", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_POWDER = ITEMS.register("uranium_powder", () -> new Item(new Item.Properties().food(ModFoods.URANIUM_POWDER)));
     public static final RegistryObject<Item> PLUTONIUM_POWDER = ITEMS.register("plutonium_powder", () -> new Item(new Item.Properties()));
@@ -162,7 +159,6 @@ public class ModItems {
     public static final RegistryObject<Item> FISSILE_URANIUM_20_POWDER = ITEMS.register("fissile_uranium_20_powder", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_90_POWDER = ITEMS.register("fissile_uranium_90_powder", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COPPER_POWDER = ITEMS.register("copper_powder", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAGNESIUM_POWDER = ITEMS.register("magnesium_powder", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_INGOT_CAST = ITEMS.register("uranium_ingot_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_INGOT_CAST = ITEMS.register("plutonium_ingot_cast", () -> new Item(new Item.Properties()));
@@ -204,7 +200,6 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_INGOT_CAST = ITEMS.register("iron_ingot_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOLD_INGOT_CAST = ITEMS.register("gold_ingot_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHERITE_INGOT_CAST = ITEMS.register("netherite_ingot_cast", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAGNESIUM_INGOT_CAST = ITEMS.register("magnesium_ingot_cast", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ORANGE = ITEMS.register("orange", () -> new Item(new Item.Properties().food(ModFoods.ORANGE)));
 
@@ -248,7 +243,6 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_PLATE_CAST = ITEMS.register("iron_plate_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOLD_PLATE_CAST = ITEMS.register("gold_plate_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHERITE_PLATE_CAST = ITEMS.register("netherite_plate_cast", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAGNESIUM_PLATE_CAST = ITEMS.register("magnesium_plate_cast", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_ALUNITE = ITEMS.register("raw_alunite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_BAUXITE = ITEMS.register("raw_bauxite", () -> new Item(new Item.Properties()));
@@ -265,7 +259,6 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_URANINITE = ITEMS.register("raw_uraninite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_LEPIDOLITE = ITEMS.register("raw_lepidolite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CASSITERITE = ITEMS.register("raw_cassiterite", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> RAW_OLIVINE = ITEMS.register("raw_olivine", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CRUSHED_RAW_ALUNITE = ITEMS.register("crushed_raw_alunite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_BAUXITE = ITEMS.register("crushed_raw_bauxite", () -> new Item(new Item.Properties()));
@@ -282,7 +275,6 @@ public class ModItems {
     public static final RegistryObject<Item> CRUSHED_RAW_URANINITE = ITEMS.register("crushed_raw_uraninite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_LEPIDOLITE = ITEMS.register("crushed_raw_lepidolite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_CASSITERITE = ITEMS.register("crushed_raw_cassiterite", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CRUSHED_RAW_OLIVINE = ITEMS.register("crushed_raw_olivine", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ALUNITE_BLEND = ITEMS.register("alunite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BAUXITE_BLEND = ITEMS.register("bauxite_blend", () -> new Item(new Item.Properties()));
@@ -299,7 +291,6 @@ public class ModItems {
     public static final RegistryObject<Item> URANINITE_BLEND = ITEMS.register("uraninite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LEPIDOLITE_BLEND = ITEMS.register("lepidolite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CASSITERITE_BLEND = ITEMS.register("cassiterite_blend", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> OLIVINE_BLEND = ITEMS.register("olivine_blend", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_NUGGET_CAST = ITEMS.register("uranium_nugget_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_NUGGET_CAST = ITEMS.register("plutonium_nugget_cast", () -> new Item(new Item.Properties()));
@@ -340,7 +331,6 @@ public class ModItems {
     public static final RegistryObject<Item> BRASS_NUGGET_CAST = ITEMS.register("brass_nugget_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> IRON_NUGGET_CAST = ITEMS.register("iron_nugget_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOLD_NUGGET_CAST = ITEMS.register("gold_nugget_cast", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAGNESIUM_NUGGET_CAST = ITEMS.register("magnesium_nugget_cast", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> COPPER_GEAR_CAST = ITEMS.register("copper_gear_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BRASS_GEAR_CAST = ITEMS.register("brass_gear_cast", () -> new Item(new Item.Properties()));
@@ -512,7 +502,6 @@ public class ModItems {
     public static final RegistryObject<Item> MOLTEN_IRON_BUCKET = ITEMS.register("molten_iron_bucket", () -> new BucketItem(ModFluids.SOURCE_MOLTEN_IRON, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> MOLTEN_GOLD_BUCKET = ITEMS.register("molten_gold_bucket", () -> new BucketItem(ModFluids.SOURCE_MOLTEN_GOLD, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> MOLTEN_NETHERITE_BUCKET = ITEMS.register("molten_netherite_bucket", () -> new BucketItem(ModFluids.SOURCE_MOLTEN_NETHERITE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
-    public static final RegistryObject<Item> MOLTEN_MAGNESIUM_BUCKET = ITEMS.register("molten_magnesium_bucket", () -> new BucketItem(ModFluids.SOURCE_MOLTEN_MAGNESIUM, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> MOLTEN_REDSTONE_BUCKET = ITEMS.register("molten_redstone_bucket", () -> new BucketItem(ModFluids.SOURCE_MOLTEN_REDSTONE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> OXYGEN_BUCKET = ITEMS.register("oxygen_bucket", () -> new BucketItem(ModFluids.SOURCE_OXYGEN, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

@@ -34,7 +34,6 @@
   "item.createconquer.polonium_ingot": "Polonium Ingot",
   "item.createconquer.electrum_ingot": "Electrum Ingot",
   "item.createconquer.silver_ingot": "Silver Ingot",
-  "item.createconquer.magnesium_ingot": "Magnesium Ingot",
 
   "item.createconquer.uranium_plate": "Uranium Sheet",
   "item.createconquer.plutonium_plate": "Plutonium Sheet",
@@ -73,7 +72,6 @@
   "item.createconquer.polonium_plate": "Polonium Sheet",
   "item.createconquer.electrum_plate": "Electrum Sheet",
   "item.createconquer.silver_plate": "Silver Sheet",
-  "item.createconquer.magnesium_plate": "Magnesium Sheet",
 
   "item.createconquer.uranium_nugget": "Uranium Nugget",
   "item.createconquer.plutonium_nugget": "Plutonium Nugget",
@@ -110,7 +108,6 @@
   "item.createconquer.polonium_nugget": "Polonium Nugget",
   "item.createconquer.electrum_nugget": "Electrum Nugget",
   "item.createconquer.silver_nugget": "Silver Nugget",
-  "item.createconquer.magnesium_nugget": "Magnesium Nugget",
 
   "item.createconquer.uranium_powder": "Powdered Uranium",
   "item.createconquer.plutonium_powder": "Powdered Plutonium",
@@ -153,7 +150,6 @@
   "item.createconquer.polonium_powder": "Powdered Polonium",
   "item.createconquer.electrum_powder": "Powdered Electrum",
   "item.createconquer.silver_powder": "Powdered Silver",
-  "item.createconquer.magnesium_powder": "Powdered Magnesium",
 
   "item.createconquer.uranium_ingot_cast": "Brass Ingot Cast (Uranium)",
   "item.createconquer.plutonium_ingot_cast": "Brass Ingot Cast (Plutonium)",
@@ -196,7 +192,6 @@
   "item.createconquer.brass_ingot_cast": "Brass Ingot Cast (Brass)",
   "item.createconquer.netherite_ingot_cast": "Brass Ingot Cast (Netherite)",
   "item.createconquer.silver_ingot_cast": "Brass Ingot Cast (Silver)",
-  "item.createconquer.magnesium_ingot_cast": "Brass Ingot Cast (Magnesium)",
 
   "item.createconquer.uranium_plate_cast": "Brass Plate Cast (Uranium)",
   "item.createconquer.plutonium_plate_cast": "Brass Plate Cast (Plutonium)",
@@ -239,7 +234,6 @@
   "item.createconquer.brass_plate_cast": "Brass Plate Cast (Brass)",
   "item.createconquer.netherite_plate_cast": "Brass Plate Cast (Netherite)",
   "item.createconquer.silver_plate_cast": "Brass Plate Cast (Silver)",
-  "item.createconquer.magnesium_plate_cast": "Brass Plate Cast (Magnesium)",
 
   "item.createconquer.uranium_nugget_cast": "Brass Nugget Cast (Uranium)",
   "item.createconquer.plutonium_nugget_cast": "Brass Nugget Cast (Plutonium)",
@@ -282,7 +276,6 @@
   "item.createconquer.brass_nugget_cast": "Brass Nugget Cast (Brass)",
   "item.createconquer.netherite_nugget_cast": "Brass Nugget Cast (Netherite)",
   "item.createconquer.silver_nugget_cast": "Brass Nugget Cast (Silver)",
-  "item.createconquer.magnesium_nugget_cast": "Brass Nugget Cast (Magnesium)",
 
   "item.createconquer.copper_gear_cast": "Brass Gear Cast (Copper)",
   "item.createconquer.brass_gear_cast": "Brass Gear Cast (Brass)",
@@ -342,7 +335,6 @@
   "block.createconquer.polonium_block": "Block of Polonium",
   "block.createconquer.electrum_block": "Block of Electrum",
   "block.createconquer.silver_block": "Block of Silver",
-  "block.createconquer.magnesium_block": "Block of Magnesium",
 
   "fluid_type.createconquer.molten_uranium_fluid": "Molten Uranium",
   "fluid_type.createconquer.molten_plutonium_fluid": "Molten Plutonium",
@@ -386,7 +378,6 @@
   "fluid_type.createconquer.molten_netherite_fluid": "Molten Netherite",
   "fluid_type.createconquer.molten_brass_fluid": "Molten Brass",
   "fluid_type.createconquer.molten_redstone_fluid_type": "Molten Redstone",
-  "fluid_type.createconquer.molten_magnesium_fluid": "Molten Magnesium",
   "fluid_type.createconquer.crude_oil_fluid": "Crude Oil",
   "fluid_type.createconquer.fluorine_fluid": "Liquid Fluorine",
   "fluid_type.createconquer.molten_potassium_chloride_fluid": "Molten Potassium Chloride",
@@ -429,7 +420,6 @@
   "block.createconquer.chromite_ore": "Chromite Ore",
   "block.createconquer.cassiterite_ore": "Cassiterite Ore",
   "block.createconquer.borax_ore": "Borax Ore",
-  "block.createconquer.olivine_ore": "Olivine Ore",
   "block.createconquer.potash_ore": "Potash Ore",
   "block.createconquer.fluorite_ore": "Fluorite Ore",
 
@@ -449,7 +439,6 @@
   "block.createconquer.deepslate_ilmenite_ore": "Deepslate Ilmenite Ore",
   "block.createconquer.deepslate_lepidolite_ore": "Deepslate Lepidolite Ore",
   "block.createconquer.deepslate_uraninite_ore": "Deepslate Uraninite Ore",
-  "block.createconquer.deepslate_olivine_ore": "Deepslate Olivine Ore",
   "block.createconquer.deepslate_potash_ore": "Deepslate Potash Ore",
   "block.createconquer.deepslate_fluorite_ore": "Deepslate Fluorite Ore",
 
@@ -468,7 +457,6 @@
   "block.createconquer.raw_cosalite_block": "Block of Raw Cosalite",
   "block.createconquer.raw_chromite_block": "Block of Raw Chromite",
   "block.createconquer.raw_cassiterite_block": "Block of Raw Cassiterite",
-  "block.createconquer.raw_olivine_block": "Block of Raw Olivine",
 
   "item.createconquer.raw_alunite": "Raw Alunite",
   "item.createconquer.raw_corundum": "Raw Corundum",
@@ -485,7 +473,6 @@
   "item.createconquer.raw_cosalite": "Raw Cosalite",
   "item.createconquer.raw_chromite": "Raw Chromite",
   "item.createconquer.raw_cassiterite": "Raw Cassiterite",
-  "item.createconquer.raw_olivine": "Raw Olivine",
 
   "item.createconquer.crushed_raw_alunite": "Crushed Raw Alunite",
   "item.createconquer.crushed_raw_corundum": "Crushed Raw Corundum",
@@ -502,7 +489,6 @@
   "item.createconquer.crushed_raw_cosalite": "Crushed Raw Cosalite",
   "item.createconquer.crushed_raw_chromite": "Crushed Raw Chromite",
   "item.createconquer.crushed_raw_cassiterite": "Crushed Raw Cassiterite",
-  "item.createconquer.crushed_raw_olivine": "Crushed Raw Olivine",
 
   "item.createconquer.alunite_blend": "Alunite Blend",
   "item.createconquer.corundum_blend": "Corundum Blend",
@@ -519,7 +505,6 @@
   "item.createconquer.cosalite_blend": "Cosalite Blend",
   "item.createconquer.chromite_blend": "Chromite Blend",
   "item.createconquer.cassiterite_blend": "Cassiterite Blend",
-  "item.createconquer.olivine_blend": "Olivine Blend",
 
   "item.createconquer.molten_uranium_bucket": "Molten Uranium Bucket",
   "item.createconquer.molten_plutonium_bucket": "Molten Plutonium Bucket",
@@ -563,7 +548,6 @@
   "item.createconquer.molten_netherite_bucket": "Molten Netherite Bucket",
   "item.createconquer.molten_brass_bucket": "Molten Brass Bucket",
   "item.createconquer.molten_redstone_bucket": "Molten Redstone Bucket",
-  "item.createconquer.molten_magnesium_bucket": "Molten Magnesium Bucket",
 
   "item.createconquer.oxygen_bucket": "Oxygen Bucket",
   "item.createconquer.hydrogen_bucket": "Hydrogen Bucket",
