@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "uranium_235_nugget",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/uranium_235"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:uranium_235_nugget"
+  }
+}

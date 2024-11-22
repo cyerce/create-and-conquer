@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:uranium_238_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:uranium_238_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

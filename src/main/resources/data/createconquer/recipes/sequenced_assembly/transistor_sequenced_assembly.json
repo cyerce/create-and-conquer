@@ -1,0 +1,111 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:silicon_plate"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_transistor"
+  },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        },
+        {
+          "tag": "forge:rods/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        },
+        {
+          "tag": "forge:rods/iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        },
+        {
+          "tag": "forge:rods/zinc"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        },
+        {
+          "tag": "forge:wires/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        },
+        {
+          "tag": "forge:wires/zinc"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_transistor"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:transistor",
+      "count": 2
+    }
+  ],
+  "loops": 2
+}

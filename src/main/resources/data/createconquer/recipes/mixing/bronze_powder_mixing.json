@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/copper"
+    },
+    {
+      "tag": "forge:dusts/tin"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:bronze_powder",
+      "count": 2
+    }
+  ]
+}

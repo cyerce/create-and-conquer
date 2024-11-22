@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "createconquer:uranium_core"
+    },
+    "@": {
+      "item": "createconquer:high_power_explosive"
+    }
+  },
+  "pattern": [
+    "@@@",
+    "@#@",
+    "@@@"
+  ],
+  "result": {
+    "item": "createconquer:uranium_nuclear_core"
+  }
+}

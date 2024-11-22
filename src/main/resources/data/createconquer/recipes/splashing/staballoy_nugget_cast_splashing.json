@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:staballoy_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:staballoy_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

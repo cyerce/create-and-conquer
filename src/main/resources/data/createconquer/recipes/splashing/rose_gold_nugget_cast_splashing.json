@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:rose_gold_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:rose_gold_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

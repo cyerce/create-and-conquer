@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/beryllium"
+    }
+  ],
+  "results": [
+    {
+      "amount": 48,
+      "fluid": "createconquer:molten_beryllium_fluid"
+    }
+  ]
+}

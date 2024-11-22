@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:thorium_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:thorium_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

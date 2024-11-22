@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:golden_sheet"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_gyroscope"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_gyroscope"
+        },
+        {
+          "item": "createconquer:gyro"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_gyroscope"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_gyroscope"
+        },
+        {
+          "tag": "forge:rods/iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_gyroscope"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_gyroscope"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_gyroscope"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:gyroscope"
+    }
+  ]
+}

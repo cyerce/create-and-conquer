@@ -1,0 +1,21 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:cosalite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:bismuth_powder",
+      "count": 3
+    },
+    {
+      "item": "createconquer:lead_powder",
+      "count": 2
+    },
+    {
+      "item": "createconquer:sulfur"
+    }
+  ]
+}

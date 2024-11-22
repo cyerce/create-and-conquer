@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:polished_quartz"
+    },
+    {
+      "fluid": "createconquer:molten_iron_fluid",
+      "amount": 576
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polished_citrine"
+    }
+  ]
+}

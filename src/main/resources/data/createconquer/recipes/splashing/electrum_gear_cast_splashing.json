@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:electrum_gear_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:electrum_gear"
+    },
+    {
+      "item": "createconquer:gear_cast"
+    }
+  ]
+}

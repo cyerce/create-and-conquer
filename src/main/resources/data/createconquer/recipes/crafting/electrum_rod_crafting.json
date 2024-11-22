@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "electrum_rod",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/electrum"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "createconquer:electrum_rod"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "createconquer:breeder_reactor",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/lithium_6"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:tritium_fluid",
+      "amount": 720
+    }
+  ]
+}

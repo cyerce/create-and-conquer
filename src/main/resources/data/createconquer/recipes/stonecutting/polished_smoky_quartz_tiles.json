@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "createconquer:polished_smoky_quartz"
+  },
+  "result": "createconquer:polished_smoky_quartz_tiles"
+}

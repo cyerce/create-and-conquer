@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "rosesteel_nugget",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/rosesteel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:rosesteel_nugget"
+  }
+}

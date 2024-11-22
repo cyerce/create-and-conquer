@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/lithium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lithium_plate"
+    }
+  ]
+}

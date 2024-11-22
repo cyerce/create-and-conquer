@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:titanium_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:titanium_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:brass_gear_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:brass_gear"
+    },
+    {
+      "item": "createconquer:gear_cast"
+    }
+  ]
+}

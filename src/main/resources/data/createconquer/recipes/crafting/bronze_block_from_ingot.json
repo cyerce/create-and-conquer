@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bronzesteel_block",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/bronzesteel"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:bronzesteel_block"
+  }
+}

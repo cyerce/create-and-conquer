@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:sulfur_dioxide"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:sulfur_trioxide"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ]
+}

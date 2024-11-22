@@ -1,0 +1,14 @@
+{
+  "values": [
+    "createconquer:alunite_ore",
+    "createconquer:deepslate_alunite_ore",
+    "createconquer:corundum_ore",
+    "createconquer:deepslate_corundum_ore",
+    "createconquer:borax_ore",
+    "createconquer:deepslate_borax_ore",
+    "createconquer:potash_ore",
+    "createconquer:deepslate_potash_ore",
+    "createconquer:fluorite_ore",
+    "createconquer:deepslate_fluorite_ore"
+  ]
+}

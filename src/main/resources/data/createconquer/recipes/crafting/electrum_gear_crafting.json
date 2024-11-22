@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "electrum_gear",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/electrum"
+    },
+    "%": {
+      "tag": "forge:storage_blocks/electrum"
+    }
+  },
+  "pattern": [
+    "###",
+    "#%#",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "createconquer:electrum_gear"
+  }
+}

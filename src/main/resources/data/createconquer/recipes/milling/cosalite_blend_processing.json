@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createconquer:cosalite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:bismuth_powder",
+      "count": 4
+    },
+    {
+      "item": "createconquer:lead_powder",
+      "count": 2
+    }
+  ]
+}

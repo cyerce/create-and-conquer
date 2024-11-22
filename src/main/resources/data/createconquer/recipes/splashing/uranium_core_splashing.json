@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:uranium_sphere_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:uranium_core"
+    },
+    {
+      "item": "createconquer:sphere_cast"
+    }
+  ]
+}

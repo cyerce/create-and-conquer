@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:tin_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tin_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

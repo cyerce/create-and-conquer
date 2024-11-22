@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lithium_7_nugget",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/lithium_7"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:lithium_7_nugget"
+  }
+}

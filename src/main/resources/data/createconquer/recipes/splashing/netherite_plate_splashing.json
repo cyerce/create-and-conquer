@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:netherite_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:netherite_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

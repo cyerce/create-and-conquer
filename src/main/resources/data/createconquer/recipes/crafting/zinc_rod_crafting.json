@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "zinc_rod",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/zinc"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "createconquer:zinc_rod"
+  }
+}

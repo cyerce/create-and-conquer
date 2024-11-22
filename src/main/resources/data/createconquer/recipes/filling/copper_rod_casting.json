@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:rod_cast"
+    },
+    {
+      "fluid": "createconquer:molten_copper_fluid",
+      "amount": 144
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:copper_rod_cast"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createconquer:conventional_warhead"
+    },
+    {
+      "item": "createconquer:reentry_vehicle"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:conventional_warhead_housed"
+    }
+  ]
+}

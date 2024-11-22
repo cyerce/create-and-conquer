@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "rosesteel_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/rosesteel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:rosesteel_ingot"
+  }
+}

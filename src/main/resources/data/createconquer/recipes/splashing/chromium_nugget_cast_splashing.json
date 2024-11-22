@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:chromium_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:chromium_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

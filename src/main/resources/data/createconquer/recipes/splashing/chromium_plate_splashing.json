@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:chromium_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:chromium_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/tanksteel"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tanksteel_plate"
+    }
+  ]
+}

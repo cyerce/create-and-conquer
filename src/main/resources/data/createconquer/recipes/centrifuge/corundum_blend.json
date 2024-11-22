@@ -1,0 +1,18 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:corundum_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:aluminum_powder",
+      "count": 4
+    },
+    {
+      "item": "createconquer:titanium_powder",
+      "count": 2
+    }
+  ]
+}

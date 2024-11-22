@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chromium_ingot",
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/chromium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:chromium_ingot"
+  }
+}

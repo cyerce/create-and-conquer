@@ -1,0 +1,14 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:cosaite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tin_blend",
+      "count": 6
+    }
+  ]
+}

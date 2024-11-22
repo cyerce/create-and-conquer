@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "tanksteel_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/tanksteel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:tanksteel_ingot"
+  }
+}

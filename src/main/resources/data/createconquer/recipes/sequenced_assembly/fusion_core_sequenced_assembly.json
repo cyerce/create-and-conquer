@@ -1,0 +1,49 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:lithium_tritide"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_fusion_core"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fusion_core"
+        },
+        {
+          "item": "createconquer:lithium_tritide"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fusion_core"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fusion_core"
+        },
+        {
+          "item": "createconquer:lithium_deuteride"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fusion_core"
+        }
+      ]
+    }
+  ],
+  "loops": 9,
+  "results": [
+    {
+      "item": "createconquer:fusion_core"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:copper_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:copper_sheet"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

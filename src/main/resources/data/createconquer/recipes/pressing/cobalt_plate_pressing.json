@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/cobalt"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:cobalt_plate"
+    }
+  ]
+}

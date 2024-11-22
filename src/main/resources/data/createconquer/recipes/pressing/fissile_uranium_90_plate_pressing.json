@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/fissile_uranium_90"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:fissile_uranium_90_plate"
+    }
+  ]
+}

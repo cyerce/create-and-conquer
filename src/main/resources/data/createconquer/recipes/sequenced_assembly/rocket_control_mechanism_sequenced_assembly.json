@@ -1,0 +1,97 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:computing_mechanism"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_rocket_control_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        },
+        {
+          "item": "createconquer:gyroscope"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        },
+        {
+          "item": "createconquer:advanced_circuit"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        },
+        {
+          "item": "createconquer:advanced_photoelectric_cell"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        },
+        {
+          "item": "createconquer:redstone_crystal"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_rocket_control_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:rocket_control_mechanism"
+    }
+  ],
+  "loops": 10
+}

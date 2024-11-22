@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/bismuth"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:bismuth_plate"
+    }
+  ]
+}

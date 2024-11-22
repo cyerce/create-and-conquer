@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:formaldehyde_fluid",
+      "amount": 1000
+    },
+    {
+      "fluid": "createconquer:ammonia_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:hexamine_powder"
+    }
+  ]
+}

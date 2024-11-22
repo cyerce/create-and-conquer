@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:gold_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

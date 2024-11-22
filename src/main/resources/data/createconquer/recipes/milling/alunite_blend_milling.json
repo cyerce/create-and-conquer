@@ -1,0 +1,13 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "create:crushed_raw_materials/alunite"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:alunite_blend"
+    }
+  ]
+}

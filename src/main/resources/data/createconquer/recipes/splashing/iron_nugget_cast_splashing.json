@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:iron_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

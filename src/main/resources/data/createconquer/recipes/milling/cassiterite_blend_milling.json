@@ -1,0 +1,13 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "create:crushed_raw_materials/cassiterite"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:cassiterite_blend"
+    }
+  ]
+}

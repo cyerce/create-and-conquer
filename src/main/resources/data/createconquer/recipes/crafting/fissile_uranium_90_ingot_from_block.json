@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "fissile_uranium_90_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/fissile_uranium_90"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:fissile_uranium_90_ingot"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "createconquer:redstone_crystal"
+  },
+  "result": "createconquer:small_redstone_crystal_tiles"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:molten_lithium_6_fluid",
+      "amount": 500
+    },
+    {
+      "fluid": "createconquer:tritium_fluid",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lithium_tritide"
+    }
+  ]
+}

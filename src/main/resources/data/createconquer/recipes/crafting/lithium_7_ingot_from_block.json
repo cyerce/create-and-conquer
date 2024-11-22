@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lithium_7_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/lithium_7"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:lithium_7_ingot"
+  }
+}

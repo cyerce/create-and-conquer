@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aluminum_block",
+  "key": {
+    "#": {
+      "tag": "forge:raw_materials/ilmenite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:raw_ilmenite_block"
+  }
+}

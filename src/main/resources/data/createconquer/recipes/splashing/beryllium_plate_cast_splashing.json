@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:beryllium_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:beryllium_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/rose_gold"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:rose_gold_powder"
+    }
+  ],
+  "processingTime": 250
+}

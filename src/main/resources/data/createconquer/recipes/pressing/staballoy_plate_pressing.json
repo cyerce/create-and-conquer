@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/staballoy"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:staballoy_plate"
+    }
+  ]
+}

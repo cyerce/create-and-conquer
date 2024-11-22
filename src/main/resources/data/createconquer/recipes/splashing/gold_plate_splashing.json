@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:gold_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:golden_sheet"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "lithium_7_ingot",
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/lithium_7"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:lithium_7_ingot"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/chromium"
+    }
+  ],
+  "results": [
+    {
+      "amount": 48,
+      "fluid": "createconquer:molten_chromium_fluid"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/uranium_235"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:uranium_235_plate"
+    }
+  ]
+}

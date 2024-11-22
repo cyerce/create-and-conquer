@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:graphite_rod"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_boron_rod"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_boron_rod"
+        },
+        {
+          "item": "createconquer:boron"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_boron_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_boron_rod"
+        }
+      ],
+      "processingTime": 20,
+      "results": [
+        {
+          "item": "createconquer:incomplete_boron_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_boron_rod"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_boron_rod"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:boron_rod",
+      "count": 1
+    }
+  ],
+  "loops": 1
+}

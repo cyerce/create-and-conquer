@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "createconquer:block/fissile_uranium_20_block"
+  }
+}

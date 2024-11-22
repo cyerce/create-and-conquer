@@ -1,0 +1,110 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:plates/tanksteel"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_fuel_rod"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        },
+        {
+          "item": "createconquer:fuel_pellet"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        },
+        {
+          "item": "createconquer:fuel_pellet"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        },
+        {
+          "item": "createconquer:fuel_pellet"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        },
+        {
+          "item": "createconquer:fuel_pellet"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        },
+        {
+          "item": "createconquer:fuel_pellet"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_fuel_rod"
+        }
+      ]
+    }
+  ],
+  "loops": 1,
+  "results": [
+    {
+      "item": "createconquer:fuel_rod"
+    }
+  ]
+}

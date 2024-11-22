@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:sand",
+      "count": 5
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:silicon_ingot"
+    }
+  ]
+}

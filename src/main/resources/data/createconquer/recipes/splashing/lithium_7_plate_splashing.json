@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:lithium_7_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lithium_7_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

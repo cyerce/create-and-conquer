@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/aluminum"
+    },
+    {
+      "tag": "forge:dusts/titanium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:sapphire_blend"
+    }
+  ]
+}

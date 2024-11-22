@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:plutonium_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:plutonium_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

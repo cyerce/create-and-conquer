@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/gold"
+    },
+    {
+      "tag": "forge:dusts/silver"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:electrum_powder",
+      "count": 2
+    }
+  ]
+}

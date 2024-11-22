@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:tanksteel_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tanksteel_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

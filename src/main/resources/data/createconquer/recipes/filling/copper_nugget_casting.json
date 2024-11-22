@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:nugget_cast"
+    },
+    {
+      "amount": 16,
+      "fluid": "createconquer:molten_copper_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:copper_nugget_cast"
+    }
+  ]
+}

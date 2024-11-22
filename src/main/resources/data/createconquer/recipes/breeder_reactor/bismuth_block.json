@@ -1,0 +1,13 @@
+{
+  "type": "createconquer:breeder_reactor",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/bismuth_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polonium_block"
+    }
+  ]
+}

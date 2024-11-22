@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "ingredient": {
+    "item": "createconquer:crushed_raw_galena"
+  },
+  "result": {
+    "item": "createconquer:lead_ingot"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/electrum"
+    }
+  ],
+  "results": [
+    {
+      "amount": 48,
+      "fluid": "createconquer:molten_electrum_fluid"
+    }
+  ]
+}

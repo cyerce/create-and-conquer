@@ -1,0 +1,110 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:photoelectric_cell"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_advanced_photoelectric_cell"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        },
+        {
+          "item": "createconquer:polished_emerald"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        },
+        {
+          "item": "createconquer:circuit_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        },
+        {
+          "item": "createconquer:polished_quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        },
+        {
+          "tag": "forge:wires/electrum"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_photoelectric_cell"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:advanced_photoelectric_cell"
+    }
+  ],
+  "loops": 2
+}

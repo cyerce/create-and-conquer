@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:tanksteel_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tanksteel_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

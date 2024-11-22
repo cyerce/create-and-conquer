@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:peat"
+    },
+    {
+      "item": "createconquer:peat"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lignite"
+    }
+  ]
+}

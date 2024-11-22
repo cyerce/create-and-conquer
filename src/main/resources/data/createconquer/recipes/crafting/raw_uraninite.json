@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/uraninite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:raw_uraninite"
+  }
+}

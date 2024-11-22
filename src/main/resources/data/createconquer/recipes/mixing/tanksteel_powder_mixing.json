@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/titanium"
+    },
+    {
+      "tag": "forge:dusts/steel"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tanksteel_powder",
+      "count": 2
+    }
+  ]
+}

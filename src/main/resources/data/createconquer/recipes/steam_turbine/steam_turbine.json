@@ -1,0 +1,15 @@
+{
+  "type": "createconquer:steam_turbine",
+  "ingredients": [
+    {
+      "fluid": "createconquer:steam_fluid",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 100
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:brass_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:brass_sheet"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

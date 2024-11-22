@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/rose_gold"
+    },
+    {
+      "tag": "forge:dusts/tanksteel"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:rosesteel_powder",
+      "count": 2
+    }
+  ]
+}

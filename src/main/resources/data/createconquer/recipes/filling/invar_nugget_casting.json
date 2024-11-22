@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:nugget_cast"
+    },
+    {
+      "amount": 16,
+      "fluid": "createconquer:molten_invar_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:invar_nugget_cast"
+    }
+  ]
+}

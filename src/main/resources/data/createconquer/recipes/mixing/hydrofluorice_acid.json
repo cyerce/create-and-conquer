@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 250
+    },
+    {
+      "item": "createconquer:fluorite"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:hydrofluoric_acid_fluid",
+      "amount": 250
+    }
+  ]
+}

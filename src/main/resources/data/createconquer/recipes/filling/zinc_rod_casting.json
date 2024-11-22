@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:rod_cast"
+    },
+    {
+      "fluid": "createconquer:molten_zinc_fluid",
+      "amount": 144
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:zinc_rod_cast"
+    }
+  ]
+}

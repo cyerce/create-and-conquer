@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "plutonium_nugget",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/plutonium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:plutonium_nugget"
+  }
+}

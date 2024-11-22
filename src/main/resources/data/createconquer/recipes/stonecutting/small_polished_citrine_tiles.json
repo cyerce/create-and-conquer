@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "createconquer:polished_citrine"
+  },
+  "result": "createconquer:small_polished_citrine_tiles"
+}

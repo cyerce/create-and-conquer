@@ -1,0 +1,18 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:galena_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:silver_powder",
+      "count": 3
+    },
+    {
+      "item": "createconquer:silver_powder",
+      "count": 3
+    }
+  ]
+}

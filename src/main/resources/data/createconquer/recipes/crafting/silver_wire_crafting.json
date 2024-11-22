@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "silver_wire",
+  "key": {
+    "#": {
+      "tag": "forge:plates/steel"
+    },
+    "%": {
+      "tag": "forge:plates/silver"
+    }
+  },
+  "pattern": [
+    "#",
+    "%",
+    "#"
+  ],
+  "result": {
+    "item": "createconquer:silver_wire"
+  }
+}

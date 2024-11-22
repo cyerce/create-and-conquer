@@ -1,0 +1,94 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:silicon_plate"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_circuit_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        },
+        {
+          "tag": "forge:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        },
+        {
+          "tag": "forge:wires/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        },
+        {
+          "tag": "forge:wires/zinc"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        },
+        {
+          "item": "createconquer:basic_circuit"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_circuit_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:circuit_mechanism"
+    }
+  ],
+  "loops": 2
+}

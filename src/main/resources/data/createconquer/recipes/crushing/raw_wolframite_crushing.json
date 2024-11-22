@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/wolframite"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:crushed_raw_wolframite"
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": 2,
+      "chance": 0.75
+    }
+  ],
+  "processingTime": 400
+}

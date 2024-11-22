@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/polonium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polonium_powder"
+    }
+  ],
+  "processingTime": 250
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:plate_cast"
+    },
+    {
+      "amount": 144,
+      "fluid": "createconquer:molten_netherite_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:netherite_plate_cast"
+    }
+  ]
+}

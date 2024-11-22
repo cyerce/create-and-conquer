@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "brass_gear",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/brass"
+    },
+    "%": {
+      "tag": "forge:storage_blocks/brass"
+    }
+  },
+  "pattern": [
+    "###",
+    "#%#",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "createconquer:brass_gear"
+  }
+}

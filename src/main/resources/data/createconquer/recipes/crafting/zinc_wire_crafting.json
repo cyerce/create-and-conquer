@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "zinc_wire",
+  "key": {
+    "#": {
+      "tag": "forge:plates/steel"
+    },
+    "%": {
+      "tag": "forge:plates/zinc"
+    }
+  },
+  "pattern": [
+    "#",
+    "%",
+    "#"
+  ],
+  "result": {
+    "item": "createconquer:zinc_wire"
+  }
+}

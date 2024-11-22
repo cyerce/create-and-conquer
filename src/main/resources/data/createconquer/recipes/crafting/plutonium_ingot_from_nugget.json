@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "plutonium_ingot",
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/plutonium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:plutonium_ingot"
+  }
+}

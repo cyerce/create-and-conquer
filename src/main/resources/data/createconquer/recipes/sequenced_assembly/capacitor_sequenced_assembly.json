@@ -1,0 +1,95 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:silicon_plate"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_capacitor"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        },
+        {
+          "tag": "forge:plates/zinc"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        },
+        {
+          "tag": "forge:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        },
+        {
+          "tag": "forge:rods/copper"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        }
+      ]
+    },
+	 {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        },
+        {
+          "tag": "forge:rods/zinc"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_capacitor"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:capacitor",
+      "count": 8
+    }
+  ],
+  "loops": 2
+}

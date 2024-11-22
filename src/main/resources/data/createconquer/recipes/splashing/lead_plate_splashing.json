@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:lead_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lead_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

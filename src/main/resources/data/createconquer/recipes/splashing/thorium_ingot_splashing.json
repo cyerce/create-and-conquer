@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:thorium_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:thorium_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:alnico_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:alnico_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

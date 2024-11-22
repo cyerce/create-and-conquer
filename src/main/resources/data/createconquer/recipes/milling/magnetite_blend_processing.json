@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createconquer:magnetite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:iron_powder",
+      "count": 6
+    }
+  ]
+}

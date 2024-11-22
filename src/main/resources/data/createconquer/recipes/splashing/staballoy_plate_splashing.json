@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:staballoy_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:staballoy_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

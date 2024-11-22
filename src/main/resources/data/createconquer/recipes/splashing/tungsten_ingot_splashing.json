@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:tungsten_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tungsten_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

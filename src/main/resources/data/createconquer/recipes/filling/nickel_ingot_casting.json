@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:ingot_cast"
+    },
+    {
+      "amount": 144,
+      "fluid": "createconquer:molten_nickel_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:nickel_ingot_cast"
+    }
+  ]
+}

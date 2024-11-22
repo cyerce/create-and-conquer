@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/fissile_uranium_20"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:fuel_pellet"
+    }
+  ]
+}

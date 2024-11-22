@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createconquer:block/redstone_crystal_tiles"
+    }
+  }
+}

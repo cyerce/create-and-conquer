@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "aluminum_block",
+  "key": {
+    "#": {
+      "item": "createconquer:hexamine_powder"
+    },
+    "@": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "#@#",
+    "@#@",
+    "#@#"
+  ],
+  "result": {
+    "item": "createconquer:high_power_explosive"
+  }
+}

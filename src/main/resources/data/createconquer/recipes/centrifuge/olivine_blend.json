@@ -1,0 +1,18 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:olivine_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:magnesium_powder",
+      "count": 4
+    },
+    {
+      "item": "createconquer:iron_powder",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/iron"
+    },
+    {
+      "item": "createconquer:coke"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:steel_powder"
+    }
+  ]
+}

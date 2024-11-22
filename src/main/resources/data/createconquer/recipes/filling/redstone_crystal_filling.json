@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:polished_lapis"
+    },
+    {
+      "fluid": "createconquer:molten_redstone_fluid",
+      "amount": 144
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:redstone_crystal"
+    }
+  ]
+}

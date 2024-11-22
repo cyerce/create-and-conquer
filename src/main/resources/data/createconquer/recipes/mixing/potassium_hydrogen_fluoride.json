@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:potassium_hydroxide"
+    },
+    {
+      "fluid": "createconquer:hydrofluoric_acid_fluid",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:potassium_hydrogen_fluoride"
+    }
+  ]
+}

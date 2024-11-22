@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:potassium_chloride"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:potassium_chloride_fluid",
+      "amount": 250
+    }
+  ]
+}

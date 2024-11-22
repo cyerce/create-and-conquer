@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "thorium_block",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/thorium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:thorium_block"
+  }
+}

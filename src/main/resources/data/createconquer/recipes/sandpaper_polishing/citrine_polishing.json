@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/citrine"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polished_citrine"
+    }
+  ]
+}

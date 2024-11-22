@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "ingredient": {
+    "tag": "create:crushed_raw_materials/cosalite"
+  },
+  "result": {
+    "item": "createconquer:bismuth_ingot"
+  }
+}

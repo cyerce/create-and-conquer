@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:plate_cast"
+    },
+    {
+      "amount": 144,
+      "fluid": "createconquer:molten_stainless_steel_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:stainless_steel_plate_cast"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "graphite_rod",
+  "key": {
+    "#": {
+      "item": "createconquer:graphite"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "createconquer:graphite_rod"
+  }
+}

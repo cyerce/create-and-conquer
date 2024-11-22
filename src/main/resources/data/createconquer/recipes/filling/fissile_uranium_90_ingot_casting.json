@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:ingot_cast"
+    },
+    {
+      "amount": 144,
+      "fluid": "createconquer:molten_fissile_uranium_90_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:fissile_uranium_90_ingot_cast"
+    }
+  ]
+}

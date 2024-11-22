@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "createconquer:block/solar_panel_bottom",
+    "east": "createconquer:block/solar_panel_side",
+    "north": "createconquer:block/solar_panel_side",
+    "particle": "createconquer:block/solar_panel_side",
+    "south": "createconquer:block/solar_panel_side",
+    "up": "createconquer:block/solar_panel_top",
+    "west": "createconquer:block/solar_panel_side"
+  }
+}

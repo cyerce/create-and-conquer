@@ -1,0 +1,97 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:conventional_warhead_housed"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_conventional_missile"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        },
+        {
+          "item": "createconquer:oxygen_bucket"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        },
+        {
+          "item": "createconquer:hydrogen_bucket"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        },
+        {
+          "item": "createconquer:connector"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        },
+        {
+          "tag": "forge:wires/electrum"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        },
+        {
+          "item": "createconquer:thruster"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_conventional_missile"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:conventional_missile"
+    }
+  ],
+  "loops": 3
+}

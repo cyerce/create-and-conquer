@@ -1,0 +1,18 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:chrysoberyl_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:beryllium_powder",
+      "count": 4
+    },
+    {
+      "item": "createconquer:aluminum_powder",
+      "count": 2
+    }
+  ]
+}

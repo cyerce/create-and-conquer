@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:iron_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:iron_sheet"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

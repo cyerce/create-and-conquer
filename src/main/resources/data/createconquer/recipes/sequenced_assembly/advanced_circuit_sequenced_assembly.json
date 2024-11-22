@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:basic_circuit"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_advanced_circuit"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit"
+        },
+        {
+          "tag": "forge:nuggets/electrum"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:unfinshed_advanced_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit"
+        },
+        {
+          "tag": "forge:wires/gold"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit"
+        },
+        {
+          "tag": "forge:wires/electrum"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:advanced_circuit"
+    }
+  ],
+  "loops": 3
+}

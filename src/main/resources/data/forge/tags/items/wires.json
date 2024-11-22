@@ -1,0 +1,9 @@
+{
+  "values": [
+    "createconquer:copper_wire",
+    "createconquer:zinc_wire",
+    "createconquer:silver_wire",
+    "createconquer:gold_wire",
+    "createconquer:electrum_wire"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/polonium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polonium_plate"
+    }
+  ]
+}

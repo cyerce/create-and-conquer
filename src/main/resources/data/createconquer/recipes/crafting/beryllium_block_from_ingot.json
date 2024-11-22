@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "beryllium_block",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/beryllium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:beryllium_block"
+  }
+}

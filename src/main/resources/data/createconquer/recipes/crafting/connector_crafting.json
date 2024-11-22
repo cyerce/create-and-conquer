@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "connector",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/rose_gold"
+    },
+    "@": {
+      "tag": "forge:nuggets/rose_gold"
+    },
+    "$": {
+      "tag": "forge:wires/copper"
+    },
+    "%": {
+      "item": "createconquer:basic_circuit"
+    },
+    "&": {
+      "tag": "forge:wires/zinc"
+    }
+  },
+  "pattern": [
+    "@@@",
+    "###",
+    "$%&"
+  ],
+  "result": {
+    "item": "createconquer:connector"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "createconquer:polished_diamond"
+  },
+  "result": "createconquer:polished_diamond_tiles"
+}

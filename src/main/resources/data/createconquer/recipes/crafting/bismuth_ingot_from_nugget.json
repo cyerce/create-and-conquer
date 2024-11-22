@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bismuth_ingot",
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/bismuth"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:bismuth_ingot"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:lignite"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:coal"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:polished_quartz"
+    },
+    {
+      "fluid": "createconquer:molten_aluminum_fluid",
+      "amount": 576
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ]
+}

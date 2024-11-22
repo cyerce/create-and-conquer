@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createconquer:galena_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lead_powder",
+      "count": 3
+    },
+    {
+      "item": "createconquer:silver_powder",
+      "count": 3
+    }
+  ]
+}

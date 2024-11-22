@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "electrum_block",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/electrum"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:electrum_block"
+  }
+}

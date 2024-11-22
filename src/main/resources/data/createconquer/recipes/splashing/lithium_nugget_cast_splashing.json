@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:lithium_nugget_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lithium_nugget"
+    },
+    {
+      "item": "createconquer:nugget_cast"
+    }
+  ]
+}

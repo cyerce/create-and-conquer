@@ -1,0 +1,19 @@
+{
+  "type": "createconquer:fractional_distillation",
+  "ingredients": [
+    {
+      "fluid": "createconquer:molten_lithium_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:molten_lithium_6_fluid",
+      "amount": 125
+    },
+    {
+      "fluid": "createconquer:molten_lithium_7_fluid",
+      "amount": 875
+    }
+  ]
+}

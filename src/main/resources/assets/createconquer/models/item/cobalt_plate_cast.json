@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createconquer:item/plate_cast",
+    "layer1": "createconquer:item/cobalt_plate"
+  }
+}

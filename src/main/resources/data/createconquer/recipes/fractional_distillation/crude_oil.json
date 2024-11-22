@@ -1,0 +1,27 @@
+{
+  "type": "createconquer:fractional_distillation",
+  "ingredients": [
+    {
+      "fluid": "createconquer:crude_oil_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:gasoline_fluid",
+      "amount": 250
+    },
+    {
+      "fluid": "createconquer:kerosene_fluid",
+      "amount": 250
+    },
+    {
+      "fluid": "createconquer:diesel_fluid",
+      "amount": 250
+    },
+    {
+      "fluid": "createconquer:bitumen_fluid",
+      "amount": 250
+    }
+  ]
+}

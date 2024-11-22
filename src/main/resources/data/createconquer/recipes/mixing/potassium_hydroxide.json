@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:plates/copper"
+    },
+    {
+      "tag": "forge:plates/zinc"
+    },
+    {
+      "fluid": "createconquer:potassium_chloride_fluid",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "create:copper_sheet"
+    },
+    {
+      "item": "createconquer:zinc_plate"
+    },
+    {
+      "item": "createconquer:potassium_hydroxide"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "!": {
+      "item": "createconquer:computing_mechanism"
+    },
+    "@": {
+      "item": "createconquer:uranium_nuclear_core"
+    },
+    "#": {
+      "tag": "forge:plates/steel"
+    },
+    "$": {
+      "tag": "forge:storage_blocks/steel"
+    }
+  },
+  "pattern": [
+    "#$#",
+    "#@#",
+    "#!#"
+  ],
+  "result": {
+    "item": "createconquer:nuclear_warhead"
+  }
+}

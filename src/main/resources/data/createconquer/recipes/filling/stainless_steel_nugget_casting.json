@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:nugget_cast"
+    },
+    {
+      "amount": 16,
+      "fluid": "createconquer:molten_stainless_steel_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:stainless_steel_nugget_cast"
+    }
+  ]
+}

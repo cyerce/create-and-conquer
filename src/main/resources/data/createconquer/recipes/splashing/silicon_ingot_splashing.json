@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:silicon_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:silicon_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

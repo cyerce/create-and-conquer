@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:plate_cast"
+    },
+    {
+      "amount": 144,
+      "fluid": "createconquer:molten_invar_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:invar_plate_cast"
+    }
+  ]
+}

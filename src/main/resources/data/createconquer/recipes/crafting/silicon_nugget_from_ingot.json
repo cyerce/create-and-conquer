@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "silicon_nugget",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/silicon"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:silicon_nugget"
+  }
+}

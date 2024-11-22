@@ -1,0 +1,125 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:circuit_mechanism"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_advanced_circuit_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        },
+        {
+          "tag": "forge:wires/silver"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        },
+        {
+          "tag": "forge:plates/silver"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        },
+        {
+          "item": "createconquer:advanced_photoelectric_cell"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        },
+        {
+          "item": "createconquer:advanced_circuit"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_advanced_circuit_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:advanced_circuit_mechanism"
+    }
+  ]
+}

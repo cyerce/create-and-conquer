@@ -1,0 +1,18 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:wolframite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:tungsten_iron",
+      "count": 4
+    },
+    {
+      "item": "createconquer:iron_powder",
+      "count": 2
+    }
+  ]
+}

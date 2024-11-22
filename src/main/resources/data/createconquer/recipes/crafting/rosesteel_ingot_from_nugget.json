@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "rosesteel_ingot",
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/rosesteel"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:rosesteel_ingot"
+  }
+}

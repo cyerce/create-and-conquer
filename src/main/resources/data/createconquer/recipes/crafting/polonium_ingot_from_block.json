@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "polonium_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/polonium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:polonium_ingot"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:invar_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:invar_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

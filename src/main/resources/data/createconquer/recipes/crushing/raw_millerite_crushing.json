@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/millerite"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:crushed_raw_millerite"
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": 2,
+      "chance": 0.75
+    }
+  ],
+  "processingTime": 400
+}

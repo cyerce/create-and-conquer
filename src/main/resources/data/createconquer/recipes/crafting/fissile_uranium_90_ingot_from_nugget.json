@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fissile_uranium_90_ingot",
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/fissile_uranium_90"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:fissile_uranium_90_ingot"
+  }
+}

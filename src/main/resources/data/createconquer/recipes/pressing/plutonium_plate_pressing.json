@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/plutonium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:plutonium_plate"
+    }
+  ]
+}

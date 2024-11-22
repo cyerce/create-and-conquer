@@ -1,0 +1,24 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "createconquer:block/heat_exchanger_top",
+		"1": "createconquer:block/heat_exchanger_side",
+		"particle": "createconquer:block/heat_exchanger_top"
+	},
+	"elements": [
+		{
+			"from": [-16, -12, -7],
+			"to": [32, 20, 25],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 4, 9]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	],
+	"display": {}
+}

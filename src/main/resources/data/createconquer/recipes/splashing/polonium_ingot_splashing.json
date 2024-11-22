@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:polonium_ingot_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polonium_ingot"
+    },
+    {
+      "item": "createconquer:ingot_cast"
+    }
+  ]
+}

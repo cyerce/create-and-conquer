@@ -1,0 +1,13 @@
+{
+   "type": "create:pressing",
+   "ingredients": [
+     {
+       "tag": "forge:ingots/chromium"
+     }
+   ],
+   "results": [
+     {
+       "item": "createconquer:chromium_plate"
+     }
+   ]
+}

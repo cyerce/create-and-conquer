@@ -1,0 +1,48 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "tag": "forge:plates/iron"
+    },
+    "B": {
+      "tag": "forge:plates/gold"
+    },
+    "C": {
+      "item": "create:precision_mechanism"
+    },
+    "D": {
+      "item": "create:item_vault"
+    },
+    "E": {
+      "item": "createconquer:connector"
+    },
+    "F": {
+      "tag": "forge:rods/iron"
+    },
+    "G": {
+      "tag": "forge:plates/steel"
+    },
+    "H": {
+      "item": "createconquer:gyroscope"
+    },
+    "I": {
+      "item": "createconquer:computing_mechanism"
+    },
+    "J": {
+      "item": "createconquer:rocket_control_mechanism"
+    }
+  },
+  "pattern": [
+    "  G  ",
+    " GHG ",
+    " GFG ",
+    "GCACG",
+    "GIDIG",
+    "GEJEG",
+    " BBB "
+  ],
+  "result": {
+    "item": "createconquer:reentry_vehicle"
+  }
+}

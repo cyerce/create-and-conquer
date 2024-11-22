@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/lithium_6"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lithium_6_powder"
+    }
+  ],
+  "processingTime": 250
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "uranium_233_ingot",
+  "key": {
+    "#": {
+      "tag": "forge:nuggets/uranium_233"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "createconquer:uranium_233_ingot"
+  }
+}

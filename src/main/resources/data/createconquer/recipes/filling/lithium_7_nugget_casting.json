@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:nugget_cast"
+    },
+    {
+      "amount": 16,
+      "fluid": "createconquer:molten_lithium_7_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lithium_7_nugget_cast"
+    }
+  ]
+}

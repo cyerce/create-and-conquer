@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "lithium_6_ingot",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/lithium_6"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "createconquer:lithium_6_ingot"
+  }
+}

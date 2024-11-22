@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.8,
+  "ingredient": {
+    "tag": "forge:raw_materials/kimberlite"
+  },
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:uranium_235_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:uranium_235_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

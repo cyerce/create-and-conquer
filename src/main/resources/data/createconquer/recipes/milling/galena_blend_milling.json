@@ -1,0 +1,13 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "create:crushed_raw_materials/galena"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:galena_blend"
+    }
+  ]
+}

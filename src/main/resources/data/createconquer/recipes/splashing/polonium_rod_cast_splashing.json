@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:polonium_rod_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polonium_rod"
+    },
+    {
+      "item": "createconquer:rod_cast"
+    }
+  ]
+}

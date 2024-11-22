@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:beryllium_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:beryllium_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

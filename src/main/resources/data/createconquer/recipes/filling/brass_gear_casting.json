@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:gear_cast"
+    },
+    {
+      "fluid": "createconquer:molten_brass_fluid",
+      "amount": 144
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:brass_gear_cast"
+    }
+  ]
+}

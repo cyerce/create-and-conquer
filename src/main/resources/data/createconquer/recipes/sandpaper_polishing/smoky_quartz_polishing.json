@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/smoky_quartz"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polished_smoky_quartz"
+    }
+  ]
+}

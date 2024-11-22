@@ -1,0 +1,30 @@
+{
+  "type": "createconquer:centrifuge",
+  "ingredients": [
+    {
+      "item": "createconquer:uraninite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:uranium_powder",
+      "count": 4
+    },
+    {
+      "item": "createconquer:lead_powder",
+      "count": 2
+    },
+    {
+      "item": "createconquer:thorium_powder",
+      "chance": 0.25
+    },
+    {
+      "item": "createconquer:plutonium_powder",
+      "chance": 0.25
+    },
+    {
+      "item": "createconquer:polonium_powder",
+      "chance": 0.125
+    }
+  ]
+}

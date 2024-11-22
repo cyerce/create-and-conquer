@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "createconquer:polished_ruby"
+  },
+  "result": "createconquer:small_polished_ruby_tiles"
+}

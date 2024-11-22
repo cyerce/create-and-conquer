@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/copper"
+    },
+    {
+      "tag": "forge:dusts/zinc"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:brass_powder",
+      "count": 2
+    }
+  ]
+}

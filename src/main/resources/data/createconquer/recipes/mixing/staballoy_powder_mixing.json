@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/uranium"
+    },
+    {
+      "tag": "forge:dusts/tanksteel"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:staballoy_powder",
+      "count": 2
+    }
+  ]
+}

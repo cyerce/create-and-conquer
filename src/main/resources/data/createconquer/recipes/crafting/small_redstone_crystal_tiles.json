@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "createconquer:redstone_crystal_tiles"
+    }
+  ],
+  "result": {
+    "item": "createconquer:small_redstone_crystal_tiles"
+  }
+}

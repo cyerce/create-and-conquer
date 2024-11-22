@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "copper_wire",
+  "key": {
+    "@": {
+      "tag": "forge:plates/silicon"
+    },
+    "#": {
+      "tag": "forge:wires/copper"
+    },
+    "$": {
+      "tag": "forge:wires/zinc"
+    },
+    "%": {
+      "tag": "forge:rods/copper"
+    },
+    "&": {
+      "tag": "forge:rods/zinc"
+    }
+  },
+  "pattern": [
+    "%@&",
+    "#@$"
+  ],
+  "result": {
+    "item": "createconquer:capacitor",
+    "amount": 2
+  }
+}

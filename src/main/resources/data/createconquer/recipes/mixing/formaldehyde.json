@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:methanol_fluid",
+      "amount": 500
+    },
+    {
+      "tag": "forge:dusts/silver"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:silver_powder"
+    },
+    {
+      "fluid": "createconquer:formaldehyde_fluid"
+    }
+  ]
+}

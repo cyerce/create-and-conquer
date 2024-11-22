@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    },
+    {
+      "tag": "forge:wires/copper"
+    },
+    {
+      "tag": "forge:wires/zinc"
+    }
+  ],
+  "results": [
+    {
+      "amount": 600,
+      "fluid": "createconquer:hydrogen_fluid"
+    },
+    {
+      "amount": 300,
+      "fluid": "createconquer:oxygen_fluid"
+    },
+    {
+      "item": "createconquer:copper_wire"
+    },
+    {
+      "item": "createconquer:zinc_wire"
+    }
+  ]
+}

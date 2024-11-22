@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:nugget_cast"
+    },
+    {
+      "amount": 16,
+      "fluid": "createconquer:molten_fissile_uranium_90_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:fissile_uranium_90_nugget_cast"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:ingot_cast"
+    },
+    {
+      "amount": 144,
+      "fluid": "createconquer:molten_silver_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:silver_ingot_cast"
+    }
+  ]
+}

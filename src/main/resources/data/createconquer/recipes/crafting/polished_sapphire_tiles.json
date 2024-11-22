@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "createconquer:small_polished_sapphire_tiles"
+    }
+  ],
+  "result": {
+    "item": "createconquer:polished_sapphire_tiles"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createconquer:advanced_circuit_mechanism"
+  },
+  "transitionalItem": {
+    "item": "createconquer:incomplete_computing_mechanism"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        },
+        {
+          "tag": "forge:nuggets/rose_gold"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        },
+        {
+          "item": "createconquer:capacitor"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        }
+      ],
+      "loops": 8
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        },
+        {
+          "item": "createconquer:transistor"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        }
+      ],
+      "loops": 4
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        },
+        {
+          "item": "createconquer:redstone_crystal"
+        }
+      ],
+      "results": [
+        {
+          "item": "createconquer:incomplete_computing_mechanism"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:computing_mechanism"
+    }
+  ],
+  "loops": 5
+}

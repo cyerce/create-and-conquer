@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/rosesteel"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:rosesteel_plate"
+    }
+  ]
+}

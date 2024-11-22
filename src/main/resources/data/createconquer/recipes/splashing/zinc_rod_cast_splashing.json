@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:zinc_rod_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:zinc_rod"
+    },
+    {
+      "item": "createconquer:rod_cast"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:stainless_steel_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:stainless_steel_plate"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

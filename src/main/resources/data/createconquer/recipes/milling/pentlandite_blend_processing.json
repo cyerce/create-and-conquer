@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createconquer:pentlandite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:nickel_powder",
+      "count": 4
+    },
+    {
+      "item": "createconquer:iron_powder",
+      "count": 2
+    }
+  ]
+}

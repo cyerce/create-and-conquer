@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:plutonium_sphere_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:plutonium_core"
+    },
+    {
+      "item": "createconquer:sphere_cast"
+    }
+  ]
+}

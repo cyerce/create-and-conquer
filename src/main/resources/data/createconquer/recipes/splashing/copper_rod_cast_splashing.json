@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:copper_rod_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:copper_rod"
+    },
+    {
+      "item": "createconquer:rod_cast"
+    }
+  ]
+}

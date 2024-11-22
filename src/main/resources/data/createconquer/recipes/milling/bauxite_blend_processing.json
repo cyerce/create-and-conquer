@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createconquer:bauxite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:aluminum_powder",
+      "count": 6
+    }
+  ]
+}

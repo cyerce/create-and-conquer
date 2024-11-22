@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/gold"
+    },
+    {
+      "tag": "forge:dusts/copper"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:rose_gold_powder",
+      "count": 2
+    }
+  ]
+}

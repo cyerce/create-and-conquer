@@ -1,0 +1,23 @@
+{
+  "values": [
+    "createconquer:alunite_ore",
+    "createconquer:bauxite_ore",
+    "createconquer:borax_ore",
+    "createconquer:cosalite_ore",
+    "createconquer:chromite_ore",
+    "createconquer:chrysoberyl_ore",
+    "createconquer:cassiterite_ore",
+    "createconquer:corundum_ore",
+    "createconquer:ilmenite_ore",
+    "createconquer:lepidolite_ore",
+    "createconquer:magnetite_ore",
+    "createconquer:millerite_ore",
+    "createconquer:olivine_ore",
+    "createconquer:pentlandite_ore",
+    "createconquer:uraninite_ore",
+    "createconquer:wolframite_ore",
+    "createconquer:galena_ore",
+    "createconquer:potash_ore",
+    "createconquer:fluorite_ore"
+  ]
+}

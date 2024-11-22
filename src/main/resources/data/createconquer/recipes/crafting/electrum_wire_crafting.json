@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "electrum_wire",
+  "key": {
+    "#": {
+      "tag": "forge:plates/steel"
+    },
+    "%": {
+      "tag": "forge:plates/electrum"
+    }
+  },
+  "pattern": [
+    "#",
+    "%",
+    "#"
+  ],
+  "result": {
+    "item": "createconquer:electrum_wire"
+  }
+}

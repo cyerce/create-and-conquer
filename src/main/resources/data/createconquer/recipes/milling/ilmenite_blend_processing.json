@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createconquer:ilmenite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:titanium_powder",
+      "count": 4
+    },
+    {
+      "item": "createconquer:iron_powder",
+      "count": 2
+    }
+  ]
+}

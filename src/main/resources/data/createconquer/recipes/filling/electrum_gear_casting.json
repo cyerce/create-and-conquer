@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:gear_cast"
+    },
+    {
+      "fluid": "createconquer:molten_electrum_fluid",
+      "amount": 144
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:electrum_gear_cast"
+    }
+  ]
+}

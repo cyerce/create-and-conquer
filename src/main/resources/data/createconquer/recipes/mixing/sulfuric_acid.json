@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    },
+    {
+      "item": "createconquer:sulfur_trioxide"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "createconquer:sulfuric_acid_fluid"
+    }
+  ]
+}

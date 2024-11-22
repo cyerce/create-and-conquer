@@ -1,0 +1,13 @@
+{
+  "type": "createconquer:breeder_reactor",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/thorium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:uranium_233_ingot"
+    }
+  ]
+}
