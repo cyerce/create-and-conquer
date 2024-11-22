@@ -396,14 +396,26 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_BLEND = ITEMS.register("sapphire_blend", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CONVENTIONAL_WARHEAD = ITEMS.register("conventional_warhead", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MINI_CONVENTIONAL_WARHEAD = ITEMS.register("mini_conventional_warhead", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NUCLEAR_WARHEAD = ITEMS.register("nuclear_warhead", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MINI_NUCLEAR_WARHEAD = ITEMS.register("mini_nuclear_warhead", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> THERMONUCLEAR_WARHEAD = ITEMS.register("thermonuclear_warhead", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MINI_THERMONUCLEAR_WARHEAD = ITEMS.register("mini_thermonuclear_warhead", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CONVENTIONAL_WARHEAD_HOUSED = ITEMS.register("conventional_warhead_housed", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONVENTIONAL_MIRV_HOUSED = ITEMS.register("conventional_mirv_housed", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NUCLEAR_WARHEAD_HOUSED = ITEMS.register("nuclear_warhead_housed", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NUCLEAR_MIRV_HOUSED = ITEMS.register("nuclear_mirv_housed", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> THERMONUCLEAR_WARHEAD_HOUSED = ITEMS.register("thermonuclear_warhead_housed", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THERMONUCLEAR_MIRV_HOUSED = ITEMS.register("thermonuclear_mirv_housed", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CONVENTIONAL_MISSILE = ITEMS.register("conventional_missile", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONVENTIONAL_ICBM = ITEMS.register("conventional_icbm", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONVENTIONAL_MIRV = ITEMS.register("conventional_mirv", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NUCLEAR_MISSILE = ITEMS.register("nuclear_missile", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NUCLEAR_ICBM = ITEMS.register("nuclear_icbm", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NUCLEAR_MIRV = ITEMS.register("nuclear_mirv", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> THERMONUCLEAR_MISSILE = ITEMS.register("thermonuclear_missile", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THERMONUCLEAR_ICBM = ITEMS.register("thermonuclear_icbm", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THERMONUCLEAR_MIRV = ITEMS.register("thermonuclear_mirv", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PLUTONIUM_CORE = ITEMS.register("plutonium_core", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_CORE = ITEMS.register("uranium_core", () -> new Item(new Item.Properties()));

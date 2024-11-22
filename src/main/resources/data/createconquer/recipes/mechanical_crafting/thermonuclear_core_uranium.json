@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "#": {
+      "tag": "forge:plates/tanksteel"
+    },
+    "$": {
+      "item": "createconquer:fusion_core"
+    },
+    "%": {
+      "item": "createconquer:uranium_nuclear_core"
+    },
+    "!": {
+      "item": "createconquer:computing_mechanism"
+    }
+  },
+  "pattern": [
+    "###",
+    "#%#",
+    "###",
+    "#$#",
+    "#!#"
+  ],
+  "result": {
+    "item": "createconquer:thermonuclear_core"
+  }
+}

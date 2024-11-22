@@ -491,14 +491,26 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.CONVENTIONAL_WARHEAD.get());
+                        pOutput.accept(ModItems.MINI_CONVENTIONAL_WARHEAD.get());
                         pOutput.accept(ModItems.NUCLEAR_WARHEAD.get());
+                        pOutput.accept(ModItems.MINI_NUCLEAR_WARHEAD.get());
                         pOutput.accept(ModItems.THERMONUCLEAR_WARHEAD.get());
+                        pOutput.accept(ModItems.MINI_THERMONUCLEAR_WARHEAD.get());
                         pOutput.accept(ModItems.CONVENTIONAL_MISSILE.get());
+                        pOutput.accept(ModItems.CONVENTIONAL_ICBM.get());
+                        pOutput.accept(ModItems.CONVENTIONAL_MIRV.get());
                         pOutput.accept(ModItems.NUCLEAR_MISSILE.get());
+                        pOutput.accept(ModItems.NUCLEAR_ICBM.get());
+                        pOutput.accept(ModItems.NUCLEAR_MIRV.get());
                         pOutput.accept(ModItems.THERMONUCLEAR_MISSILE.get());
+                        pOutput.accept(ModItems.THERMONUCLEAR_ICBM.get());
+                        pOutput.accept(ModItems.THERMONUCLEAR_MIRV.get());
                         pOutput.accept(ModItems.CONVENTIONAL_WARHEAD_HOUSED.get());
+                        pOutput.accept(ModItems.CONVENTIONAL_MIRV_HOUSED.get());
                         pOutput.accept(ModItems.NUCLEAR_WARHEAD_HOUSED.get());
+                        pOutput.accept(ModItems.NUCLEAR_MIRV_HOUSED.get());
                         pOutput.accept(ModItems.THERMONUCLEAR_WARHEAD_HOUSED.get());
+                        pOutput.accept(ModItems.THERMONUCLEAR_MIRV_HOUSED.get());
                         pOutput.accept(ModItems.URANIUM_CORE.get());
                         pOutput.accept(ModItems.PLUTONIUM_CORE.get());
                         pOutput.accept(ModItems.HIGH_POWER_EXPLOSIVE.get());
