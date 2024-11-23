@@ -94,8 +94,7 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     @Override
     public void onLoad(){
         super.onLoad();
-        lazyItemHandler = LazyOptional.of(
-                () -> itemHanler);
+        lazyItemHandler = LazyOptional.of(() -> itemHanler);
     }
 
     @Override
@@ -132,7 +131,6 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
         for(int i = 0; i < itemHanler.getSlots(); i++){
             invintory.setItem(i, itemHanler.getStackInSlot(i));
         }
-
         Containers.dropContents(this.level, this.worldPosition, invintory);
     }
 
