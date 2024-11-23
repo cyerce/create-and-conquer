@@ -1,6 +1,7 @@
 package net.aepherastudios.createconquer.block;
 
 import net.aepherastudios.createconquer.CreateConquer;
+import net.aepherastudios.createconquer.block.costom.NuclearReactorBlock;
 import net.aepherastudios.createconquer.fluid.ModFluids;
 import net.aepherastudios.createconquer.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -417,7 +418,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> HEAT_EXCHANGER = registerBlock("heat_exchanger",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> NUCLEAR_REACTOR = registerBlock("nuclear_reactor",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+            () -> new NuclearReactorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

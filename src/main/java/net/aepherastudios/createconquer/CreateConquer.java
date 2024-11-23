@@ -7,6 +7,9 @@ import net.aepherastudios.createconquer.effect.ModEffects;
 import net.aepherastudios.createconquer.fluid.*;
 import net.aepherastudios.createconquer.item.ModCreativeModeTabs;
 import net.aepherastudios.createconquer.item.ModItems;
+import net.aepherastudios.createconquer.screen.ModMenuTypes;
+import net.aepherastudios.createconquer.screen.NuclearReactorScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +36,7 @@ public class CreateConquer
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModFluids.register(modEventBus);
         ModEffects.register(modEventBus);
@@ -168,6 +172,8 @@ public class CreateConquer
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SULFURIC_ACID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_HYDROFLUORIC_ACID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_HYDROFLUORIC_ACID.get(), RenderType.translucent());
+
+            MenuScreens.register(ModMenuTypes.NUCLEAR_REACTOR_MENU.get(), NuclearReactorScreen::new);
         }
     }
 }
