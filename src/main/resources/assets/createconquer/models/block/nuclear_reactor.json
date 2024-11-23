@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/Block.box",
   "textures": {
     "all": "createconquer:block/nuclear_reactor"
   }
