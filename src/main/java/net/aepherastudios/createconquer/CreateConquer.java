@@ -2,6 +2,7 @@ package net.aepherastudios.createconquer;
 
 import com.mojang.logging.LogUtils;
 import net.aepherastudios.createconquer.block.ModBlocks;
+import net.aepherastudios.createconquer.block.entity.ModBlockEntities;
 import net.aepherastudios.createconquer.effect.ModEffects;
 import net.aepherastudios.createconquer.fluid.*;
 import net.aepherastudios.createconquer.item.ModCreativeModeTabs;
@@ -31,6 +32,7 @@ public class CreateConquer
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModFluids.register(modEventBus);
         ModEffects.register(modEventBus);
