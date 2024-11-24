@@ -1,0 +1,6 @@
+{
+  "parent": "block/Block.box",
+  "textures": {
+    "all": "createconquer:block/nuclear_reactor"
+  }
+}

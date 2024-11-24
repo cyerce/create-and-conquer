@@ -480,6 +480,8 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.ORANGE.get());
 
+                        pOutput.accept(ModBlocks.NUCLEAR_REACTOR.get());
+
 
 
                     })
