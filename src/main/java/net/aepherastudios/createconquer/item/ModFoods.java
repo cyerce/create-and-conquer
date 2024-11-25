@@ -14,4 +14,8 @@ public class ModFoods {
             .saturationMod(0.2f)
             .effect(() -> new MobEffectInstance(ModEffects.RADIATION_SICKNESS_DEATH.get(), 120001, 1, true, true, true), 1f)
             .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 12000), 1f).build();
+    public static final FoodProperties RADIOACTIVE_WASTE = new FoodProperties.Builder().alwaysEat().nutrition(2)
+            .saturationMod(0.2f)
+            .effect(() -> new MobEffectInstance(ModEffects.RADIATION_SICKNESS_DEATH.get(), 120001, 1, true, true, true), 1f)
+            .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 12000), 1f).build();
 }
