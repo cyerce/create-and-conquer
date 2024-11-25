@@ -24,7 +24,7 @@ import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 public final class NuclearReactorBlock extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(-16,0,-16,32,48,32);
+    public static final VoxelShape SHAPE = Block.box(-16,0,-16,32,32,32);
 
     public NuclearReactorBlock(Properties pProperties) {
         super(pProperties);
