@@ -296,7 +296,9 @@
 
   "item.createconquer.orange": "Orange",
 
+  "block.createconquer.radioactive_waste_barrel": "Radioactive Waste Barrel",
 
+  "block.createconquer.nuclear_reactor": "Nuclear Reactor",
 
   "block.createconquer.uranium_block": "Block of Uranium",
   "block.createconquer.plutonium_block": "Block of Plutonium",

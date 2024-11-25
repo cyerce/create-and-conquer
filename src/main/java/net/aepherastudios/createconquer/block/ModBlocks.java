@@ -406,6 +406,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> LIGHT_GRAY_ASPHALT = registerBlock("light_gray_asphalt",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
+    public static final RegistryObject<Block> RADIOACTIVE_WASTE_BARREL = registerBlock("radioactive_waste_barrel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> COKING_OVEN = registerBlock("coking_oven",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
