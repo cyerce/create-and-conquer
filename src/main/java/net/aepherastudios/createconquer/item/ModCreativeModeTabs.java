@@ -431,6 +431,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CRUSHED_RAW_CASSITERITE.get());
                         pOutput.accept(ModItems.CASSITERITE_BLEND.get());
 
+                        pOutput.accept(ModBlocks.SPHALERITE_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SPHALERITE_ORE.get());
+                        pOutput.accept(ModBlocks.RAW_SPHALERITE_BLOCK.get());
+                        pOutput.accept(ModItems.RAW_SPHALERITE.get());
+                        pOutput.accept(ModItems.CRUSHED_RAW_SPHALERITE.get());
+                        pOutput.accept(ModItems.SPHALERITE_BLEND.get());
+
                         pOutput.accept(ModBlocks.BORAX_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_BORAX_ORE.get());
                         pOutput.accept(ModBlocks.FLUORITE_ORE.get());

@@ -421,6 +421,7 @@
   "block.createconquer.cosalite_ore": "Cosalite Ore",
   "block.createconquer.chromite_ore": "Chromite Ore",
   "block.createconquer.cassiterite_ore": "Cassiterite Ore",
+  "block.createconquer.sphalerite_ore": "Sphalerite Ore",
   "block.createconquer.borax_ore": "Borax Ore",
   "block.createconquer.potash_ore": "Potash Ore",
   "block.createconquer.fluorite_ore": "Fluorite Ore",
@@ -437,6 +438,7 @@
   "block.createconquer.deepslate_cosalite_ore": "Deepslate Cosalite Ore",
   "block.createconquer.deepslate_chromite_ore": "Deepslate Chromite Ore",
   "block.createconquer.deepslate_cassiterite_ore": "Deepslate Cassiterite Ore",
+  "block.createconquer.deepslate_sphalerite_ore": "Deepslate Sphalerite Ore",
   "block.createconquer.deepslate_borax_ore": "Deepslate Borax Ore",
   "block.createconquer.deepslate_ilmenite_ore": "Deepslate Ilmenite Ore",
   "block.createconquer.deepslate_lepidolite_ore": "Deepslate Lepidolite Ore",
@@ -459,6 +461,7 @@
   "block.createconquer.raw_cosalite_block": "Block of Raw Cosalite",
   "block.createconquer.raw_chromite_block": "Block of Raw Chromite",
   "block.createconquer.raw_cassiterite_block": "Block of Raw Cassiterite",
+  "block.createconquer.raw_sphalerite_block": "Block of Raw Sphalerite",
 
   "item.createconquer.raw_alunite": "Raw Alunite",
   "item.createconquer.raw_corundum": "Raw Corundum",
@@ -475,6 +478,7 @@
   "item.createconquer.raw_cosalite": "Raw Cosalite",
   "item.createconquer.raw_chromite": "Raw Chromite",
   "item.createconquer.raw_cassiterite": "Raw Cassiterite",
+  "item.createconquer.raw_sphalerite": "Raw Sphalerite",
 
   "item.createconquer.crushed_raw_alunite": "Crushed Raw Alunite",
   "item.createconquer.crushed_raw_corundum": "Crushed Raw Corundum",
@@ -491,6 +495,7 @@
   "item.createconquer.crushed_raw_cosalite": "Crushed Raw Cosalite",
   "item.createconquer.crushed_raw_chromite": "Crushed Raw Chromite",
   "item.createconquer.crushed_raw_cassiterite": "Crushed Raw Cassiterite",
+  "item.createconquer.crushed_raw_sphalerite": "Crushed Raw Sphalerite",
 
   "item.createconquer.alunite_blend": "Alunite Blend",
   "item.createconquer.corundum_blend": "Corundum Blend",
@@ -507,6 +512,7 @@
   "item.createconquer.cosalite_blend": "Cosalite Blend",
   "item.createconquer.chromite_blend": "Chromite Blend",
   "item.createconquer.cassiterite_blend": "Cassiterite Blend",
+  "item.createconquer.sphalerite_blend": "Sphalerite Blend",
 
   "item.createconquer.molten_uranium_bucket": "Molten Uranium Bucket",
   "item.createconquer.molten_plutonium_bucket": "Molten Plutonium Bucket",

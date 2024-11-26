@@ -259,6 +259,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_URANINITE = ITEMS.register("raw_uraninite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_LEPIDOLITE = ITEMS.register("raw_lepidolite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_CASSITERITE = ITEMS.register("raw_cassiterite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_SPHALERITE = ITEMS.register("raw_sphalerite", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CRUSHED_RAW_ALUNITE = ITEMS.register("crushed_raw_alunite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_BAUXITE = ITEMS.register("crushed_raw_bauxite", () -> new Item(new Item.Properties()));
@@ -275,6 +276,7 @@ public class ModItems {
     public static final RegistryObject<Item> CRUSHED_RAW_URANINITE = ITEMS.register("crushed_raw_uraninite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_LEPIDOLITE = ITEMS.register("crushed_raw_lepidolite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_CASSITERITE = ITEMS.register("crushed_raw_cassiterite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRUSHED_RAW_SPHALERITE = ITEMS.register("crushed_raw_sphalerite", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ALUNITE_BLEND = ITEMS.register("alunite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BAUXITE_BLEND = ITEMS.register("bauxite_blend", () -> new Item(new Item.Properties()));
@@ -291,6 +293,7 @@ public class ModItems {
     public static final RegistryObject<Item> URANINITE_BLEND = ITEMS.register("uraninite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LEPIDOLITE_BLEND = ITEMS.register("lepidolite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CASSITERITE_BLEND = ITEMS.register("cassiterite_blend", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SPHALERITE_BLEND = ITEMS.register("sphalerite_blend", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_NUGGET_CAST = ITEMS.register("uranium_nugget_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_NUGGET_CAST = ITEMS.register("plutonium_nugget_cast", () -> new Item(new Item.Properties()));
