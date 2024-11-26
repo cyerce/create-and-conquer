@@ -2,6 +2,8 @@ package net.aepherastudios.createconquer.block.custom;
 
 import net.aepherastudios.createconquer.block.entity.ModBlockEntities;
 import net.aepherastudios.createconquer.block.entity.NuclearReactorBlockEntity;
+import net.minecraft.client.multiplayer.chat.ChatLog;
+import net.minecraft.client.multiplayer.chat.report.ChatReportBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -21,11 +23,14 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import net.minecraftforge.client.event.CustomizeGuiOverlayEvent;
+import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.network.NetworkHooks;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public final class NuclearReactorBlock extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
+    public static final VoxelShape SHAPE = Block.box(-16,0,-16,32,32,32);
 
     public NuclearReactorBlock(Properties pProperties) {
         super(pProperties);
