@@ -1,8 +1,8 @@
 package net.aepherastudios.createconquer.fluid;
 
 import net.aepherastudios.createconquer.CreateConquer;
-import net.aepherastudios.createconquer.block.ModBlocks;
-import net.aepherastudios.createconquer.item.ModItems;
+import net.aepherastudios.createconquer.block.CCBlocks;
+import net.aepherastudios.createconquer.item.CCItems;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -346,263 +346,263 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties MOLTEN_URANIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             UraniumFluidType.MOLTEN_URANIUM_FLUID_TYPE, SOURCE_MOLTEN_URANIUM, FLOWING_MOLTEN_URANIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_URANIUM_BLOCK).bucket(ModItems.MOLTEN_URANIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_URANIUM_BLOCK).bucket(CCItems.MOLTEN_URANIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_PLUTONIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PlutoniumFluidType.MOLTEN_PLUTONIUM_FLUID_TYPE, SOURCE_MOLTEN_PLUTONIUM, FLOWING_MOLTEN_PLUTONIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_PLUTONIUM_BLOCK).bucket(ModItems.MOLTEN_PLUTONIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_PLUTONIUM_BLOCK).bucket(CCItems.MOLTEN_PLUTONIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BERYLLIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             BerylliumFluidType.MOLTEN_BERYLLIUM_FLUID_TYPE, SOURCE_MOLTEN_BERYLLIUM, FLOWING_MOLTEN_BERYLLIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_BERYLLIUM_BLOCK).bucket(ModItems.MOLTEN_BERYLLIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BERYLLIUM_BLOCK).bucket(CCItems.MOLTEN_BERYLLIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_TITANIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TitaniumFluidType.MOLTEN_TITANIUM_FLUID_TYPE, SOURCE_MOLTEN_TITANIUM, FLOWING_MOLTEN_TITANIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_TITANIUM_BLOCK).bucket(ModItems.MOLTEN_TITANIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TITANIUM_BLOCK).bucket(CCItems.MOLTEN_TITANIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_LITHIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             LithiumFluidType.MOLTEN_LITHIUM_FLUID_TYPE, SOURCE_MOLTEN_LITHIUM, FLOWING_MOLTEN_LITHIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_LITHIUM_BLOCK).bucket(ModItems.MOLTEN_LITHIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LITHIUM_BLOCK).bucket(CCItems.MOLTEN_LITHIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_THORIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ThoriumFluidType.MOLTEN_THORIUM_FLUID_TYPE, SOURCE_MOLTEN_THORIUM, FLOWING_MOLTEN_THORIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_THORIUM_BLOCK).bucket(ModItems.MOLTEN_THORIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_THORIUM_BLOCK).bucket(CCItems.MOLTEN_THORIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_NICKEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             NickelFluidType.MOLTEN_NICKEL_FLUID_TYPE, SOURCE_MOLTEN_NICKEL, FLOWING_MOLTEN_NICKEL)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_NICKEL_BLOCK).bucket(ModItems.MOLTEN_NICKEL_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_NICKEL_BLOCK).bucket(CCItems.MOLTEN_NICKEL_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_LEAD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             LeadFluidType.MOLTEN_LEAD_FLUID_TYPE, SOURCE_MOLTEN_LEAD, FLOWING_MOLTEN_LEAD)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_LEAD_BLOCK).bucket(ModItems.MOLTEN_LEAD_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LEAD_BLOCK).bucket(CCItems.MOLTEN_LEAD_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_TANKSTEEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TanksteelFluidType.MOLTEN_TANKSTEEL_FLUID_TYPE, SOURCE_MOLTEN_TANKSTEEL, FLOWING_MOLTEN_TANKSTEEL)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_TANKSTEEL_BLOCK).bucket(ModItems.MOLTEN_TANKSTEEL_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TANKSTEEL_BLOCK).bucket(CCItems.MOLTEN_TANKSTEEL_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_STEEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             SteelFluidType.MOLTEN_STEEL_FLUID_TYPE, SOURCE_MOLTEN_STEEL, FLOWING_MOLTEN_STEEL)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_STEEL_BLOCK).bucket(ModItems.MOLTEN_STEEL_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_STEEL_BLOCK).bucket(CCItems.MOLTEN_STEEL_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ALUMINUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             AluminumFluidType.MOLTEN_ALUMINUM_FLUID_TYPE, SOURCE_MOLTEN_ALUMINUM, FLOWING_MOLTEN_ALUMINUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_ALUMINUM_BLOCK).bucket(ModItems.MOLTEN_ALUMINUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ALUMINUM_BLOCK).bucket(CCItems.MOLTEN_ALUMINUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_TIN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TinFluidType.MOLTEN_TIN_FLUID_TYPE, SOURCE_MOLTEN_TIN, FLOWING_MOLTEN_TIN)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_TIN_BLOCK).bucket(ModItems.MOLTEN_TIN_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TIN_BLOCK).bucket(CCItems.MOLTEN_TIN_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ZINC_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ZincFluidType.MOLTEN_ZINC_FLUID_TYPE, SOURCE_MOLTEN_ZINC, FLOWING_MOLTEN_ZINC)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_ZINC_BLOCK).bucket(ModItems.MOLTEN_ZINC_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ZINC_BLOCK).bucket(CCItems.MOLTEN_ZINC_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_COPPER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             CopperFluidType.MOLTEN_COPPER_FLUID_TYPE, SOURCE_MOLTEN_COPPER, FLOWING_MOLTEN_COPPER)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_COPPER_BLOCK).bucket(ModItems.MOLTEN_COPPER_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COPPER_BLOCK).bucket(CCItems.MOLTEN_COPPER_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_SILICON_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             SiliconFluidType.MOLTEN_SILICON_FLUID_TYPE, SOURCE_MOLTEN_SILICON, FLOWING_MOLTEN_SILICON)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_SILICON_BLOCK).bucket(ModItems.MOLTEN_SILICON_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_SILICON_BLOCK).bucket(CCItems.MOLTEN_SILICON_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_URANIUM_235_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             Uranium235FluidType.MOLTEN_URANIUM_235_FLUID_TYPE, SOURCE_MOLTEN_URANIUM_235, FLOWING_MOLTEN_URANIUM_235)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_URANIUM_235_BLOCK).bucket(ModItems.MOLTEN_URANIUM_235_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_URANIUM_235_BLOCK).bucket(CCItems.MOLTEN_URANIUM_235_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_URANIUM_238_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             Uranium238FluidType.MOLTEN_URANIUM_238_FLUID_TYPE, SOURCE_MOLTEN_URANIUM_238, FLOWING_MOLTEN_URANIUM_238)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_URANIUM_238_BLOCK).bucket(ModItems.MOLTEN_URANIUM_238_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_URANIUM_238_BLOCK).bucket(CCItems.MOLTEN_URANIUM_238_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_URANIUM_233_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             Uranium233FluidType.MOLTEN_URANIUM_233_FLUID_TYPE, SOURCE_MOLTEN_URANIUM_233, FLOWING_MOLTEN_URANIUM_233)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_URANIUM_233_BLOCK).bucket(ModItems.MOLTEN_URANIUM_233_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_URANIUM_233_BLOCK).bucket(CCItems.MOLTEN_URANIUM_233_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_FISSILE_URANIUM_20_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             FissileUranium20FluidType.MOLTEN_FISSILE_URANIUM_20_FLUID_TYPE, SOURCE_MOLTEN_FISSILE_URANIUM_20, FLOWING_MOLTEN_FISSILE_URANIUM_20)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_FISSILE_URANIUM_20_BLOCK).bucket(ModItems.MOLTEN_FISSILE_URANIUM_20_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_FISSILE_URANIUM_20_BLOCK).bucket(CCItems.MOLTEN_FISSILE_URANIUM_20_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_FISSILE_URANIUM_90_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             FissileUranium90FluidType.MOLTEN_FISSILE_URANIUM_90_FLUID_TYPE, SOURCE_MOLTEN_FISSILE_URANIUM_90, FLOWING_MOLTEN_FISSILE_URANIUM_90)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_FISSILE_URANIUM_90_BLOCK).bucket(ModItems.MOLTEN_FISSILE_URANIUM_90_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_FISSILE_URANIUM_90_BLOCK).bucket(CCItems.MOLTEN_FISSILE_URANIUM_90_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_LITHIUM_6_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             Lithium6FluidType.MOLTEN_LITHIUM_6_FLUID_TYPE, SOURCE_MOLTEN_LITHIUM_6, FLOWING_MOLTEN_LITHIUM_6)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_LITHIUM_6_BLOCK).bucket(ModItems.MOLTEN_LITHIUM_6_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LITHIUM_6_BLOCK).bucket(CCItems.MOLTEN_LITHIUM_6_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_LITHIUM_7_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             Lithium7FluidType.MOLTEN_LITHIUM_7_FLUID_TYPE, SOURCE_MOLTEN_LITHIUM_7, FLOWING_MOLTEN_LITHIUM_7)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_LITHIUM_7_BLOCK).bucket(ModItems.MOLTEN_LITHIUM_7_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LITHIUM_7_BLOCK).bucket(CCItems.MOLTEN_LITHIUM_7_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ROSE_GOLD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             RoseGoldFluidType.MOLTEN_ROSE_GOLD_FLUID_TYPE, SOURCE_MOLTEN_ROSE_GOLD, FLOWING_MOLTEN_ROSE_GOLD)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_ROSE_GOLD_BLOCK).bucket(ModItems.MOLTEN_ROSE_GOLD_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ROSE_GOLD_BLOCK).bucket(CCItems.MOLTEN_ROSE_GOLD_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ROSESTEEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             RosesteelFluidType.MOLTEN_ROSESTEEL_FLUID_TYPE, SOURCE_MOLTEN_ROSESTEEL, FLOWING_MOLTEN_ROSESTEEL)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_ROSESTEEL_BLOCK).bucket(ModItems.MOLTEN_ROSESTEEL_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ROSESTEEL_BLOCK).bucket(CCItems.MOLTEN_ROSESTEEL_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_INVAR_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             InvarFluidType.MOLTEN_INVAR_FLUID_TYPE, SOURCE_MOLTEN_INVAR, FLOWING_MOLTEN_INVAR)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_INVAR_BLOCK).bucket(ModItems.MOLTEN_INVAR_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_INVAR_BLOCK).bucket(CCItems.MOLTEN_INVAR_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BRONZE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             BronzeFluidType.MOLTEN_BRONZE_FLUID_TYPE, SOURCE_MOLTEN_BRONZE, FLOWING_MOLTEN_BRONZE)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_BRONZE_BLOCK).bucket(ModItems.MOLTEN_BRONZE_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BRONZE_BLOCK).bucket(CCItems.MOLTEN_BRONZE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ALNICO_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             AlnicoFluidType.MOLTEN_ALNICO_FLUID_TYPE, SOURCE_MOLTEN_ALNICO, FLOWING_MOLTEN_ALNICO)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_ALNICO_BLOCK).bucket(ModItems.MOLTEN_ALNICO_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ALNICO_BLOCK).bucket(CCItems.MOLTEN_ALNICO_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_STAINLESS_STEEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             StainlessSteelFluidType.MOLTEN_STAINLESS_STEEL_FLUID_TYPE, SOURCE_MOLTEN_STAINLESS_STEEL, FLOWING_MOLTEN_STAINLESS_STEEL)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_STAINLESS_STEEL_BLOCK).bucket(ModItems.MOLTEN_STAINLESS_STEEL_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_STAINLESS_STEEL_BLOCK).bucket(CCItems.MOLTEN_STAINLESS_STEEL_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_STABALLOY_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             StaballoyFluidType.MOLTEN_STABALLOY_FLUID_TYPE, SOURCE_MOLTEN_STABALLOY, FLOWING_MOLTEN_STABALLOY)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_STABALLOY_BLOCK).bucket(ModItems.MOLTEN_STABALLOY_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_STABALLOY_BLOCK).bucket(CCItems.MOLTEN_STABALLOY_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BRASS_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             BrassFluidType.MOLTEN_BRASS_FLUID_TYPE, SOURCE_MOLTEN_BRASS, FLOWING_MOLTEN_BRASS)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_BRASS_BLOCK).bucket(ModItems.MOLTEN_BRASS_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BRASS_BLOCK).bucket(CCItems.MOLTEN_BRASS_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BISMUTH_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             BismuthFluidType.MOLTEN_BISMUTH_FLUID_TYPE, SOURCE_MOLTEN_BISMUTH, FLOWING_MOLTEN_BISMUTH)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_BISMUTH_BLOCK).bucket(ModItems.MOLTEN_BISMUTH_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BISMUTH_BLOCK).bucket(CCItems.MOLTEN_BISMUTH_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_POLONIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PoloniumFluidType.MOLTEN_POLONIUM_FLUID_TYPE, SOURCE_MOLTEN_POLONIUM, FLOWING_MOLTEN_POLONIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_POLONIUM_BLOCK).bucket(ModItems.MOLTEN_POLONIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_POLONIUM_BLOCK).bucket(CCItems.MOLTEN_POLONIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_TUNGSTEN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TungstenFluidType.MOLTEN_TUNGSTEN_FLUID_TYPE, SOURCE_MOLTEN_TUNGSTEN, FLOWING_MOLTEN_TUNGSTEN)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_TUNGSTEN_BLOCK).bucket(ModItems.MOLTEN_TUNGSTEN_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TUNGSTEN_BLOCK).bucket(CCItems.MOLTEN_TUNGSTEN_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_CHROMIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ChromiumFluidType.MOLTEN_CHROMIUM_FLUID_TYPE, SOURCE_MOLTEN_CHROMIUM, FLOWING_MOLTEN_CHROMIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_CHROMIUM_BLOCK).bucket(ModItems.MOLTEN_CHROMIUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_CHROMIUM_BLOCK).bucket(CCItems.MOLTEN_CHROMIUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_COBALT_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             CobaltFluidType.MOLTEN_COBALT_FLUID_TYPE, SOURCE_MOLTEN_COBALT, FLOWING_MOLTEN_COBALT)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_COBALT_BLOCK).bucket(ModItems.MOLTEN_COBALT_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COBALT_BLOCK).bucket(CCItems.MOLTEN_COBALT_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ELECTRUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ElectrumFluidType.MOLTEN_ELECTRUM_FLUID_TYPE, SOURCE_MOLTEN_ELECTRUM, FLOWING_MOLTEN_ELECTRUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_ELECTRUM_BLOCK).bucket(ModItems.MOLTEN_ELECTRUM_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ELECTRUM_BLOCK).bucket(CCItems.MOLTEN_ELECTRUM_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_SILVER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             SilverFluidType.MOLTEN_SILVER_FLUID_TYPE, SOURCE_MOLTEN_SILVER, FLOWING_MOLTEN_SILVER)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_SILVER_BLOCK).bucket(ModItems.MOLTEN_SILVER_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_SILVER_BLOCK).bucket(CCItems.MOLTEN_SILVER_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_IRON_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             IronFluidType.MOLTEN_IRON_FLUID_TYPE, SOURCE_MOLTEN_IRON, FLOWING_MOLTEN_IRON)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_IRON_BLOCK).bucket(ModItems.MOLTEN_IRON_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_IRON_BLOCK).bucket(CCItems.MOLTEN_IRON_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_GOLD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             GoldFluidType.MOLTEN_GOLD_FLUID_TYPE, SOURCE_MOLTEN_GOLD, FLOWING_MOLTEN_GOLD)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_GOLD_BLOCK).bucket(ModItems.MOLTEN_GOLD_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_GOLD_BLOCK).bucket(CCItems.MOLTEN_GOLD_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_NETHERITE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             NetheriteFluidType.MOLTEN_NETHERITE_FLUID_TYPE, SOURCE_MOLTEN_NETHERITE, FLOWING_MOLTEN_NETHERITE)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_NETHERITE_BLOCK).bucket(ModItems.MOLTEN_NETHERITE_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_NETHERITE_BLOCK).bucket(CCItems.MOLTEN_NETHERITE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_REDSTONE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             RedstoneFluidType.MOLTEN_REDSTONE_FLUID_TYPE, SOURCE_MOLTEN_REDSTONE, FLOWING_MOLTEN_REDSTONE)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_REDSTONE_BLOCK).bucket(ModItems.MOLTEN_REDSTONE_BUCKET).tickRate(30);
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_REDSTONE_BLOCK).bucket(CCItems.MOLTEN_REDSTONE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties OXYGEN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             OxygenFluidType.OXYGEN_FLUID_TYPE, SOURCE_OXYGEN, FLOWING_OXYGEN)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.OXYGEN_BLOCK).bucket(ModItems.OXYGEN_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.OXYGEN_BLOCK).bucket(CCItems.OXYGEN_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties HYDROGEN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             HydrogenFluidType.HYDROGEN_FLUID_TYPE, SOURCE_HYDROGEN, FLOWING_HYDROGEN)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.HYDROGEN_BLOCK).bucket(ModItems.HYDROGEN_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.HYDROGEN_BLOCK).bucket(CCItems.HYDROGEN_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties HEAVY_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             HeavyWaterFluidType.HEAVY_WATER_FLUID_TYPE, SOURCE_HEAVY_WATER, FLOWING_HEAVY_WATER)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.HEAVY_WATER_BLOCK).bucket(ModItems.HEAVY_WATER_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.HEAVY_WATER_BLOCK).bucket(CCItems.HEAVY_WATER_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties DEUTERIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             DeuteriumFluidType.DEUTERIUM_FLUID_TYPE, SOURCE_DEUTERIUM, FLOWING_DEUTERIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.DEUTERIUM_BLOCK).bucket(ModItems.DEUTERIUM_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.DEUTERIUM_BLOCK).bucket(CCItems.DEUTERIUM_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties TRITIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TritiumFluidType.TRITIUM_FLUID_TYPE, SOURCE_TRITIUM, FLOWING_TRITIUM)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.TRITIUM_BLOCK).bucket(ModItems.TRITIUM_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.TRITIUM_BLOCK).bucket(CCItems.TRITIUM_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties CRUDE_OIL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             CrudeOilFluidType.CRUDE_OIL_FLUID_TYPE, SOURCE_CRUDE_OIL, FLOWING_CRUDE_OIL)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.CRUDE_OIL_BLOCK).bucket(ModItems.CRUDE_OIL_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.CRUDE_OIL_BLOCK).bucket(CCItems.CRUDE_OIL_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties METHANE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             MethaneFluidType.METHANE_FLUID_TYPE, SOURCE_METHANE, FLOWING_METHANE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.METHANE_BLOCK).bucket(ModItems.METHANE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.METHANE_BLOCK).bucket(CCItems.METHANE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties ETHANE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             EthaneFluidType.ETHANE_FLUID_TYPE, SOURCE_ETHANE, FLOWING_ETHANE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.ETHANE_BLOCK).bucket(ModItems.ETHANE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.ETHANE_BLOCK).bucket(CCItems.ETHANE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties PROPANE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PropaneFluidType.PROPANE_FLUID_TYPE, SOURCE_PROPANE, FLOWING_PROPANE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.PROPANE_BLOCK).bucket(ModItems.PROPANE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.PROPANE_BLOCK).bucket(CCItems.PROPANE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties BUTANE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ButaneFluidType.BUTANE_FLUID_TYPE, SOURCE_BUTANE, FLOWING_BUTANE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.BUTANE_BLOCK).bucket(ModItems.BUTANE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.BUTANE_BLOCK).bucket(CCItems.BUTANE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties GASOLINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             GasolineFluidType.GASOLINE_FLUID_TYPE, SOURCE_GASOLINE, FLOWING_GASOLINE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.GASOLINE_BLOCK).bucket(ModItems.GASOLINE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.GASOLINE_BLOCK).bucket(CCItems.GASOLINE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties KEROSENE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             KeroseneFluidType.KEROSENE_FLUID_TYPE, SOURCE_KEROSENE, FLOWING_KEROSENE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.KEROSENE_BLOCK).bucket(ModItems.KEROSENE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.KEROSENE_BLOCK).bucket(CCItems.KEROSENE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties DIESEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             DieselFluidType.DIESEL_FLUID_TYPE, SOURCE_DIESEL, FLOWING_DIESEL)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.DIESEL_BLOCK).bucket(ModItems.DIESEL_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.DIESEL_BLOCK).bucket(CCItems.DIESEL_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties BITUMEN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             BitumenFluidType.BITUMEN_FLUID_TYPE, SOURCE_BITUMEN, FLOWING_BITUMEN)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.BITUMEN_BLOCK).bucket(ModItems.BITUMEN_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.BITUMEN_BLOCK).bucket(CCItems.BITUMEN_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties FORMALDEHYDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             FormaldehydeFluidType.FORMALDEHYDE_FLUID_TYPE, SOURCE_FORMALDEHYDE, FLOWING_FORMALDEHYDE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.FORMALDEHYDE_BLOCK).bucket(ModItems.FORMALDEHYDE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.FORMALDEHYDE_BLOCK).bucket(CCItems.FORMALDEHYDE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties ETHANOL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             EthanolFluidType.ETHANOL_FLUID_TYPE, SOURCE_ETHANOL, FLOWING_ETHANOL)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.ETHANOL_BLOCK).bucket(ModItems.ETHANOL_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.ETHANOL_BLOCK).bucket(CCItems.ETHANOL_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties METHANOL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             MethanolFluidType.METHANOL_FLUID_TYPE, SOURCE_METHANOL, FLOWING_METHANOL)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.METHANOL_BLOCK).bucket(ModItems.METHANOL_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.METHANOL_BLOCK).bucket(CCItems.METHANOL_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties FLUORINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             FluorineFluidType.FLUORINE_FLUID_TYPE, SOURCE_FLUORINE, FLOWING_FLUORINE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.FLUORINE_BLOCK).bucket(ModItems.FLUORINE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.FLUORINE_BLOCK).bucket(CCItems.FLUORINE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties NITROGEN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             NitrogenFluidType.NITROGEN_FLUID_TYPE, SOURCE_NITROGEN, FLOWING_NITROGEN)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.NITROGEN_BLOCK).bucket(ModItems.NITROGEN_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.NITROGEN_BLOCK).bucket(CCItems.NITROGEN_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties AMMONIA_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             AmmoniaFluidType.AMMONIA_FLUID_TYPE, SOURCE_AMMONIA, FLOWING_AMMONIA)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.AMMONIA_BLOCK).bucket(ModItems.AMMONIA_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.AMMONIA_BLOCK).bucket(CCItems.AMMONIA_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties SULFURIC_ACID_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             SulfuricAcidFluidType.SULFURIC_ACID_FLUID_TYPE, SOURCE_SULFURIC_ACID, FLOWING_SULFURIC_ACID)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.SULFURIC_ACID_BLOCK).bucket(ModItems.SULFURIC_ACID_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.SULFURIC_ACID_BLOCK).bucket(CCItems.SULFURIC_ACID_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties HYDROFLUORIC_ACID_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             HydrofluoricAcidFluidType.HYDROFLUORIC_ACID_FLUID_TYPE, SOURCE_HYDROFLUORIC_ACID, FLOWING_HYDROFLUORIC_ACID)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.HYDROFLUORIC_ACID_BLOCK).bucket(ModItems.HYDROFLUORIC_ACID_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.HYDROFLUORIC_ACID_BLOCK).bucket(CCItems.HYDROFLUORIC_ACID_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties POTASSIUM_HYDROGEN_FLUORIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PotassiumHydrogenFluorideFluidType.MOLTEN_POTASSIUM_HYDROGEN_FLUORIDE_FLUID_TYPE, SOURCE_POTASSIUM_HYDROGEN_FLUORIDE, FLOWING_POTASSIUM_HYDROGEN_FLUORIDE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.MOLTEN_POTASSIUM_HYDROGEN_FLUORIDE_BLOCK).bucket(ModItems.POTASSIUM_HYDROGEN_FLUORIDE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.MOLTEN_POTASSIUM_HYDROGEN_FLUORIDE_BLOCK).bucket(CCItems.POTASSIUM_HYDROGEN_FLUORIDE_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties POTASSIUM_CHLORIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PotassiumChlorideFluidType.MOLTEN_POTASSIUM_CHLORIDE_FLUID_TYPE, SOURCE_POTASSIUM_CHLORIDE, FLOWING_POTASSIUM_CHLORIDE)
-            .slopeFindDistance(2).levelDecreasePerBlock(1).block(ModBlocks.MOLTEN_POTASSIUM_CHLORIDE_BLOCK).bucket(ModItems.POTASSIUM_CHLORIDE_BUCKET).tickRate(5);
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.MOLTEN_POTASSIUM_CHLORIDE_BLOCK).bucket(CCItems.POTASSIUM_CHLORIDE_BUCKET).tickRate(5);
 
 
 

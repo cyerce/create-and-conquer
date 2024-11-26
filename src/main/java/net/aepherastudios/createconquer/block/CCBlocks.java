@@ -3,7 +3,7 @@ package net.aepherastudios.createconquer.block;
 import net.aepherastudios.createconquer.CreateConquer;
 import net.aepherastudios.createconquer.block.custom.NuclearReactorBlock;
 import net.aepherastudios.createconquer.fluid.ModFluids;
-import net.aepherastudios.createconquer.item.ModItems;
+import net.aepherastudios.createconquer.item.CCItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -18,7 +18,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class CCBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CreateConquer.MOD_ID);
 
@@ -435,7 +435,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return CCItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

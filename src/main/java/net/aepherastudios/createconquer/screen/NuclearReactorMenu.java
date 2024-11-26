@@ -1,6 +1,6 @@
 package net.aepherastudios.createconquer.screen;
 
-import net.aepherastudios.createconquer.block.ModBlocks;
+import net.aepherastudios.createconquer.block.CCBlocks;
 import net.aepherastudios.createconquer.block.entity.NuclearReactorBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -23,7 +23,7 @@ public class NuclearReactorMenu extends AbstractContainerMenu {
     }
 
     public NuclearReactorMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data){
-        super(ModMenuTypes.NUCLEAR_REACTOR_MENU.get(), pContainerId);
+        super(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), pContainerId);
         checkContainerSize(inv, 12);
         blockEntity = ((NuclearReactorBlockEntity) entity);
         this.level = inv.player.level();
@@ -100,7 +100,7 @@ public class NuclearReactorMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.NUCLEAR_REACTOR.get());
+                pPlayer, CCBlocks.NUCLEAR_REACTOR.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

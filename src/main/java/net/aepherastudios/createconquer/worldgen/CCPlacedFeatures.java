@@ -15,7 +15,7 @@ import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 
 import java.util.List;
 
-public class ModPlacedFeatures {
+public class CCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> ALUNITE_ORE_PLACED_KEY = registerKey("alunite_ore_placed");
     public static final ResourceKey<PlacedFeature> BAUXITE_ORE_PLACED_KEY = registerKey("bauxite_ore_placed");
     public static final ResourceKey<PlacedFeature> BORAX_ORE_PLACED_KEY = registerKey("borax_ore_placed");
@@ -38,59 +38,59 @@ public class ModPlacedFeatures {
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, ALUNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ALUNITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, ALUNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_ALUNITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, BAUXITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_BAUXITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, BAUXITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_BAUXITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, BORAX_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_BORAX_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, BORAX_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_BORAX_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, COSALITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_COSALITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, COSALITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_COSALITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, CORUNDUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CORUNDUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, CORUNDUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_CORUNDUM_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, CASSITERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CASSITERITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, CASSITERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_CASSITERITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, CHROMITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CHROMITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, CHROMITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_CHROMITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, CHRYSOBERYL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CHRYSOBERYL_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, CHRYSOBERYL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_CHRYSOBERYL_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, ILMENITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ILMENITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, ILMENITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_ILMENITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, LEPIDOLITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_LEPIDOLITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, LEPIDOLITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_LEPIDOLITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, MILLERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MILLERITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, MILLERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_MILLERITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, MAGNETITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MAGNETITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, MAGNETITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_MAGNETITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, PENTLANDITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PENTLANDITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, PENTLANDITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_PENTLANDITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, WOLFRAMITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_WOLFRAMITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, WOLFRAMITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_WOLFRAMITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, URANINITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_URANINITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, URANINITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_URANINITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, SPHALERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SPHALERITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, SPHALERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_SPHALERITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, POTASH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_POTASH_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, POTASH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_POTASH_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, FLUORITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FLUORITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(4,
+        register(context, FLUORITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_FLUORITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }
 

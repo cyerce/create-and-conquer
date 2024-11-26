@@ -8,7 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModItems {
+public class CCItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CreateConquer.MOD_ID);
 
@@ -119,7 +119,7 @@ public class ModItems {
     public static final RegistryObject<Item> FISSILE_URANIUM_20_NUGGET = ITEMS.register("fissile_uranium_20_nugget", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FISSILE_URANIUM_90_NUGGET = ITEMS.register("fissile_uranium_90_nugget", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> URANIUM_POWDER = ITEMS.register("uranium_powder", () -> new Item(new Item.Properties().food(ModFoods.URANIUM_POWDER)));
+    public static final RegistryObject<Item> URANIUM_POWDER = ITEMS.register("uranium_powder", () -> new Item(new Item.Properties().food(CCFoods.URANIUM_POWDER)));
     public static final RegistryObject<Item> PLUTONIUM_POWDER = ITEMS.register("plutonium_powder", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LITHIUM_POWDER = ITEMS.register("lithium_powder", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> THORIUM_POWDER = ITEMS.register("thorium_powder", () -> new Item(new Item.Properties()));
@@ -201,7 +201,7 @@ public class ModItems {
     public static final RegistryObject<Item> GOLD_INGOT_CAST = ITEMS.register("gold_ingot_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHERITE_INGOT_CAST = ITEMS.register("netherite_ingot_cast", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> ORANGE = ITEMS.register("orange", () -> new Item(new Item.Properties().food(ModFoods.ORANGE)));
+    public static final RegistryObject<Item> ORANGE = ITEMS.register("orange", () -> new Item(new Item.Properties().food(CCFoods.ORANGE)));
 
     public static final RegistryObject<Item> URANIUM_PLATE_CAST = ITEMS.register("uranium_plate_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_PLATE_CAST = ITEMS.register("plutonium_plate_cast", () -> new Item(new Item.Properties()));

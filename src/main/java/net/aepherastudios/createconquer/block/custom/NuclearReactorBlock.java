@@ -1,7 +1,7 @@
 package net.aepherastudios.createconquer.block.custom;
 
 
-import net.aepherastudios.createconquer.block.entity.ModBlockEntities;
+import net.aepherastudios.createconquer.block.entity.CCBlockEntities;
 import net.aepherastudios.createconquer.block.entity.NuclearReactorBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -81,7 +81,7 @@ public final class NuclearReactorBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.NUCLEAR_REACTOR_BE.get(),
+        return createTickerHelper(pBlockEntityType, CCBlockEntities.NUCLEAR_REACTOR_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }
