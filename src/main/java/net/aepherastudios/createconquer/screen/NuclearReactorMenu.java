@@ -33,18 +33,17 @@ public class NuclearReactorMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 80, 11));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 134, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 80, 11));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 134, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 134, 59));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 134, 59));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 44, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 62, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4, 98, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 5, 116, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 6, 8, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 7, 137, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 8, 44, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 9, 62, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 10, 80, 53));
+            this.addSlot(new SlotItemHandler(iItemHandler, 11, 116, 53));
         });
 
         addDataSlots(data);
