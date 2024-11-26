@@ -13,10 +13,10 @@
     "createconquer:crushed_raw_lepidolite",
     "createconquer:crushed_raw_millerite",
     "createconquer:crushed_raw_magnetite",
-    "createconquer:crushed_raw_olivine",
     "createconquer:crushed_raw_pentlandite",
     "createconquer:crushed_raw_uraninite",
     "createconquer:crushed_raw_wolframite",
-    "createconquer:crushed_raw_galena"
+    "createconquer:crushed_raw_galena",
+    "createconquer:crushed_raw_sphalerite"
   ]
 }

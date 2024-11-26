@@ -44,6 +44,7 @@
     "createconquer:raw_magnetite_block",
     "createconquer:raw_pentlandite_block",
     "createconquer:raw_uraninite_block",
-    "createconquer:raw_wolframite_block"
+    "createconquer:raw_wolframite_block",
+    "createconquer:raw_sphalerite_block"
   ]
 }

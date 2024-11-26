@@ -34,7 +34,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PENTLANDITE_ORE_KEY = registerKey("pentlandite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_WOLFRAMITE_ORE_KEY = registerKey("wolframite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_URANINITE_ORE_KEY = registerKey("uraninite_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_OLIVINE_ORE_KEY = registerKey("olivine_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SPHALERITE_ORE_KEY = registerKey("sphalerite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_POTASH_ORE_KEY = registerKey("potash_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FLUORITE_ORE_KEY = registerKey("fluorite_ore");
 
@@ -87,6 +87,9 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldUraniniteOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.URANINITE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_URANINITE_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldSphaleriteOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.SPHALERITE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_SPHALERITE_ORE.get().defaultBlockState()));
         List<OreConfiguration.TargetBlockState> overworldPotashOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.POTASH_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_POTASH_ORE.get().defaultBlockState()));
@@ -111,6 +114,7 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_PENTLANDITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPentlanditeOres, 9));
         register(context, OVERWORLD_WOLFRAMITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldWolframiteOres, 9));
         register(context, OVERWORLD_URANINITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUraniniteOres, 9));
+        register(context, OVERWORLD_SPHALERITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSphaleriteOres, 9));
         register(context, OVERWORLD_POTASH_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPotashOres, 9));
         register(context, OVERWORLD_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres, 9));
 

@@ -28,7 +28,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_LEPIDOLITE_ORE = registerKey("add_lepidolite_ore");
     public static final ResourceKey<BiomeModifier> ADD_WOLFRAMITE_ORE = registerKey("add_wolframite_ore");
     public static final ResourceKey<BiomeModifier> ADD_URANINITE_ORE = registerKey("add_uraninite_ore");
-    public static final ResourceKey<BiomeModifier> ADD_OLIVINE_ORE = registerKey("add_olivine_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SPHALERITE_ORE = registerKey("add_sphalerite_ore");
     public static final ResourceKey<BiomeModifier> ADD_POTASH_ORE = registerKey("add_potash_ore");
     public static final ResourceKey<BiomeModifier> ADD_FLUORITE_ORE = registerKey("add_fluorite_ore");
 
@@ -96,9 +96,9 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.URANINITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
-        context.register(ADD_OLIVINE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_SPHALERITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.OLIVINE_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SPHALERITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
         context.register(ADD_POTASH_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),

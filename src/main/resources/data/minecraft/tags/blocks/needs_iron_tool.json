@@ -47,6 +47,7 @@
     "createconquer:magnetite_ore",
     "createconquer:pentlandite_ore",
     "createconquer:wolframite_ore",
+    "createconquer:sphalerite_ore",
     "createconquer:deepslate_bauxite_ore",
     "createconquer:deepslate_cosalite_ore",
     "createconquer:deepslate_chromite_ore",
@@ -60,6 +61,7 @@
     "createconquer:deepslate_ilmenite_ore",
     "createconquer:deepslate_lepidolite_ore",
     "createconquer:deepslate_uraninite_ore",
+    "createconquer:deepslate_sphalerite_ore",
     "createconquer:raw_alunite_block",
     "createconquer:raw_bauxite_block",
     "createconquer:raw_cosalite_block",
@@ -75,5 +77,6 @@
     "createconquer:raw_pentlandite_block",
     "createconquer:raw_uraninite_block",
     "createconquer:raw_wolframite_block",
+    "createconquer:raw_sphalerite_block"
   ]
 }

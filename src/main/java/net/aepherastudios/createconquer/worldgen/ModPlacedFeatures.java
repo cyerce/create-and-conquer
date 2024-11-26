@@ -31,7 +31,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PENTLANDITE_ORE_PLACED_KEY = registerKey("pentlandite_ore_placed");
     public static final ResourceKey<PlacedFeature> WOLFRAMITE_ORE_PLACED_KEY = registerKey("wolframite_ore_placed");
     public static final ResourceKey<PlacedFeature> URANINITE_ORE_PLACED_KEY = registerKey("uraninite_ore_placed");
-    public static final ResourceKey<PlacedFeature> OLIVINE_ORE_PLACED_KEY = registerKey("olivine_ore_placed");
+    public static final ResourceKey<PlacedFeature> SPHALERITE_ORE_PLACED_KEY = registerKey("sphalerite_ore_placed");
     public static final ResourceKey<PlacedFeature> POTASH_ORE_PLACED_KEY = registerKey("potash_ore_placed");
     public static final ResourceKey<PlacedFeature> FLUORITE_ORE_PLACED_KEY = registerKey("fluorite_ore_placed");
 
@@ -83,7 +83,7 @@ public class ModPlacedFeatures {
         register(context, URANINITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_URANINITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-        register(context, OLIVINE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_OLIVINE_ORE_KEY),
+        register(context, SPHALERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SPHALERITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, POTASH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_POTASH_ORE_KEY),
