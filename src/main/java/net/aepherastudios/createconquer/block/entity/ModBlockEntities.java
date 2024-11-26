@@ -14,7 +14,7 @@ public class ModBlockEntities {
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, CreateConquer.MOD_ID);
 
     public static final RegistryObject<BlockEntityType<NuclearReactorBlockEntity>> NUCLEAR_REACTOR_BE =
-            BLOCK_ENTITIES.register("nuclear_reactor_be", () ->
+            BLOCK_ENTITIES.register("nuclear_reactor_block-entity", () ->
                     BlockEntityType.Builder.of(NuclearReactorBlockEntity::new,
                             ModBlocks.NUCLEAR_REACTOR.get()).build(null));
 

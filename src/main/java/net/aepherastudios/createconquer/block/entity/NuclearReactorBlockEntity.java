@@ -1,6 +1,7 @@
 package net.aepherastudios.createconquer.block.entity;
 
 import it.unimi.dsi.fastutil.floats.FloatDoubleImmutablePair;
+import net.aepherastudios.createconquer.item.ModItems;
 import net.aepherastudios.createconquer.screen.NuclearReactorMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -14,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -27,92 +29,102 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvider {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(12){
+        @Override
+        protected void onContentsChanged(int slot){
+            setChanged();
+        }
 
-    private final ItemStackHandler itemHanler = new ItemStackHandler(10);
+        @Override
+        public boolean isItemValid(int slot, @NotNull ItemStack stack) {
+            return switch(slot){
+                case 0 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
+                case 1 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
+                case 2 -> stack.getItem() == ModItems.POLONIUM_ROD.get();
+                case 3 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
+                case 4 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
+                case 5 -> true;
+                case 6 -> false;
+                case 7 -> stack.getItem() == ModItems.FUEL_ROD.get();
+                case 8 -> stack.getItem() == ModItems.FUEL_ROD.get();
+                case 9 -> stack.getItem() == ModItems.FUEL_ROD.get();
+                case 10 -> stack.getItem() == ModItems.FUEL_ROD.get();
+                case 11 -> stack.getItem() == ModItems.FUEL_ROD.get();
+                default -> super.isItemValid(slot, stack);
+            };
+        }
+    };
 
-    private static final int FUEL_SLOT_1 = 7;
-    private static final int FUEL_SLOT_2 = 9;
-    private static final int FUEL_SLOT_3 = 1;
-    private static final int FUEL_SLOT_4 = 3;
-    private static final int FUEL_SLOT_5 = 5;
-    private static final int POLONIUM_SLOT = 0;
-    private static final int CONTROLE_ROD = 2;
+    private static final int CONTROLE_SLOT = 0;
+    private static final int CONTROLE_SLOT_2 = 1;
+    private static final int POLONIUM_SLOT = 2;
+    private static final int CONTROLE_SLOT_3 = 3;
+    private static final int CONTROLE_SLOT_4 = 4;
+    private static final int FLUID_IN_SLOT = 5;
+    private static final int FLUID_OUT_SLOT = 6;
+    private static final int FUEL1_SLOT = 7;
+    private static final int FUEL2_SLOT = 8;
+    private static final int FUEL3_SLOT = 9;
+    private static final int FUEl4_SLOT = 10;
+    private static final int FUEl5_SLOT = 11;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
     protected final ContainerData data;
-    private int fuelDurability;
-    private int fuelMaxDurability;
-    private int controleRodDurability;
-    private int controleRodMaxDurability;
-    private int poloniumRodDurablity;
-    private int poloniumRodMaxDurability;
+    private int fuelDurProgress = 0;
+    private int fuelDurMaxProgress;
+    private int poloniumDurProgress = 0;
+    private int poloniumDurMaxProgress;
+    private int controleDurProgress = 0;
+    private int controleDurMaxProgress;
 
-    public NuclearReactorBlockEntity(BlockPos pPos, BlockState pBlockState){
+    public NuclearReactorBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.NUCLEAR_REACTOR_BE.get(), pPos, pBlockState);
-        this.data = new ContainerData(){
+        this.data = new ContainerData() {
             @Override
-            public int get(int pIndex){
-                return switch (pIndex){
-                    case 0 -> NuclearReactorBlockEntity.this.fuelDurability;
-                    case 1 -> NuclearReactorBlockEntity.this.fuelMaxDurability;
-                    case 2 -> NuclearReactorBlockEntity.this.controleRodDurability;
-                    case 3 -> NuclearReactorBlockEntity.this.controleRodMaxDurability;
-                    case 4 -> NuclearReactorBlockEntity.this.poloniumRodDurablity;
-                    case 5 -> NuclearReactorBlockEntity.this.poloniumRodMaxDurability;
+            public int get(int pI) {
+                return switch (pI){
+                    case 0 -> NuclearReactorBlockEntity.this.fuelDurProgress;
+                    case 1 -> NuclearReactorBlockEntity.this.fuelDurMaxProgress;
+                    case 2 -> NuclearReactorBlockEntity.this.poloniumDurProgress;
+                    case 3 -> NuclearReactorBlockEntity.this.poloniumDurMaxProgress;
+                    case 4 -> NuclearReactorBlockEntity.this.controleDurProgress;
+                    case 5 -> NuclearReactorBlockEntity.this.controleDurMaxProgress;
                     default -> 0;
+
                 };
             }
+
             @Override
-            public void set(int pIndex, int pValue){
+            public void set(int pIndex, int pVal) {
                 switch (pIndex){
-                    case 0 -> NuclearReactorBlockEntity.this.fuelDurability = pValue;
-                    case 1 -> NuclearReactorBlockEntity.this.fuelMaxDurability = pValue;
-                    case 2 -> NuclearReactorBlockEntity.this.controleRodDurability = pValue;
-                    case 3 -> NuclearReactorBlockEntity.this.controleRodMaxDurability = pValue;
-                    case 4 -> NuclearReactorBlockEntity.this.poloniumRodDurablity = pValue;
-                    case 5 -> NuclearReactorBlockEntity.this.poloniumRodMaxDurability = pValue;
+                    case 0 -> NuclearReactorBlockEntity.this.fuelDurProgress = pVal;
+                    case 1 -> NuclearReactorBlockEntity.this.fuelDurMaxProgress = pVal;
+                    case 2 -> NuclearReactorBlockEntity.this.poloniumDurProgress = pVal;
+                    case 3 -> NuclearReactorBlockEntity.this.poloniumDurMaxProgress = pVal;
+                    case 4 -> NuclearReactorBlockEntity.this.controleDurProgress = pVal;
+                    case 5 -> NuclearReactorBlockEntity.this.controleDurMaxProgress = pVal;
                 }
             }
 
             @Override
-            public int getCount(){
-                return 10;
+            public int getCount() {
+                return 6;
             }
         };
     }
-
-    @Override
-    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side){
-        if(cap == ForgeCapabilities.ITEM_HANDLER){
-            return lazyItemHandler.cast();
+    public void drops() {
+        SimpleContainer invintory = new SimpleContainer(itemHandler.getSlots());
+        for(int i = 0; i < itemHandler.getSlots(); i++){
+            invintory.setItem(i, itemHandler.getStackInSlot(i));
         }
 
-        return super.getCapability(cap, side);
+        Containers.dropContents(this.level, this.worldPosition, invintory);
+
     }
-
     @Override
-    public void onLoad(){
-        super.onLoad();
-        lazyItemHandler = LazyOptional.of(() -> itemHanler);
-    }
-
-    @Override
-    public void invalidateCaps(){
-        super.invalidateCaps();
-        lazyItemHandler.invalidate();
-    }
-
-    @Override
-    public Component getDisplayName(){
-        return Component.translatable("block.createconquer.nuclear_reactor");
-    }
-
-    @Override
-    protected void saveAdditional(CompoundTag pTag) {
-        pTag.put("inventory", itemHanler.serializeNBT());
-
-        super.saveAdditional(pTag);
+    public Component getDisplayName() {
+        return Component.literal("NUCLEAR REACTOR!!!");
     }
 
     @Override
@@ -121,40 +133,34 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     }
 
     @Override
-    public void load(CompoundTag pTag){
+    public void onLoad() {
+        super.onLoad();
+        lazyItemHandler = LazyOptional.of(() -> itemHandler);
+    }
+
+    @Override
+    public void invalidateCaps() {
+        super.invalidateCaps();
+        lazyItemHandler.invalidate();
+    }
+
+    @Override
+    protected void saveAdditional(CompoundTag pTag) {
+        pTag.put("inventory", itemHandler.serializeNBT());
+
+        super.saveAdditional(pTag);
+    }
+
+    @Override
+    public void load(CompoundTag pTag) {
         super.load(pTag);
-        itemHanler.deserializeNBT(pTag.getCompound("inventory"));
+
+        itemHandler.deserializeNBT(pTag.getCompound("inventory"));
     }
 
-    public void drops() {
-        SimpleContainer invintory = new SimpleContainer(itemHanler.getSlots());
-        for(int i = 0; i < itemHanler.getSlots(); i++){
-            invintory.setItem(i, itemHanler.getStackInSlot(i));
-        }
-        Containers.dropContents(this.level, this.worldPosition, invintory);
-    }
-
-    public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
-        if(ReactorOn()){
-            tickDownRods();
-            tickDownFuel();
-            tickDownPoloniumRod();
-        }
-    }
-
-    private void tickDownFuel(){
+    public void tick(Level level, BlockPos pPos, BlockState pState){
 
     }
 
-    private void tickDownRods(){
 
-    }
-    private void tickDownPoloniumRod(){
-
-    }
-
-    private boolean ReactorOn(){
-
-        return false;
-    }
 }

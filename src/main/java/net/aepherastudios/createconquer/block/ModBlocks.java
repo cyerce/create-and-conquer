@@ -1,7 +1,7 @@
 package net.aepherastudios.createconquer.block;
 
 import net.aepherastudios.createconquer.CreateConquer;
-import net.aepherastudios.createconquer.block.costom.NuclearReactorBlock;
+import net.aepherastudios.createconquer.block.custom.NuclearReactorBlock;
 import net.aepherastudios.createconquer.fluid.ModFluids;
 import net.aepherastudios.createconquer.item.ModItems;
 import net.minecraft.world.item.BlockItem;
