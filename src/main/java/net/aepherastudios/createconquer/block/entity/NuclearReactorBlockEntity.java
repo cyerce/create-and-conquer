@@ -38,11 +38,11 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
         @Override
         public boolean isItemValid(int slot, @NotNull ItemStack stack) {
             return switch(slot){
-                case 0 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
-                case 1 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
+                case 0 -> stack.getItem() == ModItems.BORON_ROD.get();
+                case 1 -> stack.getItem() == ModItems.BORON_ROD.get();
                 case 2 -> stack.getItem() == ModItems.POLONIUM_ROD.get();
-                case 3 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
-                case 4 -> stack.getItem() == ModItems.GRAPHITE_ROD.get();
+                case 3 -> stack.getItem() == ModItems.BORON_ROD.get();
+                case 4 -> stack.getItem() == ModItems.BORON_ROD.get();
                 case 5 -> true;
                 case 6 -> false;
                 case 7 -> stack.getItem() == ModItems.FUEL_ROD.get();
@@ -55,11 +55,11 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
         }
     };
 
-    private static final int CONTROLE_SLOT = 0;
-    private static final int CONTROLE_SLOT_2 = 1;
+    private static final int CONTROL_SLOT = 0;
+    private static final int CONTROL_SLOT_2 = 1;
     private static final int POLONIUM_SLOT = 2;
-    private static final int CONTROLE_SLOT_3 = 3;
-    private static final int CONTROLE_SLOT_4 = 4;
+    private static final int CONTROL_SLOT_3 = 3;
+    private static final int CONTROL_SLOT_4 = 4;
     private static final int FLUID_IN_SLOT = 5;
     private static final int FLUID_OUT_SLOT = 6;
     private static final int FUEL1_SLOT = 7;
@@ -75,8 +75,8 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     private int fuelDurMaxProgress;
     private int poloniumDurProgress = 0;
     private int poloniumDurMaxProgress;
-    private int controleDurProgress = 0;
-    private int controleDurMaxProgress;
+    private int controlDurProgress = 0;
+    private int controlDurMaxProgress;
 
     public NuclearReactorBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.NUCLEAR_REACTOR_BE.get(), pPos, pBlockState);
@@ -88,8 +88,8 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                     case 1 -> NuclearReactorBlockEntity.this.fuelDurMaxProgress;
                     case 2 -> NuclearReactorBlockEntity.this.poloniumDurProgress;
                     case 3 -> NuclearReactorBlockEntity.this.poloniumDurMaxProgress;
-                    case 4 -> NuclearReactorBlockEntity.this.controleDurProgress;
-                    case 5 -> NuclearReactorBlockEntity.this.controleDurMaxProgress;
+                    case 4 -> NuclearReactorBlockEntity.this.controlDurProgress;
+                    case 5 -> NuclearReactorBlockEntity.this.controlDurMaxProgress;
                     default -> 0;
 
                 };
@@ -102,8 +102,8 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                     case 1 -> NuclearReactorBlockEntity.this.fuelDurMaxProgress = pVal;
                     case 2 -> NuclearReactorBlockEntity.this.poloniumDurProgress = pVal;
                     case 3 -> NuclearReactorBlockEntity.this.poloniumDurMaxProgress = pVal;
-                    case 4 -> NuclearReactorBlockEntity.this.controleDurProgress = pVal;
-                    case 5 -> NuclearReactorBlockEntity.this.controleDurMaxProgress = pVal;
+                    case 4 -> NuclearReactorBlockEntity.this.controlDurProgress = pVal;
+                    case 5 -> NuclearReactorBlockEntity.this.controlDurMaxProgress = pVal;
                 }
             }
 
