@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 public class NuclearReactorScreen extends AbstractContainerScreen<NuclearReactorMenu> {
 
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(CreateConquer.MOD_ID, "textures/modGUI/reactor.png");
+            new ResourceLocation(CreateConquer.MOD_ID, "textures/gui/reactor.png");
 
     public NuclearReactorScreen(NuclearReactorMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
