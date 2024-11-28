@@ -785,6 +785,11 @@
   "effect.createconquer.radiation_sickness": "Radiation Sickness",
   "effect.createconquer.radiation_sickness_extreme": "Extreme Radiation Sickness",
   "effect.createconquer.radiation_sickness_death": "Fatal Radiation Sickness",
+  "effect.createconquer.mustard_gas_poisoning": "Mustard Gas Poisoning",
+
+  "item.minecraft.potion.effect.radiation_sickness_extreme_potion": "Potion of Radiation",
+  "item.minecraft.splash_potion.effect.radiation_sickness_extreme_potion": "Splash Potion of Radiation",
+  "item.minecraft.lingering_potion.effect.radiation_sickness_extreme_potion": "Lingering Potion of Radiation",
 
   "creativetab.createconquer_tab": "Create & Conquer",
   "creativetab.weapon_tab": "Create & Conquer Weapons",

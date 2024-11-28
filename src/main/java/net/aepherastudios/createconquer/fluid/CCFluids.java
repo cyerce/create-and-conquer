@@ -11,375 +11,375 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModFluids {
+public class CCFluids {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(ForgeRegistries.FLUIDS, CreateConquer.MOD_ID);
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_URANIUM = FLUIDS.register("molten_uranium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_URANIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_URANIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_URANIUM = FLUIDS.register("flowing_molten_uranium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_URANIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_URANIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_PLUTONIUM = FLUIDS.register("molten_plutonium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_PLUTONIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_PLUTONIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_PLUTONIUM = FLUIDS.register("flowing_molten_plutonium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_PLUTONIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_PLUTONIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TITANIUM = FLUIDS.register("molten_titanium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_TITANIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TITANIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TITANIUM = FLUIDS.register("flowing_molten_titanium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_TITANIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TITANIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BERYLLIUM = FLUIDS.register("molten_beryllium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_BERYLLIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BERYLLIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BERYLLIUM = FLUIDS.register("flowing_molten_beryllium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_BERYLLIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BERYLLIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LITHIUM = FLUIDS.register("molten_lithium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_LITHIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LITHIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LITHIUM = FLUIDS.register("flowing_molten_lithium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_LITHIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LITHIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_THORIUM = FLUIDS.register("molten_thorium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_THORIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_THORIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_THORIUM = FLUIDS.register("flowing_molten_thorium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_THORIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_THORIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LEAD = FLUIDS.register("molten_lead_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_LEAD_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LEAD_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LEAD = FLUIDS.register("flowing_molten_lead",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_LEAD_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LEAD_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_NICKEL = FLUIDS.register("molten_nickel_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_NICKEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_NICKEL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_NICKEL = FLUIDS.register("flowing_molten_nickel",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_NICKEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_NICKEL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TANKSTEEL = FLUIDS.register("molten_tanksteel_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_TANKSTEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TANKSTEEL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TANKSTEEL = FLUIDS.register("flowing_molten_tanksteel",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_TANKSTEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TANKSTEEL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_STEEL = FLUIDS.register("molten_steel_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_STEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_STEEL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_STEEL = FLUIDS.register("flowing_molten_steel",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_STEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_STEEL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ALUMINUM = FLUIDS.register("molten_aluminum_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_ALUMINUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ALUMINUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ALUMINUM = FLUIDS.register("flowing_molten_aluminum",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_ALUMINUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ALUMINUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TIN = FLUIDS.register("molten_tin_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_TIN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TIN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TIN = FLUIDS.register("flowing_molten_tin",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_TIN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TIN_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ZINC = FLUIDS.register("molten_zinc_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_ZINC_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ZINC_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ZINC = FLUIDS.register("flowing_molten_zinc",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_ZINC_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ZINC_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COPPER = FLUIDS.register("molten_copper_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_COPPER_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COPPER_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COPPER = FLUIDS.register("flowing_molten_copper",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_COPPER_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COPPER_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_SILICON = FLUIDS.register("molten_silicon_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_SILICON_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_SILICON_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_SILICON = FLUIDS.register("flowing_molten_silicon",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_SILICON_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_SILICON_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_URANIUM_235 = FLUIDS.register("molten_uranium_235_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_URANIUM_235_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_URANIUM_235_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_URANIUM_235 = FLUIDS.register("flowing_molten_uranium_235",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_URANIUM_235_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_URANIUM_235_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_URANIUM_238 = FLUIDS.register("molten_uranium_238_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_URANIUM_238_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_URANIUM_238_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_URANIUM_238 = FLUIDS.register("flowing_molten_uranium_238",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_URANIUM_238_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_URANIUM_238_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_URANIUM_233 = FLUIDS.register("molten_uranium_233_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_URANIUM_233_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_URANIUM_233_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_URANIUM_233 = FLUIDS.register("flowing_molten_uranium_233",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_URANIUM_233_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_URANIUM_233_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_FISSILE_URANIUM_20 = FLUIDS.register("molten_fissile_uranium_20_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_FISSILE_URANIUM_20_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_FISSILE_URANIUM_20_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_FISSILE_URANIUM_20 = FLUIDS.register("flowing_molten_fissile_uranium_20",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_FISSILE_URANIUM_20_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_FISSILE_URANIUM_20_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_FISSILE_URANIUM_90 = FLUIDS.register("molten_fissile_uranium_90_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_FISSILE_URANIUM_90_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_FISSILE_URANIUM_90_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_FISSILE_URANIUM_90 = FLUIDS.register("flowing_molten_fissile_uranium_90",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_FISSILE_URANIUM_90_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_FISSILE_URANIUM_90_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LITHIUM_6 = FLUIDS.register("molten_lithium_6_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_LITHIUM_6_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LITHIUM_6_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LITHIUM_6 = FLUIDS.register("flowing_molten_lithium_6",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_LITHIUM_6_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LITHIUM_6_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LITHIUM_7 = FLUIDS.register("molten_lithium_7_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_LITHIUM_7_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LITHIUM_7_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LITHIUM_7 = FLUIDS.register("flowing_molten_lithium_7",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_LITHIUM_7_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LITHIUM_7_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ROSE_GOLD = FLUIDS.register("molten_rose_gold_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_ROSE_GOLD_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ROSE_GOLD_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ROSE_GOLD = FLUIDS.register("flowing_molten_rose_gold",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_ROSE_GOLD_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ROSE_GOLD_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ROSESTEEL = FLUIDS.register("molten_rosesteel_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_ROSESTEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ROSESTEEL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ROSESTEEL = FLUIDS.register("flowing_molten_rosesteel",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_ROSESTEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ROSESTEEL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ALNICO = FLUIDS.register("molten_alnico_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_ALNICO_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ALNICO_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ALNICO = FLUIDS.register("flowing_molten_alnico",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_ALNICO_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ALNICO_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BRONZE = FLUIDS.register("molten_bronze_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_BRONZE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BRONZE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BRONZE = FLUIDS.register("flowing_molten_bronze",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_BRONZE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BRONZE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_INVAR = FLUIDS.register("molten_invar_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_INVAR_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_INVAR_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_INVAR = FLUIDS.register("flowing_molten_invar",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_INVAR_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_INVAR_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_STAINLESS_STEEL = FLUIDS.register("molten_stainless_steel_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_STAINLESS_STEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_STAINLESS_STEEL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_STAINLESS_STEEL = FLUIDS.register("flowing_molten_stainless_steel",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_STAINLESS_STEEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_STAINLESS_STEEL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_STABALLOY = FLUIDS.register("molten_staballoy_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_STABALLOY_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_STABALLOY_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_STABALLOY = FLUIDS.register("flowing_molten_staballoy",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_STABALLOY_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_STABALLOY_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BRASS = FLUIDS.register("molten_brass_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_BRASS_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BRASS_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BRASS = FLUIDS.register("flowing_molten_brass",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_BRASS_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BRASS_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BISMUTH = FLUIDS.register("molten_bismuth_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_BISMUTH_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BISMUTH_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BISMUTH = FLUIDS.register("flowing_molten_bismuth",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_BISMUTH_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BISMUTH_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_POLONIUM = FLUIDS.register("molten_polonium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_POLONIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_POLONIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_POLONIUM = FLUIDS.register("flowing_molten_polonium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_POLONIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_POLONIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TUNGSTEN = FLUIDS.register("molten_tungsten_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_TUNGSTEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TUNGSTEN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TUNGSTEN = FLUIDS.register("flowing_molten_tungsten",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_TUNGSTEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TUNGSTEN_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_CHROMIUM = FLUIDS.register("molten_chromium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_CHROMIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_CHROMIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_CHROMIUM = FLUIDS.register("flowing_molten_chromium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_CHROMIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_CHROMIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COBALT = FLUIDS.register("molten_cobalt_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_COBALT_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COBALT_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COBALT = FLUIDS.register("flowing_molten_cobalt",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_COBALT_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COBALT_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ELECTRUM = FLUIDS.register("molten_electrum_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_ELECTRUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ELECTRUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ELECTRUM = FLUIDS.register("flowing_molten_electrum",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_ELECTRUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ELECTRUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_SILVER = FLUIDS.register("molten_silver_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_SILVER_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_SILVER_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_SILVER = FLUIDS.register("flowing_molten_silver",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_SILVER_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_SILVER_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_IRON = FLUIDS.register("molten_iron_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_IRON_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_IRON_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_IRON = FLUIDS.register("flowing_molten_iron",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_IRON_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_IRON_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_GOLD = FLUIDS.register("molten_gold_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_GOLD_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_GOLD_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_GOLD = FLUIDS.register("flowing_molten_gold",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_GOLD_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_GOLD_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_NETHERITE = FLUIDS.register("molten_netherite_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_NETHERITE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_NETHERITE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_NETHERITE = FLUIDS.register("flowing_molten_netherite",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_NETHERITE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_NETHERITE_FLUID_PROPERTIES));
 
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_REDSTONE = FLUIDS.register("molten_redstone_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MOLTEN_REDSTONE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_REDSTONE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_REDSTONE = FLUIDS.register("flowing_molten_redstone",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MOLTEN_REDSTONE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_REDSTONE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_OXYGEN = FLUIDS.register("oxygen_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.OXYGEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.OXYGEN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_OXYGEN = FLUIDS.register("flowing_oxygen",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.OXYGEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.OXYGEN_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_HYDROGEN = FLUIDS.register("hydrogen_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.HYDROGEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.HYDROGEN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_HYDROGEN = FLUIDS.register("flowing_hydrogen",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.HYDROGEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.HYDROGEN_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_HEAVY_WATER = FLUIDS.register("heavy_water_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.HEAVY_WATER_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.HEAVY_WATER_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_HEAVY_WATER = FLUIDS.register("flowing_heavy_water",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.HEAVY_WATER_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.HEAVY_WATER_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_DEUTERIUM = FLUIDS.register("deuterium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.DEUTERIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.DEUTERIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_DEUTERIUM = FLUIDS.register("flowing_deuterium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.DEUTERIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.DEUTERIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_TRITIUM = FLUIDS.register("tritium_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.TRITIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.TRITIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_TRITIUM = FLUIDS.register("flowing_tritium",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.TRITIUM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.TRITIUM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_CRUDE_OIL = FLUIDS.register("crude_oil_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.CRUDE_OIL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.CRUDE_OIL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_CRUDE_OIL = FLUIDS.register("flowing_crude_oil",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.CRUDE_OIL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.CRUDE_OIL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_METHANE = FLUIDS.register("methane_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.METHANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.METHANE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_METHANE = FLUIDS.register("flowing_methane",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.METHANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.METHANE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_ETHANE = FLUIDS.register("ethane_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.ETHANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.ETHANE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_ETHANE = FLUIDS.register("flowing_ethane",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.ETHANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.ETHANE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_PROPANE = FLUIDS.register("propane_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.PROPANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.PROPANE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_PROPANE = FLUIDS.register("flowing_propane",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.PROPANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.PROPANE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_BUTANE = FLUIDS.register("butane_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.BUTANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.BUTANE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_BUTANE = FLUIDS.register("flowing_butane",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.BUTANE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.BUTANE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_GASOLINE = FLUIDS.register("gasoline_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.GASOLINE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.GASOLINE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_GASOLINE = FLUIDS.register("flowing_gasoline",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.GASOLINE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.GASOLINE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_KEROSENE = FLUIDS.register("kerosene_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.KEROSENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.KEROSENE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_KEROSENE = FLUIDS.register("flowing_kerosene",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.KEROSENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.KEROSENE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_DIESEL = FLUIDS.register("diesel_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.DIESEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.DIESEL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_DIESEL = FLUIDS.register("flowing_diesel",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.DIESEL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.DIESEL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_BITUMEN = FLUIDS.register("bitumen_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.BITUMEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.BITUMEN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_BITUMEN = FLUIDS.register("flowing_bitumen",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.BITUMEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.BITUMEN_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_FORMALDEHYDE = FLUIDS.register("formaldehyde_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.FORMALDEHYDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.FORMALDEHYDE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_FORMALDEHYDE = FLUIDS.register("flowing_formaldehyde",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.FORMALDEHYDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.FORMALDEHYDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_ETHANOL = FLUIDS.register("ethanol_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.ETHANOL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.ETHANOL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_ETHANOL = FLUIDS.register("flowing_ethanol",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.ETHANOL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.ETHANOL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_METHANOL = FLUIDS.register("methanol_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.METHANOL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.METHANOL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_METHANOL = FLUIDS.register("flowing_methanol",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.METHANOL_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.METHANOL_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_AMMONIA = FLUIDS.register("ammonia_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.AMMONIA_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.AMMONIA_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_AMMONIA = FLUIDS.register("flowing_ammonia",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.AMMONIA_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.AMMONIA_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_FLUORINE = FLUIDS.register("fluorine_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.FLUORINE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.FLUORINE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_FLUORINE = FLUIDS.register("flowing_fluorine",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.FLUORINE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.FLUORINE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_NITROGEN = FLUIDS.register("nitrogen_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.NITROGEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.NITROGEN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_NITROGEN = FLUIDS.register("flowing_nitrogen",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.NITROGEN_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.NITROGEN_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_POTASSIUM_CHLORIDE = FLUIDS.register("potassium_chloride_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.POTASSIUM_CHLORIDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.POTASSIUM_CHLORIDE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_POTASSIUM_CHLORIDE = FLUIDS.register("flowing_potassium_chloride",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.POTASSIUM_CHLORIDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.POTASSIUM_CHLORIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_POTASSIUM_HYDROGEN_FLUORIDE = FLUIDS.register("potassium_hydrogen_fluoride_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.POTASSIUM_HYDROGEN_FLUORIDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.POTASSIUM_HYDROGEN_FLUORIDE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_POTASSIUM_HYDROGEN_FLUORIDE = FLUIDS.register("flowing_potassium_hydrogen_fluoride",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.POTASSIUM_HYDROGEN_FLUORIDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.POTASSIUM_HYDROGEN_FLUORIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_SULFURIC_ACID = FLUIDS.register("sulfuric_acid_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.SULFURIC_ACID_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.SULFURIC_ACID_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_SULFURIC_ACID = FLUIDS.register("flowing_sulfuric_acid",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.SULFURIC_ACID_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.SULFURIC_ACID_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_HYDROFLUORIC_ACID = FLUIDS.register("hydrofluoric_acid_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.HYDROFLUORIC_ACID_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.HYDROFLUORIC_ACID_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_HYDROFLUORIC_ACID = FLUIDS.register("flowing_hydrofluoric_acid",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.HYDROFLUORIC_ACID_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.HYDROFLUORIC_ACID_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_CHLORINE = FLUIDS.register("chlorine_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.CHLORINE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.CHLORINE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_CHLORINE = FLUIDS.register("flowing_chlorine",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.CHLORINE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.CHLORINE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_SULFUR_DICHLORIDE = FLUIDS.register("sulfur_dichloride_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.SULFUR_DICHLORIDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.SULFUR_DICHLORIDE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_SULFUR_DICHLORIDE = FLUIDS.register("flowing_sulfur_dichloride",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.SULFUR_DICHLORIDE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.SULFUR_DICHLORIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MUSTARD_GAS = FLUIDS.register("mustard_gas_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.MUSTARD_GAS_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.MUSTARD_GAS_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MUSTARD_GAS = FLUIDS.register("flowing_mustard_gas",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.MUSTARD_GAS_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MUSTARD_GAS_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_ETHYLENE = FLUIDS.register("ethylene_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.ETHYLENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.ETHYLENE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_ETHYLENE = FLUIDS.register("flowing_ethylene",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.ETHYLENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.ETHYLENE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_BENZENE = FLUIDS.register("benzene_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.BENZENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.BENZENE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_BENZENE = FLUIDS.register("flowing_benzene",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.BENZENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.BENZENE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_ETHYLBENZENE = FLUIDS.register("ethylbenzene_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.ETHYLBENZENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.ETHYLBENZENE_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_ETHYLBENZENE = FLUIDS.register("flowing_ethylbenzene",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.ETHYLBENZENE_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.ETHYLBENZENE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_NAPTHA = FLUIDS.register("naptha_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.NAPTHA_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.NAPTHA_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_NAPTHA = FLUIDS.register("flowing_naptha",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.NAPTHA_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.NAPTHA_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_NAPALM = FLUIDS.register("napalm_fluid",
-            () -> new ForgeFlowingFluid.Source(ModFluids.NAPALM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Source(CCFluids.NAPALM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_NAPALM = FLUIDS.register("flowing_napalm",
-            () -> new ForgeFlowingFluid.Flowing(ModFluids.NAPALM_FLUID_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.NAPALM_FLUID_PROPERTIES));
 
 
 
