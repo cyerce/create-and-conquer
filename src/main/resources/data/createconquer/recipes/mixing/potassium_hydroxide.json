@@ -22,6 +22,10 @@
     },
     {
       "item": "createconquer:potassium_hydroxide"
+    },
+    {
+      "fluid": "createconquer:chlorine_fluid",
+      "amount": 100
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:ethylene_fluid",
+      "amount": 500
+    },
+    {
+      "tag": "forge:dusts/tin"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:benzene_fluid",
+      "amount": 500
+    }
+  ]
+}

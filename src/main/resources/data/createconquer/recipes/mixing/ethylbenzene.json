@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:ethylene_fluid",
+      "amount": 500
+    },
+    {
+      "fluid": "createconquer:benzene_fluid",
+      "amount": 500
+    },
+    {
+      "item": "createconquer:sulfur_trioxide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:ethylbenzene_fluid",
+      "amount": 1000
+    }
+  ]
+}

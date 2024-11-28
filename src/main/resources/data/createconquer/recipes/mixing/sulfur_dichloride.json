@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:chlorine_fluid",
+      "amount": 500
+    },
+    {
+      "tag": "forge:dusts/sulfur"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:sulfur_dichloride_fluid",
+      "amount": 500
+    }
+  ]
+}

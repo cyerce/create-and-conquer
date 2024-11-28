@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "tag": "forge:ingots/bronze"
+      "tag": "forge:nuggets/bronze"
     }
   },
   "pattern": [
@@ -12,6 +12,6 @@
     "###"
   ],
   "result": {
-    "item": "createconquer:bronze_block"
+    "item": "createconquer:bronze_ingot"
   }
 }

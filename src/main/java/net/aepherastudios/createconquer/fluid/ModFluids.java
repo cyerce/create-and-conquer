@@ -341,6 +341,48 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_HYDROFLUORIC_ACID = FLUIDS.register("flowing_hydrofluoric_acid",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.HYDROFLUORIC_ACID_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_CHLORINE = FLUIDS.register("chlorine_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.CHLORINE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_CHLORINE = FLUIDS.register("flowing_chlorine",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.CHLORINE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_SULFUR_DICHLORIDE = FLUIDS.register("sulfur_dichloride_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.SULFUR_DICHLORIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_SULFUR_DICHLORIDE = FLUIDS.register("flowing_sulfur_dichloride",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.SULFUR_DICHLORIDE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MUSTARD_GAS = FLUIDS.register("mustard_gas_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.MUSTARD_GAS_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MUSTARD_GAS = FLUIDS.register("flowing_mustard_gas",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.MUSTARD_GAS_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_ETHYLENE = FLUIDS.register("ethylene_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.ETHYLENE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_ETHYLENE = FLUIDS.register("flowing_ethylene",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.ETHYLENE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_BENZENE = FLUIDS.register("benzene_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.BENZENE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_BENZENE = FLUIDS.register("flowing_benzene",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.BENZENE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_ETHYLBENZENE = FLUIDS.register("ethylbenzene_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.ETHYLBENZENE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_ETHYLBENZENE = FLUIDS.register("flowing_ethylbenzene",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.ETHYLBENZENE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_NAPTHA = FLUIDS.register("naptha_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.NAPTHA_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_NAPTHA = FLUIDS.register("flowing_naptha",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.NAPTHA_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_NAPALM = FLUIDS.register("napalm_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.NAPALM_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_NAPALM = FLUIDS.register("flowing_napalm",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.NAPALM_FLUID_PROPERTIES));
+
+
+
 
 
 
@@ -596,6 +638,22 @@ public class ModFluids {
             HydrofluoricAcidFluidType.HYDROFLUORIC_ACID_FLUID_TYPE, SOURCE_HYDROFLUORIC_ACID, FLOWING_HYDROFLUORIC_ACID)
             .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.HYDROFLUORIC_ACID_BLOCK).bucket(CCItems.HYDROFLUORIC_ACID_BUCKET).tickRate(5);
 
+    public static final ForgeFlowingFluid.Properties ETHYLENE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            EthyleneFluidType.ETHYLENE_FLUID_TYPE, SOURCE_ETHYLENE, FLOWING_ETHYLENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.ETHYLENE_BLOCK).bucket(CCItems.ETHYLENE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties SULFUR_DICHLORIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SulfurDichlorideFluidType.SULFUR_DICHLORIDE_FLUID_TYPE, SOURCE_SULFUR_DICHLORIDE, FLOWING_SULFUR_DICHLORIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.SULFUR_DICHLORIDE_BLOCK).bucket(CCItems.SULFUR_DICHLORIDE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties CHLORINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ChlorineFluidType.CHLORINE_FLUID_TYPE, SOURCE_CHLORINE, FLOWING_CHLORINE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.CHLORINE_BLOCK).bucket(CCItems.CHLORINE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties MUSTARD_GAS_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            MustardGasFluidType.MUSTARD_GAS_FLUID_TYPE, SOURCE_MUSTARD_GAS, FLOWING_MUSTARD_GAS)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.MUSTARD_GAS_BLOCK).bucket(CCItems.MUSTARD_GAS_BUCKET).tickRate(5);
+
     public static final ForgeFlowingFluid.Properties POTASSIUM_HYDROGEN_FLUORIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PotassiumHydrogenFluorideFluidType.MOLTEN_POTASSIUM_HYDROGEN_FLUORIDE_FLUID_TYPE, SOURCE_POTASSIUM_HYDROGEN_FLUORIDE, FLOWING_POTASSIUM_HYDROGEN_FLUORIDE)
             .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.MOLTEN_POTASSIUM_HYDROGEN_FLUORIDE_BLOCK).bucket(CCItems.POTASSIUM_HYDROGEN_FLUORIDE_BUCKET).tickRate(5);
@@ -603,6 +661,22 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties POTASSIUM_CHLORIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PotassiumChlorideFluidType.MOLTEN_POTASSIUM_CHLORIDE_FLUID_TYPE, SOURCE_POTASSIUM_CHLORIDE, FLOWING_POTASSIUM_CHLORIDE)
             .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.MOLTEN_POTASSIUM_CHLORIDE_BLOCK).bucket(CCItems.POTASSIUM_CHLORIDE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties BENZENE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BenzeneFluidType.BENZENE_FLUID_TYPE, SOURCE_BENZENE, FLOWING_BENZENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.BENZENE_BLOCK).bucket(CCItems.BENZENE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties NAPTHA_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            NapthaFluidType.NAPTHA_FLUID_TYPE, SOURCE_NAPTHA, FLOWING_NAPTHA)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.NAPTHA_BLOCK).bucket(CCItems.NAPTHA_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties ETHYLBENZENE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            EthylbenzeneFluidType.ETHYLBENZENE_FLUID_TYPE, SOURCE_ETHYLBENZENE, FLOWING_ETHYLBENZENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.ETHYLBENZENE_BLOCK).bucket(CCItems.ETHYLBENZENE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties NAPALM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            NapalmFluidType.NAPALM_FLUID_TYPE, SOURCE_NAPALM, FLOWING_NAPALM)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.NAPALM_BLOCK).bucket(CCItems.NAPALM_BUCKET).tickRate(5);
 
 
 

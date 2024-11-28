@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createconquer:gasoline_fluid",
+      "amount": 500
+    },
+    {
+      "item": "createconquer:polystyrene"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:napalm_fluid",
+      "amount": 500
+    }
+  ]
+}

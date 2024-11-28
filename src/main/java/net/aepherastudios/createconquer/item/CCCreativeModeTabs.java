@@ -467,6 +467,17 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.SULFURIC_ACID_BUCKET.get());
                         pOutput.accept(CCItems.HYDROFLUORIC_ACID_BUCKET.get());
 
+                        pOutput.accept(CCItems.ETHYLENE_BUCKET.get());
+                        pOutput.accept(CCItems.CHLORINE_BUCKET.get());
+                        pOutput.accept(CCItems.SULFUR_DICHLORIDE_BUCKET.get());
+                        pOutput.accept(CCItems.MUSTARD_GAS_BUCKET.get());
+                        pOutput.accept(CCItems.BENZENE_BUCKET.get());
+                        pOutput.accept(CCItems.ETHYLBENZENE_BUCKET.get());
+                        pOutput.accept(CCItems.NAPTHA_BUCKET.get());
+
+                        pOutput.accept(CCItems.POLYSTYRENE.get());
+                        pOutput.accept(CCItems.NAPALM_BUCKET.get());
+
                         pOutput.accept(CCItems.RAW_KIMBERLITE.get());
                         pOutput.accept(CCItems.RAW_EMERALD_BERYL.get());
                         pOutput.accept(CCItems.RAW_LAZURITE.get());

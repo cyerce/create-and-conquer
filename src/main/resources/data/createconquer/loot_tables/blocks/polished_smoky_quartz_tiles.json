@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "createconquer:polished_smoky_quartz_tiles.json"
+          "name": "createconquer:polished_smoky_quartz_tiles"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/polished_smoky_quartz_tiles.json"
+  "random_sequence": "minecraft:blocks/polished_smoky_quartz_tiles"
 }

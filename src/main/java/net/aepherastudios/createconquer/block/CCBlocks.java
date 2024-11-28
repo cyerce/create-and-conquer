@@ -376,8 +376,25 @@ public class CCBlocks {
             () -> new LiquidBlock(ModFluids.SOURCE_POTASSIUM_CHLORIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<LiquidBlock> SULFURIC_ACID_BLOCK = BLOCKS.register("sulfuric_acid_block",
             () -> new LiquidBlock(ModFluids.SOURCE_SULFURIC_ACID, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> ETHYLENE_BLOCK = BLOCKS.register("ethylene_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_ETHYLENE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<LiquidBlock> HYDROFLUORIC_ACID_BLOCK = BLOCKS.register("hydrofluoric_acid_block",
             () -> new LiquidBlock(ModFluids.SOURCE_HYDROFLUORIC_ACID, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> CHLORINE_BLOCK = BLOCKS.register("chlorine_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_CHLORINE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MUSTARD_GAS_BLOCK = BLOCKS.register("mustard_gas_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_MUSTARD_GAS, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> SULFUR_DICHLORIDE_BLOCK = BLOCKS.register("sulfur_dichloride_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_SULFUR_DICHLORIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> NAPTHA_BLOCK = BLOCKS.register("naptha_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_NAPTHA, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> BENZENE_BLOCK = BLOCKS.register("benzene_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_BENZENE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> ETHYLBENZENE_BLOCK = BLOCKS.register("ethylbenzene_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_ETHYLBENZENE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> NAPALM_BLOCK = BLOCKS.register("napalm_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_NAPALM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
 
     public static final RegistryObject<Block> RED_ASPHALT = registerBlock("red_asphalt",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));

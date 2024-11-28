@@ -15,7 +15,8 @@
       "item": "createconquer:silver_powder"
     },
     {
-      "fluid": "createconquer:formaldehyde_fluid"
+      "fluid": "createconquer:formaldehyde_fluid",
+      "amount": 500
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:ethylene_fluid",
+      "amount": 500
+    },
+    {
+      "fluid": "createconquer:sulfur_dichloride_fluid",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:mustard_gas_fluid",
+      "amount": 1000
+    }
+  ]
+}

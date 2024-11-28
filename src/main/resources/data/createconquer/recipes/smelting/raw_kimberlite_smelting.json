@@ -3,7 +3,8 @@
   "cookingtime": 200,
   "experience": 0.4,
   "ingredient": {
-    "tag": "forge:raw_materials/kimberlite",
+    "tag": "forge:raw_materials/kimberlite"
+  },
   "result": {
     "item": "minecraft:diamond"
   }

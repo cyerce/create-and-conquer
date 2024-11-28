@@ -107,6 +107,16 @@ public class CreateConquer
         PotassiumChlorideFluidType.register(modEventBus);
         SulfuricAcidFluidType.register(modEventBus);
         HydrofluoricAcidFluidType.register(modEventBus);
+        EthanolFluidType.register(modEventBus);
+
+        EthyleneFluidType.register(modEventBus);
+        ChlorineFluidType.register(modEventBus);
+        SulfurDichlorideFluidType.register(modEventBus);
+        MustardGasFluidType.register(modEventBus);
+        BenzeneFluidType.register(modEventBus);
+        NapthaFluidType.register(modEventBus);
+        EthylbenzeneFluidType.register(modEventBus);
+        NapalmFluidType.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -172,6 +182,20 @@ public class CreateConquer
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SULFURIC_ACID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_HYDROFLUORIC_ACID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_HYDROFLUORIC_ACID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ETHYLENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ETHYLENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_CHLORINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_CHLORINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SULFUR_DICHLORIDE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SULFUR_DICHLORIDE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_MUSTARD_GAS.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_MUSTARD_GAS.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_NAPTHA.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_NAPTHA.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_BENZENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_BENZENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ETHYLBENZENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ETHYLBENZENE.get(), RenderType.translucent());
 
             MenuScreens.register(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), NuclearReactorScreen::new);
         }

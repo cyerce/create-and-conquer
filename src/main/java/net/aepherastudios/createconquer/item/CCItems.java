@@ -543,6 +543,16 @@ public class CCItems {
     public static final RegistryObject<Item> POTASSIUM_CHLORIDE_BUCKET = ITEMS.register("potassium_chloride_bucket", () -> new BucketItem(ModFluids.SOURCE_POTASSIUM_CHLORIDE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> SULFURIC_ACID_BUCKET = ITEMS.register("sulfuric_acid_bucket", () -> new BucketItem(ModFluids.SOURCE_SULFURIC_ACID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> HYDROFLUORIC_ACID_BUCKET = ITEMS.register("hydrofluoric_acid_bucket", () -> new BucketItem(ModFluids.SOURCE_HYDROFLUORIC_ACID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> ETHYLENE_BUCKET = ITEMS.register("ethylene_bucket", () -> new BucketItem(ModFluids.SOURCE_ETHYLENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> SULFUR_DICHLORIDE_BUCKET = ITEMS.register("sulfur_dichloride_bucket", () -> new BucketItem(ModFluids.SOURCE_SULFUR_DICHLORIDE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> CHLORINE_BUCKET = ITEMS.register("chlorine_bucket", () -> new BucketItem(ModFluids.SOURCE_CHLORINE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> MUSTARD_GAS_BUCKET = ITEMS.register("mustard_gas_bucket", () -> new BucketItem(ModFluids.SOURCE_MUSTARD_GAS, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> NAPTHA_BUCKET = ITEMS.register("naptha_bucket", () -> new BucketItem(ModFluids.SOURCE_NAPTHA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> BENZENE_BUCKET = ITEMS.register("benzene_bucket", () -> new BucketItem(ModFluids.SOURCE_BENZENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> ETHYLBENZENE_BUCKET = ITEMS.register("ethylbenzene_bucket", () -> new BucketItem(ModFluids.SOURCE_ETHYLBENZENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> NAPALM_BUCKET = ITEMS.register("napalm_bucket", () -> new BucketItem(ModFluids.SOURCE_NAPALM, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final RegistryObject<Item> POLYSTYRENE = ITEMS.register("polystyrene", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_KIMBERLITE = ITEMS.register("raw_kimberlite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_EMERALD_BERYL = ITEMS.register("raw_emerald_beryl", () -> new Item(new Item.Properties()));
