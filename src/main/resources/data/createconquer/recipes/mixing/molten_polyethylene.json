@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:polyethylene"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:polyethylene_fluid",
+      "amount": 500
+    }
+  ]
+}

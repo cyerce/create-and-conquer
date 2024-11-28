@@ -243,6 +243,7 @@ public class CCItems {
     public static final RegistryObject<Item> IRON_PLATE_CAST = ITEMS.register("iron_plate_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOLD_PLATE_CAST = ITEMS.register("gold_plate_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHERITE_PLATE_CAST = ITEMS.register("netherite_plate_cast", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PLASTIC_PLATE_CAST = ITEMS.register("plastic_plate_cast", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_ALUNITE = ITEMS.register("raw_alunite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_BAUXITE = ITEMS.register("raw_bauxite", () -> new Item(new Item.Properties()));
@@ -551,8 +552,10 @@ public class CCItems {
     public static final RegistryObject<Item> BENZENE_BUCKET = ITEMS.register("benzene_bucket", () -> new BucketItem(CCFluids.SOURCE_BENZENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> ETHYLBENZENE_BUCKET = ITEMS.register("ethylbenzene_bucket", () -> new BucketItem(CCFluids.SOURCE_ETHYLBENZENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> NAPALM_BUCKET = ITEMS.register("napalm_bucket", () -> new BucketItem(CCFluids.SOURCE_NAPALM, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> POLYETHYLENE_BUCKET = ITEMS.register("polyethylene_bucket", () -> new BucketItem(CCFluids.SOURCE_POLYETHYLENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> POLYSTYRENE = ITEMS.register("polystyrene", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POLYETHYLENE = ITEMS.register("polyethylene", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_KIMBERLITE = ITEMS.register("raw_kimberlite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_EMERALD_BERYL = ITEMS.register("raw_emerald_beryl", () -> new Item(new Item.Properties()));

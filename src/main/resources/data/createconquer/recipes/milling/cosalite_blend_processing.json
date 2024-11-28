@@ -8,11 +8,14 @@
   "results": [
     {
       "item": "createconquer:bismuth_powder",
-      "count": 4
+      "count": 3
     },
     {
       "item": "createconquer:lead_powder",
       "count": 2
+    },
+    {
+      "item": "createconquer:sulfur"
     }
   ]
 }

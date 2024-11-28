@@ -475,8 +475,10 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.BENZENE_BUCKET.get());
                         pOutput.accept(CCItems.ETHYLBENZENE_BUCKET.get());
                         pOutput.accept(CCItems.NAPTHA_BUCKET.get());
+                        pOutput.accept(CCItems.POLYETHYLENE_BUCKET.get());
 
                         pOutput.accept(CCItems.POLYSTYRENE.get());
+                        pOutput.accept(CCItems.POLYETHYLENE.get());
                         pOutput.accept(CCItems.NAPALM_BUCKET.get());
 
                         pOutput.accept(CCItems.RAW_KIMBERLITE.get());
@@ -686,6 +688,7 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.IRON_PLATE_CAST.get());
                         pOutput.accept(CCItems.GOLD_PLATE_CAST.get());
                         pOutput.accept(CCItems.NETHERITE_PLATE_CAST.get());
+                        pOutput.accept(CCItems.PLASTIC_PLATE_CAST.get());
 
                         pOutput.accept(CCItems.URANIUM_NUGGET_CAST.get());
                         pOutput.accept(CCItems.PLUTONIUM_NUGGET_CAST.get());

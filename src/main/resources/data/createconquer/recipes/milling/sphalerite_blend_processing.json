@@ -1,0 +1,21 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "createconquer:sphalerite_blend"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:zinc_powder",
+      "count": 3
+    },
+    {
+      "item": "createconquer:iron_powder"
+    },
+    {
+      "item": "createconquer:sulfur",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createconquer:plate_cast"
+    },
+    {
+      "amount": 250,
+      "fluid": "createconquer:polyethylene_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:plastic_plate_cast"
+    }
+  ]
+}

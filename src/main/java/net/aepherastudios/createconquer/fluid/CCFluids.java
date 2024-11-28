@@ -381,6 +381,11 @@ public class CCFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_NAPALM = FLUIDS.register("flowing_napalm",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.NAPALM_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_POLYETHYLENE = FLUIDS.register("polyethylene_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.POLYETHYLENE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_POLYETHYLENE = FLUIDS.register("flowing_polyethylene",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.POLYETHYLENE_FLUID_PROPERTIES));
+
 
 
 
@@ -677,6 +682,10 @@ public class CCFluids {
     public static final ForgeFlowingFluid.Properties NAPALM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             NapalmFluidType.NAPALM_FLUID_TYPE, SOURCE_NAPALM, FLOWING_NAPALM)
             .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.NAPALM_BLOCK).bucket(CCItems.NAPALM_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties POLYETHYLENE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PolyethyleneFluidType.POLYETHYLENE_FLUID_TYPE, SOURCE_POLYETHYLENE, FLOWING_POLYETHYLENE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.POLYETHYLENE_BLOCK).bucket(CCItems.POLYETHYLENE_BUCKET).tickRate(5);
 
 
 

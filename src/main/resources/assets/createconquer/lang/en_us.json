@@ -228,6 +228,7 @@
   "item.createconquer.brass_plate_cast": "Brass Plate Cast (Brass)",
   "item.createconquer.netherite_plate_cast": "Brass Plate Cast (Netherite)",
   "item.createconquer.silver_plate_cast": "Brass Plate Cast (Silver)",
+  "item.createconquer.plastic_plate_cast": "Brass Plate Cast (Plastic)",
 
   "item.createconquer.uranium_nugget_cast": "Brass Nugget Cast (Uranium)",
   "item.createconquer.plutonium_nugget_cast": "Brass Nugget Cast (Plutonium)",
@@ -403,6 +404,8 @@
   "fluid_type.createconquer.ethylbenzene_fluid": "Liquid Ethylbenzene",
   "fluid_type.createconquer.benzene_fluid": "Liquid Benzene",
   "fluid_type.createconquer.napalm_fluid": "Liquid Napalm",
+  "fluid_type.createconquer.naptha_fluid": "Naptha",
+  "fluid_type.createconquer.polyethylene_fluid": "Molten Polyethylene",
 
   "block.createconquer.alunite_ore": "Alunite Ore",
   "block.createconquer.corundum_ore": "Corundum Ore",
@@ -588,6 +591,7 @@
   "item.createconquer.benzene_bucket": "Benzene Bucket",
   "item.createconquer.ethylbenzene_bucket": "Ethylbenzene Bucket",
   "item.createconquer.napalm_bucket": "Napalm Bucket",
+  "item.createconquer.polyethylene_bucket": "Molten Polyethylene Bucket",
 
   "item.createconquer.graphite": "Graphite",
   "item.createconquer.coke": "Coke",
@@ -639,6 +643,7 @@
   "item.createconquer.fuel_pellet": "Fuel Pellet",
 
   "item.createconquer.polystyrene": "Polystyrene",
+  "item.createconquer.polyethylene": "Polyethylene",
 
   "item.createconquer.nuclear_warhead": "Nuclear Warhead",
   "item.createconquer.mini_nuclear_warhead": "Mini Nuclear Warhead",
@@ -696,12 +701,6 @@
   "item.createconquer.gear_cast": "Brass Gear Cast",
   "item.createconquer.rod_cast": "Brass Rod Cast",
   "item.createconquer.sphere_cast": "Brass Sphere Cast",
-  "item.createconquer.small_bullet_tip_cast": "Brass Small Bullet Tip Cast",
-  "item.createconquer.large_bullet_tip_cast": "Brass Large Bullet Tip Cast",
-  "item.createconquer.buckshot_cast": "Brass Buckshot Cast",
-  "item.createconquer.bullet_casing_cast": "Brass Bullet Casing Cast",
-
-
 
   "item.createconquer.incomplete_transistor": "Incomplete Transistor",
   "item.createconquer.incomplete_capacitor": "Incomplete Capacitor",
@@ -787,9 +786,7 @@
   "effect.createconquer.radiation_sickness_death": "Fatal Radiation Sickness",
   "effect.createconquer.mustard_gas_poisoning": "Mustard Gas Poisoning",
 
-  "item.minecraft.potion.effect.radiation_sickness_extreme_potion": "Potion of Radiation",
-  "item.minecraft.splash_potion.effect.radiation_sickness_extreme_potion": "Splash Potion of Radiation",
-  "item.minecraft.lingering_potion.effect.radiation_sickness_extreme_potion": "Lingering Potion of Radiation",
+
 
   "creativetab.createconquer_tab": "Create & Conquer",
   "creativetab.weapon_tab": "Create & Conquer Weapons",

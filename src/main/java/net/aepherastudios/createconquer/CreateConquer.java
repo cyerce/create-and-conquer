@@ -119,6 +119,7 @@ public class CreateConquer
         NapthaFluidType.register(modEventBus);
         EthylbenzeneFluidType.register(modEventBus);
         NapalmFluidType.register(modEventBus);
+        PolyethyleneFluidType.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -198,6 +199,8 @@ public class CreateConquer
             ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_BENZENE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_ETHYLBENZENE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_ETHYLBENZENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_POLYETHYLENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_POLYETHYLENE.get(), RenderType.translucent());
 
             MenuScreens.register(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), NuclearReactorScreen::new);
         }

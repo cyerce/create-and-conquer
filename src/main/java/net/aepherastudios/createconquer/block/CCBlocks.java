@@ -394,6 +394,8 @@ public class CCBlocks {
             () -> new LiquidBlock(CCFluids.SOURCE_ETHYLBENZENE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<LiquidBlock> NAPALM_BLOCK = BLOCKS.register("napalm_block",
             () -> new LiquidBlock(CCFluids.SOURCE_NAPALM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> POLYETHYLENE_BLOCK = BLOCKS.register("polyethylene_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_POLYETHYLENE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
 
 
     public static final RegistryObject<Block> RED_ASPHALT = registerBlock("red_asphalt",

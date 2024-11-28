@@ -8,13 +8,16 @@
   "results": [
     {
       "item": "createconquer:cobalt_powder",
-      "count": 4
+      "count": 3
     },
     {
       "item": "createconquer:iron_powder"
     },
     {
       "item": "createconquer:nickel_powder"
+    },
+    {
+      "item": "createconquer:sulfur"
     }
   ]
 }

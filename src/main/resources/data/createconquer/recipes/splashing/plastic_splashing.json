@@ -1,0 +1,16 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "createconquer:plastic_plate_cast"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:plastic"
+    },
+    {
+      "item": "createconquer:plate_cast"
+    }
+  ]
+}

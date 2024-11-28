@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:ethylene_fluid",
+      "amount": 500
+    },
+    {
+      "tag": "forge:dusts/chromium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:polyethylene"
+    }
+  ]
+}
