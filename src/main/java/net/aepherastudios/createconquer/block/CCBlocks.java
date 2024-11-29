@@ -396,6 +396,27 @@ public class CCBlocks {
             () -> new LiquidBlock(CCFluids.SOURCE_NAPALM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<LiquidBlock> POLYETHYLENE_BLOCK = BLOCKS.register("polyethylene_block",
             () -> new LiquidBlock(CCFluids.SOURCE_POLYETHYLENE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> HYDROGEN_SULFIDE_MONOETHANOLAMINE_BLOCK = BLOCKS.register("hydrogen_sulfide_monoethanolamine_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_HYDROGEN_SULFIDE_MONOETHANOLAMINE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MONOETHANOLAMINE_BLOCK = BLOCKS.register("monoethanolamine_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MONOETHANOLAMINE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> HYDROGEN_SULFIDE_BLOCK = BLOCKS.register("hydrogen_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_HYDROGEN_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> ETHYLENE_OXIDE_BLOCK = BLOCKS.register("ethylene_oxide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_ETHYLENE_OXIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> NATURAL_GAS_BLOCK = BLOCKS.register("natural_gas_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_NATURAL_GAS, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> RAW_NATURAL_GAS_BLOCK = BLOCKS.register("raw_natural_gas_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_RAW_NATURAL_GAS, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> RAW_CRUDE_OIL_BLOCK = BLOCKS.register("raw_crude_oil_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_RAW_CRUDE_OIL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> RAW_DIRTY_CRUDE_OIL_BLOCK = BLOCKS.register("raw_dirty_crude_oil_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_RAW_DIRTY_CRUDE_OIL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> SALINE_WATER_BLOCK = BLOCKS.register("saline_water_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_SALINE_WATER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> WASH_OIL_BLOCK = BLOCKS.register("wash_oil_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_WASH_OIL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
 
 
     public static final RegistryObject<Block> RED_ASPHALT = registerBlock("red_asphalt",

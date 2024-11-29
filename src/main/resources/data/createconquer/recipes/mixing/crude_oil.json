@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:raw_crude_oil_fluid",
+      "amount": 500
+    },
+    {
+      "fluid": "createconquer:hydrogen_fluid",
+      "amount": 500
+    },
+    {
+      "tag": "forge:dusts/nickel"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:crude_oil_fluid",
+      "amount": 500
+    },
+    {
+      "fluid": "createconquer:hydrogen_sulfide_fluid",
+      "amount": 500
+    }
+  ]
+}

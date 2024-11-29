@@ -446,7 +446,12 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCBlocks.POTASH_ORE.get());
                         pOutput.accept(CCBlocks.DEEPSLATE_POTASH_ORE.get());
 
+                        pOutput.accept(CCItems.NATURAL_GAS_BUCKET.get());
+                        pOutput.accept(CCItems.RAW_NATURAL_GAS_BUCKET.get());
                         pOutput.accept(CCItems.CRUDE_OIL_BUCKET.get());
+                        pOutput.accept(CCItems.RAW_CRUDE_OIL_BUCKET.get());
+                        pOutput.accept(CCItems.RAW_DIRTY_CRUDE_OIL_BUCKET.get());
+                        pOutput.accept(CCItems.WASH_OIL_BUCKET.get());
                         pOutput.accept(CCItems.GASOLINE_BUCKET.get());
                         pOutput.accept(CCItems.KEROSENE_BUCKET.get());
                         pOutput.accept(CCItems.DIESEL_BUCKET.get());
@@ -476,10 +481,16 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.ETHYLBENZENE_BUCKET.get());
                         pOutput.accept(CCItems.NAPTHA_BUCKET.get());
                         pOutput.accept(CCItems.POLYETHYLENE_BUCKET.get());
+                        pOutput.accept(CCItems.HYDROGEN_SULFIDE_MONOETHANOLAMINE_BUCKET.get());
+                        pOutput.accept(CCItems.HYDROGEN_SULFIDE_BUCKET.get());
+                        pOutput.accept(CCItems.MONOETHANOLAMINE_BUCKET.get());
+                        pOutput.accept(CCItems.ETHYLENE_OXIDE_BUCKET.get());
+                        pOutput.accept(CCItems.SALINE_WATER_BUCKET.get());
 
                         pOutput.accept(CCItems.POLYSTYRENE.get());
                         pOutput.accept(CCItems.POLYETHYLENE.get());
                         pOutput.accept(CCItems.NAPALM_BUCKET.get());
+                        pOutput.accept(CCItems.SALT.get());
 
                         pOutput.accept(CCItems.RAW_KIMBERLITE.get());
                         pOutput.accept(CCItems.RAW_EMERALD_BERYL.get());

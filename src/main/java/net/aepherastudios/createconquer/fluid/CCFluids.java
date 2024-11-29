@@ -386,6 +386,56 @@ public class CCFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_POLYETHYLENE = FLUIDS.register("flowing_polyethylene",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.POLYETHYLENE_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MONOETHANOLAMINE = FLUIDS.register("monoethanolamine_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MONOETHANOLAMINE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MONOETHANOLAMINE = FLUIDS.register("flowing_monoethanolamine",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MONOETHANOLAMINE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_ETHYLENE_OXIDE = FLUIDS.register("ethylene_oxide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.ETHYLENE_OXIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_ETHYLENE_OXIDE = FLUIDS.register("flowing_ethylene_oxide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.ETHYLENE_OXIDE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_HYDROGEN_SULFIDE = FLUIDS.register("hydrogen_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.HYDROGEN_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_HYDROGEN_SULFIDE = FLUIDS.register("flowing_hydrogen_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.HYDROGEN_SULFIDE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_HYDROGEN_SULFIDE_MONOETHANOLAMINE = FLUIDS.register("hydrogen_sulfide_monoethanolamine_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.HYDROGEN_SULFIDE_MONOETHANOLAMINE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_HYDROGEN_SULFIDE_MONOETHANOLAMINE = FLUIDS.register("flowing_hydrogen_sulfide_monoethanolamine",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.HYDROGEN_SULFIDE_MONOETHANOLAMINE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_NATURAL_GAS = FLUIDS.register("natural_gas_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.NATURAL_GAS_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_NATURAL_GAS = FLUIDS.register("flowing_natural_gas",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.NATURAL_GAS_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_RAW_NATURAL_GAS = FLUIDS.register("raw_natural_gas_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.RAW_NATURAL_GAS_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_RAW_NATURAL_GAS = FLUIDS.register("flowing_raw_natural_gas",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.RAW_NATURAL_GAS_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_RAW_CRUDE_OIL = FLUIDS.register("raw_crude_oil_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.RAW_CRUDE_OIL_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_RAW_CRUDE_OIL = FLUIDS.register("flowing_raw_crude_oil",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.RAW_CRUDE_OIL_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_RAW_DIRTY_CRUDE_OIL = FLUIDS.register("raw_dirty_crude_oil_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.RAW_DIRTY_CRUDE_OIL_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_RAW_DIRTY_CRUDE_OIL = FLUIDS.register("flowing_raw_dirty_crude_oil",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.RAW_DIRTY_CRUDE_OIL_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_SALINE_WATER = FLUIDS.register("saline_water_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.SALINE_WATER_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_SALINE_WATER = FLUIDS.register("flowing_saline_water",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.SALINE_WATER_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_WASH_OIL = FLUIDS.register("wash_oil_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.WASH_OIL_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_WASH_OIL = FLUIDS.register("flowing_wash_oil",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.WASH_OIL_FLUID_PROPERTIES));
+
 
 
 
@@ -686,6 +736,46 @@ public class CCFluids {
     public static final ForgeFlowingFluid.Properties POLYETHYLENE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PolyethyleneFluidType.POLYETHYLENE_FLUID_TYPE, SOURCE_POLYETHYLENE, FLOWING_POLYETHYLENE)
             .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.POLYETHYLENE_BLOCK).bucket(CCItems.POLYETHYLENE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties HYDROGEN_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            HydrogenSulfideFluidType.HYDROGEN_SULFIDE_FLUID_TYPE, SOURCE_HYDROGEN_SULFIDE, FLOWING_HYDROGEN_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.HYDROGEN_SULFIDE_BLOCK).bucket(CCItems.HYDROGEN_SULFIDE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties HYDROGEN_SULFIDE_MONOETHANOLAMINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            HydrogenSulfideMonoethanolamineFluidType.HYDROGEN_SULFIDE_MONOETHANOLAMINE_FLUID_TYPE, SOURCE_HYDROGEN_SULFIDE_MONOETHANOLAMINE, FLOWING_HYDROGEN_SULFIDE_MONOETHANOLAMINE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.HYDROGEN_SULFIDE_MONOETHANOLAMINE_BLOCK).bucket(CCItems.HYDROGEN_SULFIDE_MONOETHANOLAMINE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties MONOETHANOLAMINE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            MonoethanolamineFluidType.MONOETHANOLAMINE_FLUID_TYPE, SOURCE_MONOETHANOLAMINE, FLOWING_MONOETHANOLAMINE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.MONOETHANOLAMINE_BLOCK).bucket(CCItems.MONOETHANOLAMINE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties ETHYLENE_OXIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            EthyleneOxideFluidType.ETHYLENE_OXIDE_FLUID_TYPE, SOURCE_ETHYLENE_OXIDE, FLOWING_ETHYLENE_OXIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.ETHYLENE_OXIDE_BLOCK).bucket(CCItems.ETHYLENE_OXIDE_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties RAW_CRUDE_OIL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            RawCrudeOilFluidType.RAW_CRUDE_OIL_FLUID_TYPE, SOURCE_RAW_CRUDE_OIL, FLOWING_RAW_CRUDE_OIL)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.RAW_CRUDE_OIL_BLOCK).bucket(CCItems.RAW_CRUDE_OIL_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties RAW_DIRTY_CRUDE_OIL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            RawDirtyCrudeOilFluidType.RAW_DIRTY_CRUDE_OIL_FLUID_TYPE, SOURCE_RAW_DIRTY_CRUDE_OIL, FLOWING_RAW_DIRTY_CRUDE_OIL)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.RAW_DIRTY_CRUDE_OIL_BLOCK).bucket(CCItems.RAW_DIRTY_CRUDE_OIL_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties SALINE_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SalineWaterFluidType.SALINE_WATER_FLUID_TYPE, SOURCE_SALINE_WATER, FLOWING_SALINE_WATER)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.SALINE_WATER_BLOCK).bucket(CCItems.SALINE_WATER_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties WASH_OIL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            WashOilFluidType.WASH_OIL_FLUID_TYPE, SOURCE_WASH_OIL, FLOWING_WASH_OIL)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.WASH_OIL_BLOCK).bucket(CCItems.WASH_OIL_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties NATURAL_GAS_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            NaturalGasFluidType.NATURAL_GAS_FLUID_TYPE, SOURCE_NATURAL_GAS, FLOWING_NATURAL_GAS)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.NATURAL_GAS_BLOCK).bucket(CCItems.NATURAL_GAS_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties RAW_NATURAL_GAS_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            RawNaturalGasFluidType.RAW_NATURAL_GAS_FLUID_TYPE, SOURCE_RAW_NATURAL_GAS, FLOWING_RAW_NATURAL_GAS)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.RAW_NATURAL_GAS_BLOCK).bucket(CCItems.RAW_NATURAL_GAS_BUCKET).tickRate(5);
 
 
 

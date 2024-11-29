@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:raw_natural_gas_fluid",
+      "amount": 500
+    },
+    {
+      "fluid": "createconquer:monoethanolamine_fluid",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:natural_gas_fluid",
+      "amount": 500
+    },
+    {
+      "fluid": "createconquer:hydrogen_sulfide_monoethanolamine_fluid",
+      "amount": 500
+    }
+  ]
+}

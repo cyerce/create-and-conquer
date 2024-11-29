@@ -90,7 +90,12 @@ public class CreateConquer
         HeavyWaterFluidType.register(modEventBus);
         DeuteriumFluidType.register(modEventBus);
         TritiumFluidType.register(modEventBus);
+        NaturalGasFluidType.register(modEventBus);
+        RawNaturalGasFluidType.register(modEventBus);
         CrudeOilFluidType.register(modEventBus);
+        RawCrudeOilFluidType.register(modEventBus);
+        RawDirtyCrudeOilFluidType.register(modEventBus);
+        WashOilFluidType.register(modEventBus);
 
         MethaneFluidType.register(modEventBus);
         EthaneFluidType.register(modEventBus);
@@ -120,6 +125,11 @@ public class CreateConquer
         EthylbenzeneFluidType.register(modEventBus);
         NapalmFluidType.register(modEventBus);
         PolyethyleneFluidType.register(modEventBus);
+        MonoethanolamineFluidType.register(modEventBus);
+        HydrogenSulfideFluidType.register(modEventBus);
+        HydrogenSulfideMonoethanolamineFluidType.register(modEventBus);
+        EthyleneOxideFluidType.register(modEventBus);
+        SalineWaterFluidType.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -201,6 +211,20 @@ public class CreateConquer
             ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_ETHYLBENZENE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_POLYETHYLENE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_POLYETHYLENE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_ETHYLENE_OXIDE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_ETHYLENE_OXIDE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_MONOETHANOLAMINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_MONOETHANOLAMINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_HYDROGEN_SULFIDE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_HYDROGEN_SULFIDE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_HYDROGEN_SULFIDE_MONOETHANOLAMINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_HYDROGEN_SULFIDE_MONOETHANOLAMINE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_SALINE_WATER.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_SALINE_WATER.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_NATURAL_GAS.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_NATURAL_GAS.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.SOURCE_RAW_NATURAL_GAS.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_RAW_NATURAL_GAS.get(), RenderType.translucent());
 
             MenuScreens.register(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), NuclearReactorScreen::new);
         }

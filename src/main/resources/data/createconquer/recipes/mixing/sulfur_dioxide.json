@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:hydrogen_sulfide_fluid",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:sulfur_dioxide"
+    }
+  ]
+}

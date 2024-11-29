@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "createconquer:saline_water_fluid",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:salt"
+    }
+  ]
+}

@@ -553,9 +553,21 @@ public class CCItems {
     public static final RegistryObject<Item> ETHYLBENZENE_BUCKET = ITEMS.register("ethylbenzene_bucket", () -> new BucketItem(CCFluids.SOURCE_ETHYLBENZENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> NAPALM_BUCKET = ITEMS.register("napalm_bucket", () -> new BucketItem(CCFluids.SOURCE_NAPALM, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> POLYETHYLENE_BUCKET = ITEMS.register("polyethylene_bucket", () -> new BucketItem(CCFluids.SOURCE_POLYETHYLENE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> ETHYLENE_OXIDE_BUCKET = ITEMS.register("ethylene_oxide_bucket", () -> new BucketItem(CCFluids.SOURCE_ETHYLENE_OXIDE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> MONOETHANOLAMINE_BUCKET = ITEMS.register("monoethanolamine_bucket", () -> new BucketItem(CCFluids.SOURCE_MONOETHANOLAMINE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> HYDROGEN_SULFIDE_BUCKET = ITEMS.register("hydrogen_sulfide_bucket", () -> new BucketItem(CCFluids.SOURCE_HYDROGEN_SULFIDE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> HYDROGEN_SULFIDE_MONOETHANOLAMINE_BUCKET = ITEMS.register("hydrogen_sulfide_monoethanolamine_bucket", () -> new BucketItem(CCFluids.SOURCE_HYDROGEN_SULFIDE_MONOETHANOLAMINE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> WASH_OIL_BUCKET = ITEMS.register("wash_oil_bucket", () -> new BucketItem(CCFluids.SOURCE_WASH_OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> SALINE_WATER_BUCKET = ITEMS.register("saline_water_bucket", () -> new BucketItem(CCFluids.SOURCE_SALINE_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> NATURAL_GAS_BUCKET = ITEMS.register("natural_gas_bucket", () -> new BucketItem(CCFluids.SOURCE_NATURAL_GAS, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> RAW_NATURAL_GAS_BUCKET = ITEMS.register("raw_natural_gas_bucket", () -> new BucketItem(CCFluids.SOURCE_RAW_NATURAL_GAS, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> RAW_CRUDE_OIL_BUCKET = ITEMS.register("raw_crude_oil_bucket", () -> new BucketItem(CCFluids.SOURCE_RAW_CRUDE_OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> RAW_DIRTY_CRUDE_OIL_BUCKET = ITEMS.register("raw_dirty_crude_oil_bucket", () -> new BucketItem(CCFluids.SOURCE_RAW_DIRTY_CRUDE_OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
 
     public static final RegistryObject<Item> POLYSTYRENE = ITEMS.register("polystyrene", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLYETHYLENE = ITEMS.register("polyethylene", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_KIMBERLITE = ITEMS.register("raw_kimberlite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_EMERALD_BERYL = ITEMS.register("raw_emerald_beryl", () -> new Item(new Item.Properties()));
