@@ -7,6 +7,7 @@ import net.aepherastudios.createconquer.effect.CCEffects;
 import net.aepherastudios.createconquer.fluid.*;
 import net.aepherastudios.createconquer.item.CCCreativeModeTabs;
 import net.aepherastudios.createconquer.item.CCItems;
+import net.aepherastudios.createconquer.screen.ArcFurnaceScreen;
 import net.aepherastudios.createconquer.screen.CCMenuTypes;
 import net.aepherastudios.createconquer.screen.NuclearReactorScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -227,6 +228,7 @@ public class CreateConquer
             ItemBlockRenderTypes.setRenderLayer(CCFluids.FLOWING_RAW_NATURAL_GAS.get(), RenderType.translucent());
 
             MenuScreens.register(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), NuclearReactorScreen::new);
+            MenuScreens.register(CCMenuTypes.ARC_FURNACE_MENU.get(), ArcFurnaceScreen::new);
         }
     }
 }
