@@ -1,5 +1,6 @@
 package net.aepherastudios.createconquer.block.entity;
 
+import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.aepherastudios.createconquer.screen.NuclearReactorMenu;
 import net.minecraft.core.BlockPos;
@@ -17,13 +18,19 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.capability.IFluidHandler;
+import net.minecraftforge.fluids.capability.templates.FluidTank;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import javax.swing.*;
 
 public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(12){
@@ -37,8 +44,7 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
             return switch(slot){
                 case 0, 1, 3, 4 -> stack.getItem() == CCItems.BORON_ROD.get();
                 case 2 -> stack.getItem() == CCItems.POLONIUM_ROD.get();
-                case 5 -> true;
-                case 6 -> false;
+                case 5, 6 -> stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
                 case 7, 8, 9, 10, 11 -> stack.getItem() == CCItems.FUEL_ROD.get();
                 default -> super.isItemValid(slot, stack);
             };
@@ -59,6 +65,7 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     private static final int FUEl5_SLOT = 11;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
 
     protected final ContainerData data;
     private int fuelDurProgress = 0;
@@ -67,6 +74,27 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     private int poloniumDurMaxProgress = 20;
     private int controlDurProgress = 0;
     private int controlDurMaxProgress = 20;
+
+    private final FluidTank FLUID_TANK = createFluidTank();
+
+    private FluidTank createFluidTank() {
+        return new FluidTank(10000){
+            @Override
+            protected void onContentsChanged() {
+                setChanged();
+                if(!level.isClientSide){
+                    level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+                }
+            }
+
+            @Override
+            public boolean isFluidValid(FluidStack stack) {
+                return stack.getFluid() == Fluids.WATER;
+            }
+        };
+
+
+    }
 
     public NuclearReactorBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(CCBlockEntities.NUCLEAR_REACTOR_BE.get(), pPos, pBlockState);
@@ -158,6 +186,21 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState){
+        if(controlDurProgress < controlDurMaxProgress){
+            if(!itemHandler.getStackInSlot(0).isEmpty()) {
+                controlDurProgress++;
+            }
+        }else if(controlDurProgress == controlDurMaxProgress){
+            itemHandler.getStackInSlot(0).setDamageValue(1);
 
+        }
+
+
+    }
+    public boolean on(){
+        return false;
+    }
+    public boolean isMeltdown(){
+        return false;
     }
 }
