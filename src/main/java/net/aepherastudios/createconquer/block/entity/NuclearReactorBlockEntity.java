@@ -30,7 +30,7 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
         }
 
         @Override
-        public boolean isItemValid(int slot, @NotNull ItemStack stack) {
+        public boolean isItemValid(int slot, ItemStack stack) {
             return switch(slot){
                 case 0 -> stack.getItem() == CCItems.BORON_ROD.get();
                 case 1 -> stack.getItem() == CCItems.BORON_ROD.get();
