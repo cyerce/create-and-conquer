@@ -58,8 +58,8 @@ public class ArcFurnaceBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof NuclearReactorBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (NuclearReactorBlockEntity)entity, pPos);
+            if(entity instanceof ArcFurnaceBlockEntity) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (ArcFurnaceBlockEntity)entity, pPos);
             } else {
                 throw new IllegalStateException("WHO IN THE WORLD TOOK OUR CONTAINER PROVIDER!!");
             }
