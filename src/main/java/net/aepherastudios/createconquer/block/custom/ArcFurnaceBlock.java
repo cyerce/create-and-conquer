@@ -81,7 +81,7 @@ public class ArcFurnaceBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, CCBlockEntities.NUCLEAR_REACTOR_BE.get(),
+        return createTickerHelper(pBlockEntityType, CCBlockEntities.ARC_FURNACE_BE.get(),
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }
