@@ -411,9 +411,9 @@ public class CCItems {
     public static final RegistryObject<Item> GRAPHITE_ROD = ITEMS.register("graphite_rod", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HEXAMINE_POWDER = ITEMS.register("hexamine_powder", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLISHED_QUARTZ = ITEMS.register("polished_quartz", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PLASTIC = ITEMS.register("plastic", () -> new Item(new Item.Properties().durability(1000).stacksTo(1)));
-    public static final RegistryObject<Item> BORON_ROD = ITEMS.register("boron_rod", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> POLONIUM_ROD = ITEMS.register("polonium_rod", () -> new Item(new Item.Properties().durability(50).stacksTo(1)));
+    public static final RegistryObject<Item> PLASTIC = ITEMS.register("plastic", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BORON_ROD = ITEMS.register("boron_rod", () -> new Item(new Item.Properties().durability(1000)));
+    public static final RegistryObject<Item> POLONIUM_ROD = ITEMS.register("polonium_rod", () -> new Item(new Item.Properties().durability(50)));
     public static final RegistryObject<Item> COPPER_ROD = ITEMS.register("copper_rod", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ZINC_ROD = ITEMS.register("zinc_rod", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOLD_ROD = ITEMS.register("gold_rod", () -> new Item(new Item.Properties()));
@@ -472,7 +472,7 @@ public class CCItems {
     public static final RegistryObject<Item> FUSION_CORE = ITEMS.register("fusion_core", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> THERMONUCLEAR_CORE = ITEMS.register("thermonuclear_core", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> FUEL_ROD = ITEMS.register("fuel_rod", () -> new Item(new Item.Properties().durability(1000).stacksTo(1)));
+    public static final RegistryObject<Item> FUEL_ROD = ITEMS.register("fuel_rod", () -> new Item(new Item.Properties().durability(1000)));
     public static final RegistryObject<Item> SPENT_FUEL_ROD = ITEMS.register("spent_fuel_rod", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FUEL_PELLET = ITEMS.register("fuel_pellet", () -> new Item(new Item.Properties()));
 
