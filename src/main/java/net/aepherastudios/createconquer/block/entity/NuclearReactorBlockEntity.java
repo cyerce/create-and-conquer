@@ -3,6 +3,7 @@ package net.aepherastudios.createconquer.block.entity;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.aepherastudios.createconquer.screen.NuclearReactorMenu;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
@@ -16,6 +17,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -59,11 +62,11 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
 
     protected final ContainerData data;
     private int fuelDurProgress = 0;
-    private int fuelDurMaxProgress;
+    private int fuelDurMaxProgress = 100;
     private int poloniumDurProgress = 0;
-    private int poloniumDurMaxProgress;
+    private int poloniumDurMaxProgress = 20;
     private int controlDurProgress = 0;
-    private int controlDurMaxProgress;
+    private int controlDurMaxProgress = 20;
 
     public NuclearReactorBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(CCBlockEntities.NUCLEAR_REACTOR_BE.get(), pPos, pBlockState);
@@ -120,6 +123,15 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     }
 
     @Override
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        if(cap == ForgeCapabilities.ITEM_HANDLER){
+            return lazyItemHandler.cast();
+        }
+
+        return super.getCapability(cap, side);
+    }
+
+    @Override
     public void onLoad() {
         super.onLoad();
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
@@ -148,6 +160,4 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     public void tick(Level level, BlockPos pPos, BlockState pState){
 
     }
-
-
 }
