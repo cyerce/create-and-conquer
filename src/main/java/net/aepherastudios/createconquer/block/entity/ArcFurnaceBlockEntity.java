@@ -77,7 +77,7 @@ public class ArcFurnaceBlockEntity extends BlockEntity implements MenuProvider {
 
             @Override
             public int getCount() {
-                return 6;
+                return 2;
             }
         };
     }

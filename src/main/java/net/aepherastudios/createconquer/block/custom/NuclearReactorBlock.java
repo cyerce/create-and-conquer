@@ -25,7 +25,7 @@ import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 public class NuclearReactorBlock extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(-16,0,-16,32,32,32);
+    public static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
 
     public NuclearReactorBlock(Properties pProperties) {
         super(pProperties);
@@ -74,7 +74,7 @@ public class NuclearReactorBlock extends BaseEntityBlock {
         return new NuclearReactorBlockEntity(pPos, pState);
     }
 
-    @Nullable
+    @javax.annotation.Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
         if(pLevel.isClientSide()) {
