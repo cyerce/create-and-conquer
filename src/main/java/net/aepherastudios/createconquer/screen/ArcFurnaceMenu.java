@@ -1,6 +1,7 @@
 package net.aepherastudios.createconquer.screen;
 
 import net.aepherastudios.createconquer.block.CCBlocks;
+import net.aepherastudios.createconquer.block.entity.ArcFurnaceBlockEntity;
 import net.aepherastudios.createconquer.block.entity.NuclearReactorBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -11,22 +12,22 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
+import org.jetbrains.annotations.Nullable;
 
-
-public class NuclearReactorMenu extends AbstractContainerMenu {
-    public final NuclearReactorBlockEntity blockEntity;
+public class ArcFurnaceMenu extends AbstractContainerMenu {
+    public final ArcFurnaceBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public NuclearReactorMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
+    public ArcFurnaceMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
         this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()),
                 new SimpleContainerData(2));
     }
 
-    public NuclearReactorMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data){
-        super(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), pContainerId);
-        checkContainerSize(inv, 12);
-        blockEntity = ((NuclearReactorBlockEntity) entity);
+    public ArcFurnaceMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data){
+        super(CCMenuTypes.ARC_FURNACE_MENU.get(), pContainerId);
+        checkContainerSize(inv, 6);
+        blockEntity = ((ArcFurnaceBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
 
@@ -39,13 +40,6 @@ public class NuclearReactorMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 17));
             this.addSlot(new SlotItemHandler(iItemHandler, 3, 98, 17));
             this.addSlot(new SlotItemHandler(iItemHandler, 4, 116, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 5, 8, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 6, 137, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 7, 44, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 8, 62, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 9, 80, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 10, 98, 53));
-            this.addSlot(new SlotItemHandler(iItemHandler, 11, 116,53));
         });
 
         addDataSlots(data);
@@ -99,10 +93,11 @@ public class NuclearReactorMenu extends AbstractContainerMenu {
         return copyOfSourceStack;
     }
 
+
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, CCBlocks.NUCLEAR_REACTOR.get());
+                pPlayer, CCBlocks.ARC_FURNACE.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
