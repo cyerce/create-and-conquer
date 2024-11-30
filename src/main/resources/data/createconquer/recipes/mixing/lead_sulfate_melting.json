@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:lead_sulfate_crystal"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:molten_lead_sulfate_fluid",
+      "amount": 25
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:aluminum_sulfide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:molten_aluminum_sulfide_fluid",
+      "amount": 25
+    }
+  ]
+}

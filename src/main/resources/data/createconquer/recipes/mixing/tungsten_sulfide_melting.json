@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:tungsten_sulfide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:molten_tungsten_sulfide_fluid",
+      "amount": 25
+    }
+  ]
+}

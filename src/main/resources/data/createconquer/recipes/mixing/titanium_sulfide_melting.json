@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:titanium_sulfide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:molten_titanium_sulfide_fluid",
+      "amount": 25
+    }
+  ]
+}

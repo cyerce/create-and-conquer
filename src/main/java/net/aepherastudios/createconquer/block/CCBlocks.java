@@ -251,86 +251,207 @@ public class CCBlocks {
 
     public static final RegistryObject<LiquidBlock> MOLTEN_URANIUM_BLOCK = BLOCKS.register("molten_uranium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_URANIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_URANIUM_SULFATE_BLOCK = BLOCKS.register("molten_uranium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_URANIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_URANIUM_SULFIDE_BLOCK = BLOCKS.register("molten_uranium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_URANIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_PLUTONIUM_BLOCK = BLOCKS.register("molten_plutonium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_PLUTONIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_PLUTONIUM_SULFATE_BLOCK = BLOCKS.register("molten_plutonium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_PLUTONIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_PLUTONIUM_SULFIDE_BLOCK = BLOCKS.register("molten_plutonium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_PLUTONIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_BERYLLIUM_BLOCK = BLOCKS.register("molten_beryllium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BERYLLIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_BERYLLIUM_SULFIDE_BLOCK = BLOCKS.register("molten_beryllium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BERYLLIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_BERYLLIUM_SULFATE_BLOCK = BLOCKS.register("molten_beryllium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BERYLLIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_TITANIUM_BLOCK = BLOCKS.register("molten_titanium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TITANIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_TITANIUM_SULFIDE_BLOCK = BLOCKS.register("molten_titanium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TITANIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_TITANIUM_SULFATE_BLOCK = BLOCKS.register("molten_titanium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TITANIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_LITHIUM_BLOCK = BLOCKS.register("molten_lithium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LITHIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_LITHIUM_SULFATE_BLOCK = BLOCKS.register("molten_lithium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LITHIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_LITHIUM_SULFIDE_BLOCK = BLOCKS.register("molten_lithium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LITHIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_THORIUM_BLOCK = BLOCKS.register("molten_thorium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_THORIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_THORIUM_SULFATE_BLOCK = BLOCKS.register("molten_thorium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_THORIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_THORIUM_SULFIDE_BLOCK = BLOCKS.register("molten_thorium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_THORIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_NICKEL_BLOCK = BLOCKS.register("molten_nickel_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_NICKEL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_NICKEL_SULFATE_BLOCK = BLOCKS.register("molten_nickel_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_NICKEL_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_NICKEL_SULFIDE_BLOCK = BLOCKS.register("molten_nickel_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_NICKEL_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_LEAD_BLOCK = BLOCKS.register("molten_lead_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LEAD, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_LEAD_SULFATE_BLOCK = BLOCKS.register("molten_lead_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LEAD_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_LEAD_SULFIDE_BLOCK = BLOCKS.register("molten_lead_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LEAD_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_STEEL_BLOCK = BLOCKS.register("molten_steel_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_STEEL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_TANKSTEEL_BLOCK = BLOCKS.register("molten_tanksteel_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TANKSTEEL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_ALUMINUM_BLOCK = BLOCKS.register("molten_aluminum_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ALUMINUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_ALUMINUM_SULFATE_BLOCK = BLOCKS.register("molten_aluminum_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ALUMINUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_ALUMINUM_SULFIDE_BLOCK = BLOCKS.register("molten_aluminum_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ALUMINUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_TIN_BLOCK = BLOCKS.register("molten_tin_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TIN, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_TIN_SULFATE_BLOCK = BLOCKS.register("molten_tin_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TIN_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_TIN_SULFIDE_BLOCK = BLOCKS.register("molten_tin_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TIN_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_ZINC_BLOCK = BLOCKS.register("molten_zinc_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ZINC, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_ZINC_SULFATE_BLOCK = BLOCKS.register("molten_zinc_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ZINC_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_ZINC_SULFIDE_BLOCK = BLOCKS.register("molten_zinc_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ZINC_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_COPPER_BLOCK = BLOCKS.register("molten_copper_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_COPPER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_COPPER_SULFATE_BLOCK = BLOCKS.register("molten_copper_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_COPPER_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_COPPER_SULFIDE_BLOCK = BLOCKS.register("molten_copper_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_COPPER_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_SILICON_BLOCK = BLOCKS.register("molten_silicon_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_SILICON, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_URANIUM_235_BLOCK = BLOCKS.register("molten_uranium_235_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_URANIUM_235, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_URANIUM_238_BLOCK = BLOCKS.register("molten_uranium_238_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_URANIUM_238, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_URANIUM_233_BLOCK = BLOCKS.register("molten_uranium_233_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_URANIUM_233, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_FISSILE_URANIUM_20_BLOCK = BLOCKS.register("molten_fissile_uranium_20_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_FISSILE_URANIUM_20, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_FISSILE_URANIUM_90_BLOCK = BLOCKS.register("molten_fissile_uranium_90_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_FISSILE_URANIUM_90, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_LITHIUM_6_BLOCK = BLOCKS.register("molten_lithium_6_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LITHIUM_6, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_LITHIUM_7_BLOCK = BLOCKS.register("molten_lithium_7_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_LITHIUM_7, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_ROSE_GOLD_BLOCK = BLOCKS.register("molten_rose_gold_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ROSE_GOLD, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_ROSESTEEL_BLOCK = BLOCKS.register("molten_rosesteel_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ROSESTEEL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_INVAR_BLOCK = BLOCKS.register("molten_invar_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_INVAR, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_BRONZE_BLOCK = BLOCKS.register("molten_bronze_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_ALNICO_BLOCK = BLOCKS.register("molten_alnico_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ALNICO, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_STAINLESS_STEEL_BLOCK = BLOCKS.register("molten_stainless_steel_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_STAINLESS_STEEL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_STABALLOY_BLOCK = BLOCKS.register("molten_staballoy_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_STABALLOY, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_BRASS_BLOCK = BLOCKS.register("molten_brass_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BRASS, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_BISMUTH_BLOCK = BLOCKS.register("molten_bismuth_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BISMUTH, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_BISMUTH_SULFATE_BLOCK = BLOCKS.register("molten_bismuth_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BISMUTH_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_BISMUTH_SULFIDE_BLOCK = BLOCKS.register("molten_bismuth_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_BISMUTH_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_POLONIUM_BLOCK = BLOCKS.register("molten_polonium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_POLONIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_POLONIUM_SULFATE_BLOCK = BLOCKS.register("molten_polonium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_POLONIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_POLONIUM_SULFIDE_BLOCK = BLOCKS.register("molten_polonium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_POLONIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_TUNGSTEN_BLOCK = BLOCKS.register("molten_tungsten_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TUNGSTEN, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_TUNGSTEN_SULFATE_BLOCK = BLOCKS.register("molten_tungsten_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TUNGSTEN_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_TUNGSTEN_SULFIDE_BLOCK = BLOCKS.register("molten_tungsten_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_TUNGSTEN_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_CHROMIUM_BLOCK = BLOCKS.register("molten_chromium_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_CHROMIUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_CHROMIUM_SULFATE_BLOCK = BLOCKS.register("molten_chromium_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_CHROMIUM_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_CHROMIUM_SULFIDE_BLOCK = BLOCKS.register("molten_chromium_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_CHROMIUM_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_COBALT_BLOCK = BLOCKS.register("molten_cobalt_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_COBALT, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_COBALT_SULFATE_BLOCK = BLOCKS.register("molten_cobalt_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_COBALT_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_COBALT_SULFIDE_BLOCK = BLOCKS.register("molten_cobalt_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_COBALT_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_ELECTRUM_BLOCK = BLOCKS.register("molten_electrum_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_ELECTRUM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_SILVER_BLOCK = BLOCKS.register("molten_silver_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_SILVER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_SILVER_SULFATE_BLOCK = BLOCKS.register("molten_silver_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_SILVER_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_SILVER_SULFIDE_BLOCK = BLOCKS.register("molten_silver_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_SILVER_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_IRON_BLOCK = BLOCKS.register("molten_iron_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_IRON, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_IRON_SULFATE_BLOCK = BLOCKS.register("molten_iron_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_IRON_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_IRON_SULFIDE_BLOCK = BLOCKS.register("molten_iron_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_IRON_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_GOLD_BLOCK = BLOCKS.register("molten_gold_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_GOLD, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_GOLD_SULFATE_BLOCK = BLOCKS.register("molten_gold_sulfate_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_GOLD_SULFATE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> MOLTEN_GOLD_SULFIDE_BLOCK = BLOCKS.register("molten_gold_sulfide_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_GOLD_SULFIDE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_NETHERITE_BLOCK = BLOCKS.register("molten_netherite_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_NETHERITE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> MOLTEN_REDSTONE_BLOCK = BLOCKS.register("molten_redstone_block",
             () -> new LiquidBlock(CCFluids.SOURCE_MOLTEN_REDSTONE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
     public static final RegistryObject<LiquidBlock> OXYGEN_BLOCK = BLOCKS.register("oxygen_block",
             () -> new LiquidBlock(CCFluids.SOURCE_OXYGEN, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<LiquidBlock> HYDROGEN_BLOCK = BLOCKS.register("hydrogen_block",

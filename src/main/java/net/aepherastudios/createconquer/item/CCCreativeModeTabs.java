@@ -27,6 +27,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_URANIUM_BUCKET.get());
                         pOutput.accept(CCItems.URANIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.URANIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_URANIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_URANIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.PLUTONIUM_INGOT.get());
                         pOutput.accept(CCItems.PLUTONIUM_PLATE.get());
@@ -36,6 +38,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_PLUTONIUM_BUCKET.get());
                         pOutput.accept(CCItems.PLUTONIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.PLUTONIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_PLUTONIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_PLUTONIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.BERYLLIUM_INGOT.get());
                         pOutput.accept(CCItems.BERYLLIUM_PLATE.get());
@@ -45,6 +49,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_BERYLLIUM_BUCKET.get());
                         pOutput.accept(CCItems.BERYLLIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.BERYLLIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_BERYLLIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_BERYLLIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.TITANIUM_INGOT.get());
                         pOutput.accept(CCItems.TITANIUM_PLATE.get());
@@ -54,6 +60,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_TITANIUM_BUCKET.get());
                         pOutput.accept(CCItems.TITANIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.TITANIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_TITANIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_TITANIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.THORIUM_INGOT.get());
                         pOutput.accept(CCItems.THORIUM_PLATE.get());
@@ -63,6 +71,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_THORIUM_BUCKET.get());
                         pOutput.accept(CCItems.THORIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.THORIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_THORIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_THORIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.LITHIUM_INGOT.get());
                         pOutput.accept(CCItems.LITHIUM_PLATE.get());
@@ -72,6 +82,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_LITHIUM_BUCKET.get());
                         pOutput.accept(CCItems.LITHIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.LITHIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_LITHIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_LITHIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.LEAD_INGOT.get());
                         pOutput.accept(CCItems.LEAD_PLATE.get());
@@ -81,6 +93,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_LEAD_BUCKET.get());
                         pOutput.accept(CCItems.LEAD_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.LEAD_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_LEAD_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_LEAD_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.TANKSTEEL_INGOT.get());
                         pOutput.accept(CCItems.TANKSTEEL_PLATE.get());
@@ -104,6 +118,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_ALUMINUM_BUCKET.get());
                         pOutput.accept(CCItems.ALUMINUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.ALUMINUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_ALUMINUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_ALUMINUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.TIN_INGOT.get());
                         pOutput.accept(CCItems.TIN_PLATE.get());
@@ -113,6 +129,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_TIN_BUCKET.get());
                         pOutput.accept(CCItems.TIN_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.TIN_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_TIN_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_TIN_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.ZINC_PLATE.get());
                         pOutput.accept(CCItems.ZINC_POWDER.get());
@@ -121,6 +139,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_ZINC_BUCKET.get());
                         pOutput.accept(CCItems.ZINC_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.ZINC_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_ZINC_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_ZINC_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.COPPER_POWDER.get());
                         pOutput.accept(CCItems.COPPER_GEAR.get());
@@ -129,6 +149,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_COPPER_BUCKET.get());
                         pOutput.accept(CCItems.COPPER_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.COPPER_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_COPPER_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_COPPER_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.SILICON_INGOT.get());
                         pOutput.accept(CCItems.SILICON_PLATE.get());
@@ -233,6 +255,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_BISMUTH_BUCKET.get());
                         pOutput.accept(CCItems.BISMUTH_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.BISMUTH_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_BISMUTH_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_BISMUTH_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.POLONIUM_INGOT.get());
                         pOutput.accept(CCItems.POLONIUM_PLATE.get());
@@ -243,6 +267,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_POLONIUM_BUCKET.get());
                         pOutput.accept(CCItems.POLONIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.POLONIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_POLONIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_POLONIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.TUNGSTEN_INGOT.get());
                         pOutput.accept(CCItems.TUNGSTEN_PLATE.get());
@@ -252,6 +278,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_TUNGSTEN_BUCKET.get());
                         pOutput.accept(CCItems.TUNGSTEN_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.TUNGSTEN_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_TUNGSTEN_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_TUNGSTEN_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.CHROMIUM_INGOT.get());
                         pOutput.accept(CCItems.CHROMIUM_PLATE.get());
@@ -261,6 +289,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_CHROMIUM_BUCKET.get());
                         pOutput.accept(CCItems.CHROMIUM_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.CHROMIUM_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_CHROMIUM_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_CHROMIUM_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.ELECTRUM_INGOT.get());
                         pOutput.accept(CCItems.ELECTRUM_PLATE.get());
@@ -282,12 +312,16 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_SILVER_BUCKET.get());
                         pOutput.accept(CCItems.SILVER_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.SILVER_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_SILVER_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_SILVER_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.IRON_POWDER.get());
                         pOutput.accept(CCItems.IRON_ROD.get());
                         pOutput.accept(CCItems.MOLTEN_IRON_BUCKET.get());
                         pOutput.accept(CCItems.IRON_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.IRON_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_IRON_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_IRON_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.GOLD_POWDER.get());
                         pOutput.accept(CCItems.GOLD_ROD.get());
@@ -295,6 +329,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.MOLTEN_GOLD_BUCKET.get());
                         pOutput.accept(CCItems.GOLD_SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.GOLD_SULFIDE.get());
+                        pOutput.accept(CCItems.MOLTEN_GOLD_SULFATE_BUCKET.get());
+                        pOutput.accept(CCItems.MOLTEN_GOLD_SULFIDE_BUCKET.get());
 
                         pOutput.accept(CCItems.NETHERITE_PLATE.get());
                         pOutput.accept(CCItems.NETHERITE_POWDER.get());

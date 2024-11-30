@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:plutonium_sulfide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:molten_plutonium_sulfide_fluid",
+      "amount": 25
+    }
+  ]
+}

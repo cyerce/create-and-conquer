@@ -20,40 +20,120 @@ public class CCFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_URANIUM = FLUIDS.register("flowing_molten_uranium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_URANIUM_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_URANIUM_SULFATE = FLUIDS.register("molten_uranium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_URANIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_URANIUM_SULFATE = FLUIDS.register("flowing_molten_uranium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_URANIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_URANIUM_SULFIDE = FLUIDS.register("molten_uranium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_URANIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_URANIUM_SULFIDE = FLUIDS.register("flowing_molten_uranium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_URANIUM_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_PLUTONIUM = FLUIDS.register("molten_plutonium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_PLUTONIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_PLUTONIUM = FLUIDS.register("flowing_molten_plutonium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_PLUTONIUM_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_PLUTONIUM_SULFATE = FLUIDS.register("molten_plutonium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_PLUTONIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_PLUTONIUM_SULFATE = FLUIDS.register("flowing_molten_plutonium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_PLUTONIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_PLUTONIUM_SULFIDE = FLUIDS.register("molten_plutonium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_PLUTONIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_PLUTONIUM_SULFIDE = FLUIDS.register("flowing_molten_plutonium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_PLUTONIUM_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TITANIUM = FLUIDS.register("molten_titanium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TITANIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TITANIUM = FLUIDS.register("flowing_molten_titanium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TITANIUM_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TITANIUM_SULFATE = FLUIDS.register("molten_titanium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TITANIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TITANIUM_SULFATE = FLUIDS.register("flowing_molten_titanium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TITANIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TITANIUM_SULFIDE = FLUIDS.register("molten_titanium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TITANIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TITANIUM_SULFIDE = FLUIDS.register("flowing_molten_titanium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TITANIUM_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BERYLLIUM = FLUIDS.register("molten_beryllium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BERYLLIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BERYLLIUM = FLUIDS.register("flowing_molten_beryllium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BERYLLIUM_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BERYLLIUM_SULFATE = FLUIDS.register("molten_beryllium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BERYLLIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BERYLLIUM_SULFATE = FLUIDS.register("flowing_molten_beryllium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BERYLLIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BERYLLIUM_SULFIDE = FLUIDS.register("molten_beryllium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BERYLLIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BERYLLIUM_SULFIDE = FLUIDS.register("flowing_molten_beryllium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BERYLLIUM_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LITHIUM = FLUIDS.register("molten_lithium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LITHIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LITHIUM = FLUIDS.register("flowing_molten_lithium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LITHIUM_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LITHIUM_SULFATE = FLUIDS.register("molten_lithium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LITHIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LITHIUM_SULFATE = FLUIDS.register("flowing_molten_lithium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LITHIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LITHIUM_SULFIDE = FLUIDS.register("molten_lithium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LITHIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LITHIUM_SULFIDE = FLUIDS.register("flowing_molten_lithium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LITHIUM_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_THORIUM = FLUIDS.register("molten_thorium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_THORIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_THORIUM = FLUIDS.register("flowing_molten_thorium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_THORIUM_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_THORIUM_SULFATE = FLUIDS.register("molten_thorium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_THORIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_THORIUM_SULFATE = FLUIDS.register("flowing_molten_thorium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_THORIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_THORIUM_SULFIDE = FLUIDS.register("molten_thorium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_THORIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_THORIUM_SULFIDE = FLUIDS.register("flowing_molten_thorium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_THORIUM_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LEAD = FLUIDS.register("molten_lead_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LEAD_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LEAD = FLUIDS.register("flowing_molten_lead",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LEAD_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LEAD_SULFATE = FLUIDS.register("molten_lead_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LEAD_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LEAD_SULFATE = FLUIDS.register("flowing_molten_lead_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LEAD_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_LEAD_SULFIDE = FLUIDS.register("molten_lead_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_LEAD_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_LEAD_SULFIDE = FLUIDS.register("flowing_molten_lead_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_LEAD_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_NICKEL = FLUIDS.register("molten_nickel_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_NICKEL_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_NICKEL = FLUIDS.register("flowing_molten_nickel",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_NICKEL_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_NICKEL_SULFATE = FLUIDS.register("molten_nickel_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_NICKEL_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_NICKEL_SULFATE = FLUIDS.register("flowing_molten_nickel_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_NICKEL_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_NICKEL_SULFIDE = FLUIDS.register("molten_nickel_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_NICKEL_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_NICKEL_SULFIDE = FLUIDS.register("flowing_molten_nickel_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_NICKEL_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TANKSTEEL = FLUIDS.register("molten_tanksteel_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TANKSTEEL_FLUID_PROPERTIES));
@@ -70,20 +150,60 @@ public class CCFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ALUMINUM = FLUIDS.register("flowing_molten_aluminum",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ALUMINUM_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ALUMINUM_SULFATE = FLUIDS.register("molten_aluminum_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ALUMINUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ALUMINUM_SULFATE = FLUIDS.register("flowing_molten_aluminum_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ALUMINUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ALUMINUM_SULFIDE = FLUIDS.register("molten_aluminum_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ALUMINUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ALUMINUM_SULFIDE = FLUIDS.register("flowing_molten_aluminum_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ALUMINUM_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TIN = FLUIDS.register("molten_tin_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TIN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TIN = FLUIDS.register("flowing_molten_tin",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TIN_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TIN_SULFATE = FLUIDS.register("molten_tin_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TIN_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TIN_SULFATE = FLUIDS.register("flowing_molten_tin_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TIN_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TIN_SULFIDE = FLUIDS.register("molten_tin_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TIN_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TIN_SULFIDE = FLUIDS.register("flowing_molten_tin_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TIN_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ZINC = FLUIDS.register("molten_zinc_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ZINC_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ZINC = FLUIDS.register("flowing_molten_zinc",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ZINC_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ZINC_SULFATE = FLUIDS.register("molten_zinc_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ZINC_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ZINC_SULFATE = FLUIDS.register("flowing_molten_zinc_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ZINC_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ZINC_SULFIDE = FLUIDS.register("molten_zinc_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ZINC_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_ZINC_SULFIDE = FLUIDS.register("flowing_molten_zinc_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_ZINC_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COPPER = FLUIDS.register("molten_copper_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COPPER_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COPPER = FLUIDS.register("flowing_molten_copper",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COPPER_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COPPER_SULFATE = FLUIDS.register("molten_copper_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COPPER_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COPPER_SULFATE = FLUIDS.register("flowing_molten_copper_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COPPER_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COPPER_SULFIDE = FLUIDS.register("molten_copper_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COPPER_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COPPER_SULFIDE = FLUIDS.register("flowing_molten_copper_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COPPER_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_SILICON = FLUIDS.register("molten_silicon_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_SILICON_FLUID_PROPERTIES));
@@ -170,25 +290,75 @@ public class CCFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BISMUTH = FLUIDS.register("flowing_molten_bismuth",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BISMUTH_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BISMUTH_SULFATE = FLUIDS.register("molten_bismuth_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BISMUTH_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BISMUTH_SULFATE = FLUIDS.register("flowing_molten_bismuth_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BISMUTH_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_BISMUTH_SULFIDE = FLUIDS.register("molten_bismuth_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_BISMUTH_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_BISMUTH_SULFIDE = FLUIDS.register("flowing_molten_bismuth_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_BISMUTH_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_POLONIUM = FLUIDS.register("molten_polonium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_POLONIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_POLONIUM = FLUIDS.register("flowing_molten_polonium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_POLONIUM_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_POLONIUM_SULFATE = FLUIDS.register("molten_polonium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_POLONIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_POLONIUM_SULFATE = FLUIDS.register("flowing_molten_polonium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_POLONIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_POLONIUM_SULFIDE = FLUIDS.register("molten_polonium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_POLONIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_POLONIUM_SULFIDE = FLUIDS.register("flowing_molten_polonium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_POLONIUM_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TUNGSTEN = FLUIDS.register("molten_tungsten_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TUNGSTEN_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TUNGSTEN = FLUIDS.register("flowing_molten_tungsten",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TUNGSTEN_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TUNGSTEN_SULFATE = FLUIDS.register("molten_tungsten_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TUNGSTEN_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TUNGSTEN_SULFATE = FLUIDS.register("flowing_molten_tungsten_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TUNGSTEN_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_TUNGSTEN_SULFIDE = FLUIDS.register("molten_tungsten_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_TUNGSTEN_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_TUNGSTEN_SULFIDE = FLUIDS.register("flowing_molten_tungsten_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_TUNGSTEN_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_CHROMIUM = FLUIDS.register("molten_chromium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_CHROMIUM_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_CHROMIUM = FLUIDS.register("flowing_molten_chromium",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_CHROMIUM_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_CHROMIUM_SULFATE = FLUIDS.register("molten_chromium_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_CHROMIUM_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_CHROMIUM_SULFATE = FLUIDS.register("flowing_molten_chromium_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_CHROMIUM_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_CHROMIUM_SULFIDE = FLUIDS.register("molten_chromium_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_CHROMIUM_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_CHROMIUM_SULFIDE = FLUIDS.register("flowing_molten_chromium_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_CHROMIUM_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COBALT = FLUIDS.register("molten_cobalt_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COBALT_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COBALT = FLUIDS.register("flowing_molten_cobalt",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COBALT_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COBALT_SULFATE = FLUIDS.register("molten_cobalt_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COBALT_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COBALT_SULFATE = FLUIDS.register("flowing_molten_cobalt_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COBALT_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_COBALT_SULFIDE = FLUIDS.register("molten_cobalt_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_COBALT_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_COBALT_SULFIDE = FLUIDS.register("flowing_molten_cobalt_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_COBALT_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_ELECTRUM = FLUIDS.register("molten_electrum_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_ELECTRUM_FLUID_PROPERTIES));
@@ -200,15 +370,45 @@ public class CCFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_SILVER = FLUIDS.register("flowing_molten_silver",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_SILVER_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_SILVER_SULFATE = FLUIDS.register("molten_silver_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_SILVER_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_SILVER_SULFATE = FLUIDS.register("flowing_molten_silver_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_SILVER_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_SILVER_SULFIDE = FLUIDS.register("molten_silver_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_SILVER_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_SILVER_SULFIDE = FLUIDS.register("flowing_molten_silver_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_SILVER_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_IRON = FLUIDS.register("molten_iron_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_IRON_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_IRON = FLUIDS.register("flowing_molten_iron",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_IRON_FLUID_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_IRON_SULFATE = FLUIDS.register("molten_iron_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_IRON_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_IRON_SULFATE = FLUIDS.register("flowing_molten_iron_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_IRON_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_IRON_SULFIDE = FLUIDS.register("molten_iron_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_IRON_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_IRON_SULFIDE = FLUIDS.register("flowing_molten_iron_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_IRON_SULFIDE_FLUID_PROPERTIES));
+
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_GOLD = FLUIDS.register("molten_gold_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_GOLD_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_GOLD = FLUIDS.register("flowing_molten_gold",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_GOLD_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_GOLD_SULFATE = FLUIDS.register("molten_gold_sulfate_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_GOLD_SULFATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_GOLD_SULFATE = FLUIDS.register("flowing_molten_gold_sulfate",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_GOLD_SULFATE_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_GOLD_SULFIDE = FLUIDS.register("molten_gold_sulfide_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_GOLD_SULFIDE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_MOLTEN_GOLD_SULFIDE = FLUIDS.register("flowing_molten_gold_sulfide",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.MOLTEN_GOLD_SULFIDE_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_MOLTEN_NETHERITE = FLUIDS.register("molten_netherite_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.MOLTEN_NETHERITE_FLUID_PROPERTIES));
@@ -445,33 +645,97 @@ public class CCFluids {
             UraniumFluidType.MOLTEN_URANIUM_FLUID_TYPE, SOURCE_MOLTEN_URANIUM, FLOWING_MOLTEN_URANIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_URANIUM_BLOCK).bucket(CCItems.MOLTEN_URANIUM_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_URANIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            UraniumSulfateFluidType.MOLTEN_URANIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_URANIUM_SULFATE, FLOWING_MOLTEN_URANIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_URANIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_URANIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_URANIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            UraniumSulfideFluidType.MOLTEN_URANIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_URANIUM_SULFIDE, FLOWING_MOLTEN_URANIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_URANIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_URANIUM_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_PLUTONIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PlutoniumFluidType.MOLTEN_PLUTONIUM_FLUID_TYPE, SOURCE_MOLTEN_PLUTONIUM, FLOWING_MOLTEN_PLUTONIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_PLUTONIUM_BLOCK).bucket(CCItems.MOLTEN_PLUTONIUM_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_PLUTONIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PlutoniumSulfateFluidType.MOLTEN_PLUTONIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_PLUTONIUM_SULFATE, FLOWING_MOLTEN_PLUTONIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_PLUTONIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_PLUTONIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_PLUTONIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PlutoniumSulfideFluidType.MOLTEN_PLUTONIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_PLUTONIUM_SULFIDE, FLOWING_MOLTEN_PLUTONIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_PLUTONIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_PLUTONIUM_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BERYLLIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             BerylliumFluidType.MOLTEN_BERYLLIUM_FLUID_TYPE, SOURCE_MOLTEN_BERYLLIUM, FLOWING_MOLTEN_BERYLLIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BERYLLIUM_BLOCK).bucket(CCItems.MOLTEN_BERYLLIUM_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_BERYLLIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BerylliumSulfateFluidType.MOLTEN_BERYLLIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_BERYLLIUM_SULFATE, FLOWING_MOLTEN_BERYLLIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BERYLLIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_BERYLLIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_BERYLLIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BerylliumSulfideFluidType.MOLTEN_BERYLLIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_BERYLLIUM_SULFIDE, FLOWING_MOLTEN_BERYLLIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BERYLLIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_BERYLLIUM_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_TITANIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TitaniumFluidType.MOLTEN_TITANIUM_FLUID_TYPE, SOURCE_MOLTEN_TITANIUM, FLOWING_MOLTEN_TITANIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TITANIUM_BLOCK).bucket(CCItems.MOLTEN_TITANIUM_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_TITANIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            TitaniumSulfateFluidType.MOLTEN_TITANIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_TITANIUM_SULFATE, FLOWING_MOLTEN_TITANIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TITANIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_TITANIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_TITANIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            TitaniumSulfideFluidType.MOLTEN_TITANIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_TITANIUM_SULFIDE, FLOWING_MOLTEN_TITANIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TITANIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_TITANIUM_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_LITHIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             LithiumFluidType.MOLTEN_LITHIUM_FLUID_TYPE, SOURCE_MOLTEN_LITHIUM, FLOWING_MOLTEN_LITHIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LITHIUM_BLOCK).bucket(CCItems.MOLTEN_LITHIUM_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_LITHIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            LithiumSulfateFluidType.MOLTEN_LITHIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_LITHIUM_SULFATE, FLOWING_MOLTEN_LITHIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LITHIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_LITHIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_LITHIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            LithiumSulfideFluidType.MOLTEN_LITHIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_LITHIUM_SULFIDE, FLOWING_MOLTEN_LITHIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LITHIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_LITHIUM_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_THORIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ThoriumFluidType.MOLTEN_THORIUM_FLUID_TYPE, SOURCE_MOLTEN_THORIUM, FLOWING_MOLTEN_THORIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_THORIUM_BLOCK).bucket(CCItems.MOLTEN_THORIUM_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_THORIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ThoriumSulfateFluidType.MOLTEN_THORIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_THORIUM_SULFATE, FLOWING_MOLTEN_THORIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_THORIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_THORIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_THORIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ThoriumSulfideFluidType.MOLTEN_THORIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_THORIUM_SULFIDE, FLOWING_MOLTEN_THORIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_THORIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_THORIUM_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_NICKEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             NickelFluidType.MOLTEN_NICKEL_FLUID_TYPE, SOURCE_MOLTEN_NICKEL, FLOWING_MOLTEN_NICKEL)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_NICKEL_BLOCK).bucket(CCItems.MOLTEN_NICKEL_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_NICKEL_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            NickelSulfateFluidType.MOLTEN_NICKEL_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_NICKEL_SULFATE, FLOWING_MOLTEN_NICKEL_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_NICKEL_SULFATE_BLOCK).bucket(CCItems.MOLTEN_NICKEL_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_NICKEL_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            NickelSulfideFluidType.MOLTEN_NICKEL_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_NICKEL_SULFIDE, FLOWING_MOLTEN_NICKEL_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_NICKEL_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_NICKEL_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_LEAD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             LeadFluidType.MOLTEN_LEAD_FLUID_TYPE, SOURCE_MOLTEN_LEAD, FLOWING_MOLTEN_LEAD)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LEAD_BLOCK).bucket(CCItems.MOLTEN_LEAD_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_LEAD_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            LeadSulfateFluidType.MOLTEN_LEAD_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_LEAD_SULFATE, FLOWING_MOLTEN_LEAD_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LEAD_SULFATE_BLOCK).bucket(CCItems.MOLTEN_LEAD_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_LEAD_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            LeadSulfideFluidType.MOLTEN_LEAD_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_LEAD_SULFIDE, FLOWING_MOLTEN_LEAD_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_LEAD_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_LEAD_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_TANKSTEEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TanksteelFluidType.MOLTEN_TANKSTEEL_FLUID_TYPE, SOURCE_MOLTEN_TANKSTEEL, FLOWING_MOLTEN_TANKSTEEL)
@@ -485,17 +749,49 @@ public class CCFluids {
             AluminumFluidType.MOLTEN_ALUMINUM_FLUID_TYPE, SOURCE_MOLTEN_ALUMINUM, FLOWING_MOLTEN_ALUMINUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ALUMINUM_BLOCK).bucket(CCItems.MOLTEN_ALUMINUM_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_ALUMINUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            AluminumSulfateFluidType.MOLTEN_ALUMINUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_ALUMINUM_SULFATE, FLOWING_MOLTEN_ALUMINUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ALUMINUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_ALUMINUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_ALUMINUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            AluminumSulfideFluidType.MOLTEN_ALUMINUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_ALUMINUM_SULFIDE, FLOWING_MOLTEN_ALUMINUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ALUMINUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_ALUMINUM_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_TIN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TinFluidType.MOLTEN_TIN_FLUID_TYPE, SOURCE_MOLTEN_TIN, FLOWING_MOLTEN_TIN)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TIN_BLOCK).bucket(CCItems.MOLTEN_TIN_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_TIN_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            TinSulfateFluidType.MOLTEN_TIN_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_TIN_SULFATE, FLOWING_MOLTEN_TIN_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TIN_SULFATE_BLOCK).bucket(CCItems.MOLTEN_TIN_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_TIN_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            TinSulfideFluidType.MOLTEN_TIN_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_TIN_SULFIDE, FLOWING_MOLTEN_TIN_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TIN_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_TIN_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ZINC_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ZincFluidType.MOLTEN_ZINC_FLUID_TYPE, SOURCE_MOLTEN_ZINC, FLOWING_MOLTEN_ZINC)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ZINC_BLOCK).bucket(CCItems.MOLTEN_ZINC_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_ZINC_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ZincSulfateFluidType.MOLTEN_ZINC_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_ZINC_SULFATE, FLOWING_MOLTEN_ZINC_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ZINC_SULFATE_BLOCK).bucket(CCItems.MOLTEN_ZINC_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_ZINC_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ZincSulfideFluidType.MOLTEN_ZINC_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_ZINC_SULFIDE, FLOWING_MOLTEN_ZINC_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_ZINC_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_ZINC_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_COPPER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             CopperFluidType.MOLTEN_COPPER_FLUID_TYPE, SOURCE_MOLTEN_COPPER, FLOWING_MOLTEN_COPPER)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COPPER_BLOCK).bucket(CCItems.MOLTEN_COPPER_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_COPPER_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            CopperSulfateFluidType.MOLTEN_COPPER_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_COPPER_SULFATE, FLOWING_MOLTEN_COPPER_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COPPER_SULFATE_BLOCK).bucket(CCItems.MOLTEN_COPPER_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_COPPER_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            CopperSulfideFluidType.MOLTEN_COPPER_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_COPPER_SULFIDE, FLOWING_MOLTEN_COPPER_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COPPER_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_COPPER_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_SILICON_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             SiliconFluidType.MOLTEN_SILICON_FLUID_TYPE, SOURCE_MOLTEN_SILICON, FLOWING_MOLTEN_SILICON)
@@ -565,21 +861,61 @@ public class CCFluids {
             BismuthFluidType.MOLTEN_BISMUTH_FLUID_TYPE, SOURCE_MOLTEN_BISMUTH, FLOWING_MOLTEN_BISMUTH)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BISMUTH_BLOCK).bucket(CCItems.MOLTEN_BISMUTH_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_BISMUTH_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BismuthSulfateFluidType.MOLTEN_BISMUTH_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_BISMUTH_SULFATE, FLOWING_MOLTEN_BISMUTH_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BISMUTH_SULFATE_BLOCK).bucket(CCItems.MOLTEN_BISMUTH_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_BISMUTH_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            BismuthSulfideFluidType.MOLTEN_BISMUTH_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_BISMUTH_SULFIDE, FLOWING_MOLTEN_BISMUTH_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_BISMUTH_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_BISMUTH_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_POLONIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             PoloniumFluidType.MOLTEN_POLONIUM_FLUID_TYPE, SOURCE_MOLTEN_POLONIUM, FLOWING_MOLTEN_POLONIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_POLONIUM_BLOCK).bucket(CCItems.MOLTEN_POLONIUM_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_POLONIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PoloniumSulfateFluidType.MOLTEN_POLONIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_POLONIUM_SULFATE, FLOWING_MOLTEN_POLONIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_POLONIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_POLONIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_POLONIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            PoloniumSulfideFluidType.MOLTEN_POLONIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_POLONIUM_SULFIDE, FLOWING_MOLTEN_POLONIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_POLONIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_POLONIUM_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_TUNGSTEN_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             TungstenFluidType.MOLTEN_TUNGSTEN_FLUID_TYPE, SOURCE_MOLTEN_TUNGSTEN, FLOWING_MOLTEN_TUNGSTEN)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TUNGSTEN_BLOCK).bucket(CCItems.MOLTEN_TUNGSTEN_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_TUNGSTEN_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            TungstenSulfateFluidType.MOLTEN_TUNGSTEN_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_TUNGSTEN_SULFATE, FLOWING_MOLTEN_TUNGSTEN_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TUNGSTEN_SULFATE_BLOCK).bucket(CCItems.MOLTEN_TUNGSTEN_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_TUNGSTEN_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            TungstenSulfideFluidType.MOLTEN_TUNGSTEN_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_TUNGSTEN_SULFIDE, FLOWING_MOLTEN_TUNGSTEN_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_TUNGSTEN_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_TUNGSTEN_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_CHROMIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ChromiumFluidType.MOLTEN_CHROMIUM_FLUID_TYPE, SOURCE_MOLTEN_CHROMIUM, FLOWING_MOLTEN_CHROMIUM)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_CHROMIUM_BLOCK).bucket(CCItems.MOLTEN_CHROMIUM_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_CHROMIUM_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ChromiumSulfateFluidType.MOLTEN_CHROMIUM_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_CHROMIUM_SULFATE, FLOWING_MOLTEN_CHROMIUM_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_CHROMIUM_SULFATE_BLOCK).bucket(CCItems.MOLTEN_CHROMIUM_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_CHROMIUM_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ChromiumSulfideFluidType.MOLTEN_CHROMIUM_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_CHROMIUM_SULFIDE, FLOWING_MOLTEN_CHROMIUM_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_CHROMIUM_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_CHROMIUM_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_COBALT_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             CobaltFluidType.MOLTEN_COBALT_FLUID_TYPE, SOURCE_MOLTEN_COBALT, FLOWING_MOLTEN_COBALT)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COBALT_BLOCK).bucket(CCItems.MOLTEN_COBALT_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_COBALT_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            CobaltSulfateFluidType.MOLTEN_COBALT_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_COBALT_SULFATE, FLOWING_MOLTEN_COBALT_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COBALT_SULFATE_BLOCK).bucket(CCItems.MOLTEN_COBALT_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_COBALT_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            CobaltSulfideFluidType.MOLTEN_COBALT_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_COBALT_SULFIDE, FLOWING_MOLTEN_COBALT_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_COBALT_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_COBALT_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_ELECTRUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ElectrumFluidType.MOLTEN_ELECTRUM_FLUID_TYPE, SOURCE_MOLTEN_ELECTRUM, FLOWING_MOLTEN_ELECTRUM)
@@ -589,13 +925,37 @@ public class CCFluids {
             SilverFluidType.MOLTEN_SILVER_FLUID_TYPE, SOURCE_MOLTEN_SILVER, FLOWING_MOLTEN_SILVER)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_SILVER_BLOCK).bucket(CCItems.MOLTEN_SILVER_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_SILVER_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SilverSulfateFluidType.MOLTEN_SILVER_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_SILVER_SULFATE, FLOWING_MOLTEN_SILVER_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_SILVER_SULFATE_BLOCK).bucket(CCItems.MOLTEN_SILVER_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_SILVER_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SilverSulfideFluidType.MOLTEN_SILVER_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_SILVER_SULFIDE, FLOWING_MOLTEN_SILVER_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_SILVER_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_SILVER_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_IRON_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             IronFluidType.MOLTEN_IRON_FLUID_TYPE, SOURCE_MOLTEN_IRON, FLOWING_MOLTEN_IRON)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_IRON_BLOCK).bucket(CCItems.MOLTEN_IRON_BUCKET).tickRate(30);
 
+    public static final ForgeFlowingFluid.Properties MOLTEN_IRON_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            IronSulfateFluidType.MOLTEN_IRON_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_IRON_SULFATE, FLOWING_MOLTEN_IRON_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_IRON_SULFATE_BLOCK).bucket(CCItems.MOLTEN_IRON_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_IRON_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            IronSulfideFluidType.MOLTEN_IRON_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_IRON_SULFIDE, FLOWING_MOLTEN_IRON_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_IRON_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_IRON_SULFIDE_BUCKET).tickRate(30);
+
     public static final ForgeFlowingFluid.Properties MOLTEN_GOLD_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             GoldFluidType.MOLTEN_GOLD_FLUID_TYPE, SOURCE_MOLTEN_GOLD, FLOWING_MOLTEN_GOLD)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_GOLD_BLOCK).bucket(CCItems.MOLTEN_GOLD_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_GOLD_SULFATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            GoldSulfateFluidType.MOLTEN_GOLD_SULFATE_FLUID_TYPE, SOURCE_MOLTEN_GOLD_SULFATE, FLOWING_MOLTEN_GOLD_SULFATE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_GOLD_SULFATE_BLOCK).bucket(CCItems.MOLTEN_GOLD_SULFATE_BUCKET).tickRate(30);
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_GOLD_SULFIDE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            GoldSulfideFluidType.MOLTEN_GOLD_SULFIDE_FLUID_TYPE, SOURCE_MOLTEN_GOLD_SULFIDE, FLOWING_MOLTEN_GOLD_SULFIDE)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(CCBlocks.MOLTEN_GOLD_SULFIDE_BLOCK).bucket(CCItems.MOLTEN_GOLD_SULFIDE_BUCKET).tickRate(30);
 
     public static final ForgeFlowingFluid.Properties MOLTEN_NETHERITE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             NetheriteFluidType.MOLTEN_NETHERITE_FLUID_TYPE, SOURCE_MOLTEN_NETHERITE, FLOWING_MOLTEN_NETHERITE)

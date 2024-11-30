@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:plates/copper"
+    },
+    {
+      "tag": "forge:plates/zinc"
+    },
+    {
+      "fluid": "createconquer:molten_thorium_sulfate_fluid",
+      "amount": 25
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:sulfate_crystal"
+    },
+    {
+      "item": "create:copper_sheet"
+    },
+    {
+      "item": "createconquer:zinc_plate"
+    },
+    {
+      "item": "createconquer:thorium_powder"
+    }
+
+  ]
+}

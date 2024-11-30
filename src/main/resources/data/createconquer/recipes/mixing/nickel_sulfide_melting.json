@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:nickel_sulfide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:molten_nickel_sulfide_fluid",
+      "amount": 25
+    }
+  ]
+}

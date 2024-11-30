@@ -1,0 +1,33 @@
+
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:plates/copper"
+    },
+    {
+      "tag": "forge:plates/zinc"
+    },
+    {
+      "fluid": "createconquer:molten_zinc_sulfide_fluid",
+      "amount": 25
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createconquer:hydrogen_sulfide_fluid",
+      "amount": 250
+    },
+    {
+      "item": "create:copper_sheet"
+    },
+    {
+      "item": "createconquer:zinc_plate"
+    },
+    {
+      "item": "createconquer:zinc_powder"
+    }
+
+  ]
+}
