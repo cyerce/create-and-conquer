@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:magnetite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:iron_sulfate_crystal",
+      "count": 6
+    },
+    {
+      "item": "createconquer:iron_sulfide",
+      "count": 6
+    }
+  ]
+}

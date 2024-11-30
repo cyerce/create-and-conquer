@@ -1,0 +1,34 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:cosalite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:bismuth_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:bismuth_sulfide",
+      "count": 3
+    },
+    {
+      "item": "createconquer:lead_sulfate_crystal",
+      "count": 2
+    },
+    {
+      "item": "createconquer:lead_sulfide",
+      "count": 2
+    },
+    {
+      "item": "createconquer:sulfate_crystal",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:uraninite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:uranium_sulfate_crystal",
+      "count": 4
+    },
+    {
+      "item": "createconquer:uranium_sulfide",
+      "count": 4
+    },
+    {
+      "item": "createconquer:lead_sulfate_crystal",
+      "count": 2
+    },
+    {
+      "item": "createconquer:lead_sulfide",
+      "count": 2
+    },
+    {
+      "item": "createconquer:thorium_sulfate_crystal",
+      "chance": 0.25
+    },
+    {
+      "item": "createconquer:plutonium_sulfate_crystal",
+      "chance": 0.25
+    },
+    {
+      "item": "createconquer:polonium_sulfate_crystal",
+      "chance": 0.125
+    }
+  ]
+}

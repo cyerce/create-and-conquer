@@ -315,6 +315,7 @@ public class CCCreativeModeTabs {
 
                         pOutput.accept(CCItems.FLUORITE.get());
                         pOutput.accept(CCItems.POTASH.get());
+                        pOutput.accept(CCItems.SULFATE_CRYSTAL.get());
                         pOutput.accept(CCItems.SULFUR.get());
                         pOutput.accept(CCItems.SULFUR_DIOXIDE.get());
                         pOutput.accept(CCItems.SULFUR_TRIOXIDE.get());

@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:chrysoberyl_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:beryllium_sulfate_crystal",
+      "count": 4
+    },
+    {
+      "item": "createconquer:beryllium_sulfide",
+      "count": 4
+    },
+    {
+      "item": "createconquer:aluminum_sulfate_crystal",
+      "count": 2
+    },
+    {
+      "item": "createconquer:aluminum_sulfide",
+      "count": 2
+    }
+  ]
+}

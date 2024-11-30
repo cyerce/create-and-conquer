@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:galena_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lead_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:lead_sulfide",
+      "count": 3
+    },
+    {
+      "item": "createconquer:silver_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:silver_sulfide",
+      "count": 3
+    }
+  ]
+}

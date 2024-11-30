@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:pentlandite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:nickel_sulfate_crystal",
+      "count": 4
+    },
+    {
+      "item": "createconquer:nickel_sulfide",
+      "count": 4
+    },
+    {
+      "item": "createconquer:iron_sulfate_crystal",
+      "count": 2
+    },
+    {
+      "item": "createconquer:iron_sulfide",
+      "count": 2
+    }
+  ]
+}

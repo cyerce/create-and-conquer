@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:lepidolite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:lithium_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:lithium_sulfide",
+      "count": 3
+    },
+    {
+      "item": "createconquer:aluminum_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:aluminum_sulfide",
+      "count": 3
+    }
+  ]
+}

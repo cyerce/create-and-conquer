@@ -11,13 +11,11 @@
       "count": 3
     },
     {
-      "item": "createconquer:copper_powder"
+      "item": "createconquer:copper_powder",
+      "count": 2
     },
     {
       "item": "createconquer:iron_powder"
-    },
-    {
-      "item": "createconquer:gold_powder"
     }
   ]
 }

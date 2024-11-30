@@ -1,0 +1,36 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:alunite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:aluminum_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:aluminum_sulfide",
+      "count": 3
+    },
+    {
+      "item": "createconquer:copper_sulfate_crystal",
+      "count": 2
+    },
+    {
+      "item": "createconquer:copper_sulfide",
+      "count": 2
+    },
+    {
+      "item": "createconquer:iron_sulfate_crystal"
+    },
+    {
+      "item": "createconquer:iron_sulfide"
+    }
+  ]
+}

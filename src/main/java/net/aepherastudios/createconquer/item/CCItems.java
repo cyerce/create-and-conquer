@@ -201,6 +201,7 @@ public class CCItems {
     public static final RegistryObject<Item> GOLD_SULFATE_CRYSTAL = ITEMS.register("gold_sulfate_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLONIUM_SULFATE_CRYSTAL = ITEMS.register("polonium_sulfate_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COPPER_SULFATE_CRYSTAL = ITEMS.register("copper_sulfate_crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SULFATE_CRYSTAL = ITEMS.register("sulfate_crystal", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_INGOT_CAST = ITEMS.register("uranium_ingot_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_INGOT_CAST = ITEMS.register("plutonium_ingot_cast", () -> new Item(new Item.Properties()));

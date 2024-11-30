@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:millerite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:cobalt_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:cobalt_sulfide",
+      "count": 3
+    },
+    {
+      "item": "createconquer:iron_sulfate_crystal"
+    },
+    {
+      "item": "createconquer:iron_sulfide"
+    },
+    {
+      "item": "createconquer:nickel_sulfate_crystal"
+    },
+    {
+      "item": "createconquer:nickel_sulfide"
+    },
+    {
+      "item": "createconquer:sulfate_crystal",
+      "count": 2
+    }
+  ]
+}

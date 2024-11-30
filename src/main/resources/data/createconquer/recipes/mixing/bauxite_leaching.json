@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:bauxite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:aluminum_sulfate_crystal",
+      "count": 6
+    },
+    {
+      "item": "createconquer:aluminum_sulfide",
+      "count": 6
+    }
+  ]
+}

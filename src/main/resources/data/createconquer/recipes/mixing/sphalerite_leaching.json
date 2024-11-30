@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createconquer:sphalerite_blend"
+    },
+    {
+      "fluid": "createconquer:sulfuric_acid_fluid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:zinc_sulfate_crystal",
+      "count": 3
+    },
+    {
+      "item": "createconquer:zinc_sulfide",
+      "count": 3
+    },
+    {
+      "item": "createconquer:sulfate_crystal",
+      "count": 4
+    },
+    {
+      "item": "createconquer:iron_sulfate_crystal"
+    },
+    {
+      "item": "createconquer:iron_sulfide"
+    }
+  ]
+}
