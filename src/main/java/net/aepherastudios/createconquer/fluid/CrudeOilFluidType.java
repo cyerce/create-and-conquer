@@ -18,7 +18,7 @@ public class CrudeOilFluidType {
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, CreateConquer.MOD_ID);
 
     public static final RegistryObject<FluidType> CRUDE_OIL_FLUID_TYPE = register("crude_oil_fluid",
-            FluidType.Properties.create().canConvertToSource(false).density(15).viscosity(5));
+            FluidType.Properties.create().canConvertToSource(false).lightLevel(0).density(15).viscosity(5));
 
     private static RegistryObject<FluidType> register(String name, FluidType.Properties properties) {
         return FLUID_TYPES.register(name, () ->
