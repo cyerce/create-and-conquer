@@ -10,7 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
 public class NuclearReactorScreen extends AbstractContainerScreen<NuclearReactorMenu> {
-
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(CreateConquer.MOD_ID, "textures/gui/reactor.png");
 
