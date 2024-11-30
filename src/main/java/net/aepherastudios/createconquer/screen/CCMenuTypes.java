@@ -17,6 +17,9 @@ public class CCMenuTypes {
     public static final RegistryObject<MenuType<NuclearReactorMenu>> NUCLEAR_REACTOR_MENU =
             registerMenuType(NuclearReactorMenu::new, "nuclear_reactor_menu");
 
+    public static final RegistryObject<MenuType<ArcFurnaceMenu>> ARC_FURNACE_MENU =
+            registerMenuType(ArcFurnaceMenu::new, "arc_furnace_menu");
+
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name){
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }
