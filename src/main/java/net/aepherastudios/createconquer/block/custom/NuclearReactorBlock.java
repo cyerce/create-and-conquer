@@ -3,6 +3,7 @@ package net.aepherastudios.createconquer.block.custom;
 
 import net.aepherastudios.createconquer.block.entity.CCBlockEntities;
 import net.aepherastudios.createconquer.block.entity.NuclearReactorBlockEntity;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
