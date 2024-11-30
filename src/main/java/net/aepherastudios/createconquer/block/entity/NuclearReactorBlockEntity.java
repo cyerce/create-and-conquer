@@ -186,21 +186,48 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState){
-        if(controlDurProgress < controlDurMaxProgress){
-            if(!itemHandler.getStackInSlot(0).isEmpty()) {
-                controlDurProgress++;
+        if(itemHandler.getStackInSlot(2).getItem() == CCItems.POLONIUM_ROD.get()) {
+            if (controlDurProgress < controlDurMaxProgress) {
+                if (!itemHandler.getStackInSlot(0).isEmpty() && !itemHandler.getStackInSlot(1).isEmpty() &&
+                        !itemHandler.getStackInSlot(3).isEmpty() && !itemHandler.getStackInSlot(4).isEmpty()) {
+                    isMeltdown(false);
+                    controlDurProgress++;
+                }else {
+                    isMeltdown(true);
+                }
+            } else if (controlDurProgress == controlDurMaxProgress) {
+                    itemHandler.getStackInSlot(0).setDamageValue(1);
+                    itemHandler.getStackInSlot(1).setDamageValue(1);
+                    itemHandler.getStackInSlot(3).setDamageValue(1);
+                    itemHandler.getStackInSlot(4).setDamageValue(1);
             }
-        }else if(controlDurProgress == controlDurMaxProgress){
-            itemHandler.getStackInSlot(0).setDamageValue(1);
 
+            if (fuelDurProgress < fuelDurMaxProgress) {
+                if (!itemHandler.getStackInSlot(7).isEmpty() && !itemHandler.getStackInSlot(8).isEmpty() &&
+                        !itemHandler.getStackInSlot(9).isEmpty() &&
+                        !itemHandler.getStackInSlot(10).isEmpty() && !itemHandler.getStackInSlot(11).isEmpty()) {
+                    isMeltdown(false);
+                    fuelDurProgress++;
+                }else{
+                    isMeltdown(true);
+                }
+            } else if (fuelDurProgress == fuelDurMaxProgress) {
+
+                    itemHandler.getStackInSlot(7).setDamageValue(1);
+                    itemHandler.getStackInSlot(8).setDamageValue(1);
+                    itemHandler.getStackInSlot(9).setDamageValue(1);
+                    itemHandler.getStackInSlot(10).setDamageValue(1);
+                    itemHandler.getStackInSlot(11).setDamageValue(1);
+            }
         }
+    }
 
 
+    public void isMeltdown(boolean imMelting){
+
     }
-    public boolean on(){
-        return false;
-    }
-    public boolean isMeltdown(){
-        return false;
+
+    public void isCritical(boolean criticalyMelting){
+
     }
 }
