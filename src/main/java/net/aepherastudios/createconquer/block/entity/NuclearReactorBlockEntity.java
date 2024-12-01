@@ -1,6 +1,5 @@
 package net.aepherastudios.createconquer.block.entity;
 
-import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.aepherastudios.createconquer.screen.NuclearReactorMenu;
 import net.minecraft.core.BlockPos;
@@ -29,8 +28,6 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
-import javax.swing.*;
 
 public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(12){
@@ -198,10 +195,10 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
             if (controlDurProgress < controlDurMaxProgress) {
                 if (!itemHandler.getStackInSlot(0).isEmpty() && !itemHandler.getStackInSlot(1).isEmpty() &&
                         !itemHandler.getStackInSlot(3).isEmpty() && !itemHandler.getStackInSlot(4).isEmpty()) {
-                    isMeltdown(false);
+                    setIsMeltdown(false);
                     controlDurProgress++;
                 }else {
-                    isMeltdown(true);
+                    setIsMeltdown(true);
                 }
             } else if (controlDurProgress == controlDurMaxProgress) {
                     itemHandler.getStackInSlot(0).setDamageValue(100);
@@ -214,10 +211,10 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                 if (!itemHandler.getStackInSlot(7).isEmpty() && !itemHandler.getStackInSlot(8).isEmpty() &&
                         !itemHandler.getStackInSlot(9).isEmpty() &&
                         !itemHandler.getStackInSlot(10).isEmpty() && !itemHandler.getStackInSlot(11).isEmpty()) {
-                    isMeltdown(false);
+                    setIsMeltdown(false);
                     fuelDurProgress++;
                 }else{
-                    isMeltdown(true);
+                    setIsMeltdown(true);
                 }
             } else if (fuelDurProgress == fuelDurMaxProgress) {
 
@@ -261,8 +258,12 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                 this.itemHandler.getStackInSlot(fluidInSlot).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
     }
 
-    public void isMeltdown(boolean imMelting){
-
+    boolean melt;
+    public void setIsMeltdown(boolean imMelting){
+        melt = imMelting;
+    }
+    public boolean getMelt(){
+        return melt;
     }
 
     public void isCritical(boolean criticalyMelting){
