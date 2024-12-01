@@ -74,6 +74,8 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     private int poloniumDurMaxProgress = 20;
     private int controlDurProgress = 0;
     private int controlDurMaxProgress = 20;
+    private int fluidProgress = 0;
+    private int maxFluidProgress = 1;
 
     private final FluidTank FLUID_TANK = createFluidTank();
 
@@ -163,17 +165,20 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     public void onLoad() {
         super.onLoad();
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyFluidHandler = LazyOptional.of(() -> FLUID_TANK);
     }
 
     @Override
     public void invalidateCaps() {
         super.invalidateCaps();
         lazyItemHandler.invalidate();
+        lazyFluidHandler.invalidate();
     }
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
+        pTag = FLUID_TANK.writeToNBT(pTag);
 
         super.saveAdditional(pTag);
     }
@@ -181,11 +186,14 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
+        FLUID_TANK.readFromNBT(pTag);
 
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState){
+        fillFluid();
+
         if(itemHandler.getStackInSlot(2).getItem() == CCItems.POLONIUM_ROD.get()) {
             if (controlDurProgress < controlDurMaxProgress) {
                 if (!itemHandler.getStackInSlot(0).isEmpty() && !itemHandler.getStackInSlot(1).isEmpty() &&
@@ -196,10 +204,10 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                     isMeltdown(true);
                 }
             } else if (controlDurProgress == controlDurMaxProgress) {
-                    itemHandler.getStackInSlot(0).setDamageValue(1);
-                    itemHandler.getStackInSlot(1).setDamageValue(1);
-                    itemHandler.getStackInSlot(3).setDamageValue(1);
-                    itemHandler.getStackInSlot(4).setDamageValue(1);
+                    itemHandler.getStackInSlot(0).setDamageValue(100);
+                    itemHandler.getStackInSlot(1).setDamageValue(100);
+                    itemHandler.getStackInSlot(3).setDamageValue(100);
+                    itemHandler.getStackInSlot(4).setDamageValue(100);
             }
 
             if (fuelDurProgress < fuelDurMaxProgress) {
@@ -213,15 +221,45 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                 }
             } else if (fuelDurProgress == fuelDurMaxProgress) {
 
-                    itemHandler.getStackInSlot(7).setDamageValue(1);
-                    itemHandler.getStackInSlot(8).setDamageValue(1);
-                    itemHandler.getStackInSlot(9).setDamageValue(1);
-                    itemHandler.getStackInSlot(10).setDamageValue(1);
-                    itemHandler.getStackInSlot(11).setDamageValue(1);
+                    itemHandler.getStackInSlot(7).setDamageValue(100);
+                    itemHandler.getStackInSlot(8).setDamageValue(100);
+                    itemHandler.getStackInSlot(9).setDamageValue(100);
+                    itemHandler.getStackInSlot(10).setDamageValue(100);
+                    itemHandler.getStackInSlot(11).setDamageValue(100);
             }
         }
     }
 
+    public void fillFluid(){
+        if(hasFluidSourceSlot(FLUID_IN_SLOT)){
+            tranceferItemFluidTank(FLUID_IN_SLOT);
+        }
+    }
+
+    private void tranceferItemFluidTank(int fluidInSlot) {
+        this.itemHandler.getStackInSlot(fluidInSlot).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).ifPresent(iFluidHandlerItem -> {
+            int drainAmount = Math.min(this.FLUID_TANK.getSpace(), 10000);
+
+            FluidStack stack = iFluidHandlerItem.drain(drainAmount, IFluidHandler.FluidAction.SIMULATE);
+            if(stack.getFluid() == Fluids.WATER){
+                stack = iFluidHandlerItem.drain(drainAmount, IFluidHandler.FluidAction.EXECUTE);
+                fillTankWithFluid(stack, iFluidHandlerItem.getContainer());
+            }
+
+        });
+    }
+
+    private void fillTankWithFluid(FluidStack stack, @NotNull ItemStack container) {
+        this.FLUID_TANK.fill(new FluidStack(stack.getFluid(), stack.getAmount()), IFluidHandler.FluidAction.EXECUTE);
+
+        this.itemHandler.extractItem(FLUID_IN_SLOT, 1, false);
+        this.itemHandler.insertItem(FLUID_IN_SLOT, container, false);
+    }
+
+    private boolean hasFluidSourceSlot(int fluidInSlot) {
+        return this.itemHandler.getStackInSlot(fluidInSlot).getCount() > 0 &&
+                this.itemHandler.getStackInSlot(fluidInSlot).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
+    }
 
     public void isMeltdown(boolean imMelting){
 
