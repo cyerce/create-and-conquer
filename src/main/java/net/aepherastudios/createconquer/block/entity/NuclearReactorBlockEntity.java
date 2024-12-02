@@ -297,7 +297,7 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
         this.itemHandler.insertItem(FLUID_IN_SLOT, container, false);
     }
 
-    public boolean hasFluidSourceSlot(int fluidInSlot) {
+    public void hasFluidSourceSlot(int fluidInSlot) {
         return this.itemHandler.getStackInSlot(fluidInSlot).getCount() > 0 &&
                 this.itemHandler.getStackInSlot(fluidInSlot).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
     }
