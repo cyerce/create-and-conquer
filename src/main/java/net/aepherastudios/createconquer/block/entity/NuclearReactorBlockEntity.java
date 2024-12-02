@@ -201,10 +201,23 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                     setIsMeltdown(true);
                 }
             } else if (controlDurProgress == controlDurMaxProgress) {
-                    itemHandler.getStackInSlot(0).setDamageValue(100);
-                    itemHandler.getStackInSlot(1).setDamageValue(100);
-                    itemHandler.getStackInSlot(3).setDamageValue(100);
-                    itemHandler.getStackInSlot(4).setDamageValue(100);
+                if(itemHandler.getStackInSlot(0).getDamageValue() >= itemHandler.getStackInSlot(0).getMaxDamage()){
+                    itemHandler.extractItem(0, 1, false);
+                }
+                if(itemHandler.getStackInSlot(1).getDamageValue() >= itemHandler.getStackInSlot(1).getMaxDamage()){
+                    itemHandler.extractItem(1, 1, false);
+                }
+                if(itemHandler.getStackInSlot(3).getDamageValue() >= itemHandler.getStackInSlot(3).getMaxDamage()){
+                    itemHandler.extractItem(3, 1, false);
+                }
+                if(itemHandler.getStackInSlot(4).getDamageValue() >= itemHandler.getStackInSlot(4).getMaxDamage()){
+                    itemHandler.extractItem(4, 1, false);
+                }
+                itemHandler.getStackInSlot(0).setDamageValue(itemHandler.getStackInSlot(0).getDamageValue() + 100);
+                itemHandler.getStackInSlot(1).setDamageValue(itemHandler.getStackInSlot(1).getDamageValue() + 100);
+                itemHandler.getStackInSlot(3).setDamageValue(itemHandler.getStackInSlot(3).getDamageValue() + 100);
+                itemHandler.getStackInSlot(4).setDamageValue(itemHandler.getStackInSlot(4).getDamageValue() + 100);
+                controlDurProgress = 0;
             }
 
             if (fuelDurProgress < fuelDurMaxProgress) {
@@ -217,12 +230,37 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                     setIsMeltdown(true);
                 }
             } else if (fuelDurProgress == fuelDurMaxProgress) {
+                if(itemHandler.getStackInSlot(7).getItem() == CCItems.FUEL_ROD.get() && itemHandler.getStackInSlot(8).getItem() == CCItems.FUEL_ROD.get() &&
+                        itemHandler.getStackInSlot(9).getItem() == CCItems.FUEL_ROD.get() &&
+                        itemHandler.getStackInSlot(10).getItem() == CCItems.FUEL_ROD.get() && itemHandler.getStackInSlot(11).getItem() == CCItems.FUEL_ROD.get()) {
+                    if(itemHandler.getStackInSlot(7).getDamageValue() == itemHandler.getStackInSlot(7).getMaxDamage()){
+                        itemHandler.extractItem(7, 1, false);
+                        itemHandler.insertItem(7, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                    }
+                    if(itemHandler.getStackInSlot(8).getDamageValue() == itemHandler.getStackInSlot(8).getMaxDamage()){
+                        itemHandler.extractItem(8, 1, false);
+                        itemHandler.insertItem(8, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                    }
+                    if(itemHandler.getStackInSlot(9).getDamageValue() == itemHandler.getStackInSlot(9).getMaxDamage()){
+                        itemHandler.extractItem(9, 1, false);
+                        itemHandler.insertItem(9, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                    }
+                    if(itemHandler.getStackInSlot(10).getDamageValue() == itemHandler.getStackInSlot(10).getMaxDamage()){
+                        itemHandler.extractItem(10, 1, false);
+                        itemHandler.insertItem(10, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                    }
+                    if(itemHandler.getStackInSlot(11).getDamageValue() == itemHandler.getStackInSlot(11).getMaxDamage()){
+                        itemHandler.extractItem(11, 1, false);
+                        itemHandler.insertItem(11, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                    }
 
-                    itemHandler.getStackInSlot(7).setDamageValue(100);
-                    itemHandler.getStackInSlot(8).setDamageValue(100);
-                    itemHandler.getStackInSlot(9).setDamageValue(100);
-                    itemHandler.getStackInSlot(10).setDamageValue(100);
-                    itemHandler.getStackInSlot(11).setDamageValue(100);
+                    itemHandler.getStackInSlot(7).setDamageValue(itemHandler.getStackInSlot(7).getDamageValue() + 100);
+                    itemHandler.getStackInSlot(8).setDamageValue(itemHandler.getStackInSlot(8).getDamageValue() + 100);
+                    itemHandler.getStackInSlot(9).setDamageValue(itemHandler.getStackInSlot(9).getDamageValue() + 100);
+                    itemHandler.getStackInSlot(10).setDamageValue(itemHandler.getStackInSlot(10).getDamageValue() + 100);
+                    itemHandler.getStackInSlot(11).setDamageValue(itemHandler.getStackInSlot(11).getDamageValue() + 100);
+                }
+                fuelDurProgress = 0;
             }
         }
     }
