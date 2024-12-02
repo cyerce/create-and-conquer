@@ -13,4 +13,6 @@ public class CokingOvenRecipe extends SmeltingRecipe {
     public CokingOvenRecipe(ResourceLocation pId, String pGroup, CookingBookCategory pCategory, Ingredient pIngredient, ItemStack pResult, float pExperience, int pCookingTime) {
         super(pId, pGroup, pCategory, pIngredient, pResult, pExperience, pCookingTime);
     }
+
+
 }
