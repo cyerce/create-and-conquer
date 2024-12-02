@@ -137,6 +137,9 @@ public class CreateConquer
         RawCrudeOilFluidType.register(modEventBus);
         RawDirtyCrudeOilFluidType.register(modEventBus);
         WashOilFluidType.register(modEventBus);
+        IrradiatedWaterFluidType.register(modEventBus);
+        SuperheatedIrradiatedWaterFluidType.register(modEventBus);
+        SteamFluidType.register(modEventBus);
 
         MethaneFluidType.register(modEventBus);
         EthaneFluidType.register(modEventBus);

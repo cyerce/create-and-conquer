@@ -586,6 +586,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCBlocks.RADIOACTIVE_WASTE_BARREL.get());
 
                         pOutput.accept(CCBlocks.NUCLEAR_REACTOR.get());
+                        pOutput.accept(CCBlocks.ARC_FURNACE.get());
+                        pOutput.accept(CCBlocks.COKING_OVEN.get());
 
 
 

@@ -19,9 +19,14 @@ public class CCBlockEntities {
                             CCBlocks.NUCLEAR_REACTOR.get()).build(null));
 
     public static final RegistryObject<BlockEntityType<ArcFurnaceBlockEntity>> ARC_FURNACE_BE =
-            BLOCK_ENTITIES.register("ark_furnace_block_entity", () ->
+            BLOCK_ENTITIES.register("arc_furnace_block_entity", () ->
                     BlockEntityType.Builder.of(ArcFurnaceBlockEntity::new,
                             CCBlocks.ARC_FURNACE.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<CokingOvenBlockEntity>> COKING_OVEN_BE =
+            BLOCK_ENTITIES.register("coking_oven_block_entity", () ->
+                    BlockEntityType.Builder.of(CokingOvenBlockEntity::new,
+                            CCBlocks.COKING_OVEN.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

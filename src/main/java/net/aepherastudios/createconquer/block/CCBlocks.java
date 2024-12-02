@@ -2,6 +2,7 @@ package net.aepherastudios.createconquer.block;
 
 import net.aepherastudios.createconquer.CreateConquer;
 import net.aepherastudios.createconquer.block.custom.ArcFurnaceBlock;
+import net.aepherastudios.createconquer.block.custom.CokingOvenBlock;
 import net.aepherastudios.createconquer.block.custom.NuclearReactorBlock;
 import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.aepherastudios.createconquer.item.CCItems;
@@ -538,6 +539,12 @@ public class CCBlocks {
             () -> new LiquidBlock(CCFluids.SOURCE_SALINE_WATER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<LiquidBlock> WASH_OIL_BLOCK = BLOCKS.register("wash_oil_block",
             () -> new LiquidBlock(CCFluids.SOURCE_WASH_OIL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> IRRADIATED_WATER_BLOCK = BLOCKS.register("irradiated_water_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_IRRADIATED_WATER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> SUPERHEATED_IRRADIATED_WATER_BLOCK = BLOCKS.register("superheated_irradiated_water_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> STEAM_BLOCK = BLOCKS.register("steam_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_STEAM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
 
 
 
@@ -585,7 +592,7 @@ public class CCBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> COKING_OVEN = registerBlock("coking_oven",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new CokingOvenBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final RegistryObject<Block> RTG_GENERATOR = registerBlock("rtg_generator",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> BREEDER_REACTOR = registerBlock("breeder_reactor",

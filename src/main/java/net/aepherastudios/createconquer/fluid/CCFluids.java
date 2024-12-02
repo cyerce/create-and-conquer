@@ -5,6 +5,7 @@ import net.aepherastudios.createconquer.block.CCBlocks;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.WaterFluid;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.DeferredRegister;
@@ -435,6 +436,21 @@ public class CCFluids {
             () -> new ForgeFlowingFluid.Source(CCFluids.HEAVY_WATER_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_HEAVY_WATER = FLUIDS.register("flowing_heavy_water",
             () -> new ForgeFlowingFluid.Flowing(CCFluids.HEAVY_WATER_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_IRRADIATED_WATER = FLUIDS.register("irradiated_water_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.IRRADIATED_WATER_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_IRRADIATED_WATER = FLUIDS.register("flowing_irradiated_water",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.IRRADIATED_WATER_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_SUPERHEATED_IRRADIATED_WATER = FLUIDS.register("superheated_irradiated_water_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.SUPERHEATED_IRRADIATED_WATER_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_SUPERHEATED_IRRADIATED_WATER = FLUIDS.register("flowing_superheated_irradiated_water",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.SUPERHEATED_IRRADIATED_WATER_FLUID_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_STEAM = FLUIDS.register("steam_fluid",
+            () -> new ForgeFlowingFluid.Source(CCFluids.STEAM_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_STEAM = FLUIDS.register("flowing_steam",
+            () -> new ForgeFlowingFluid.Flowing(CCFluids.STEAM_FLUID_PROPERTIES));
 
     public static final RegistryObject<FlowingFluid> SOURCE_DEUTERIUM = FLUIDS.register("deuterium_fluid",
             () -> new ForgeFlowingFluid.Source(CCFluids.DEUTERIUM_FLUID_PROPERTIES));
@@ -976,6 +992,18 @@ public class CCFluids {
     public static final ForgeFlowingFluid.Properties HEAVY_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             HeavyWaterFluidType.HEAVY_WATER_FLUID_TYPE, SOURCE_HEAVY_WATER, FLOWING_HEAVY_WATER)
             .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.HEAVY_WATER_BLOCK).bucket(CCItems.HEAVY_WATER_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties IRRADIATED_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            IrradiatedWaterFluidType.IRRADIATED_WATER_FLUID_TYPE, SOURCE_IRRADIATED_WATER, FLOWING_IRRADIATED_WATER)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.IRRADIATED_WATER_BLOCK).bucket(CCItems.IRRADIATED_WATER_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties SUPERHEATED_IRRADIATED_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SuperheatedIrradiatedWaterFluidType.SUPERHEATED_IRRADIATED_WATER_FLUID_TYPE, SOURCE_SUPERHEATED_IRRADIATED_WATER, FLOWING_SUPERHEATED_IRRADIATED_WATER)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.SUPERHEATED_IRRADIATED_WATER_BLOCK).bucket(CCItems.SUPERHEATED_IRRADIATED_WATER_BUCKET).tickRate(5);
+
+    public static final ForgeFlowingFluid.Properties STEAM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            SteamFluidType.STEAM_FLUID_TYPE, SOURCE_STEAM, FLOWING_STEAM)
+            .slopeFindDistance(2).levelDecreasePerBlock(1).block(CCBlocks.STEAM_BLOCK).bucket(CCItems.STEAM_BUCKET).tickRate(5);
 
     public static final ForgeFlowingFluid.Properties DEUTERIUM_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             DeuteriumFluidType.DEUTERIUM_FLUID_TYPE, SOURCE_DEUTERIUM, FLOWING_DEUTERIUM)

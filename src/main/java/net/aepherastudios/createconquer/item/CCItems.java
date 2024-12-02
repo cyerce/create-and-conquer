@@ -647,6 +647,9 @@ public class CCItems {
     public static final RegistryObject<Item> RAW_CRUDE_OIL_BUCKET = ITEMS.register("raw_crude_oil_bucket", () -> new BucketItem(CCFluids.SOURCE_RAW_CRUDE_OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
     public static final RegistryObject<Item> RAW_DIRTY_CRUDE_OIL_BUCKET = ITEMS.register("raw_dirty_crude_oil_bucket", () -> new BucketItem(CCFluids.SOURCE_RAW_DIRTY_CRUDE_OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final RegistryObject<Item> SUPERHEATED_IRRADIATED_WATER_BUCKET = ITEMS.register("superheated_irradiated_water_bucket", () -> new BucketItem(CCFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> IRRADIATED_WATER_BUCKET = ITEMS.register("irradiated_water_bucket", () -> new BucketItem(CCFluids.SOURCE_IRRADIATED_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> STEAM_BUCKET = ITEMS.register("steam_bucket", () -> new BucketItem(CCFluids.SOURCE_STEAM, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> POLYSTYRENE = ITEMS.register("polystyrene", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLYETHYLENE = ITEMS.register("polyethylene", () -> new Item(new Item.Properties()));

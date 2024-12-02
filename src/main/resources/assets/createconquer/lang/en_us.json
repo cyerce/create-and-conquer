@@ -335,6 +335,8 @@
   "block.createconquer.radioactive_waste_barrel": "Radioactive Waste Barrel",
 
   "block.createconquer.nuclear_reactor": "Nuclear Reactor",
+  "block.createconquer.arc_furnace": "Arc Furnace",
+  "block.createconquer.coking_oven": "Coking Oven",
 
   "block.createconquer.uranium_block": "Block of Uranium",
   "block.createconquer.plutonium_block": "Block of Plutonium",
@@ -751,6 +753,10 @@
   "item.createconquer.raw_dirty_crude_oil_bucket": "Raw Dirty Crude Oil Bucket",
   "item.createconquer.wash_oil_bucket": "Wash Oil Bucket",
   "item.createconquer.saline_water_bucket": "Saline Water Bucket",
+  "item.createconquer.superheated_irradiated_water_bucket": "Superheated Irradiated Water Bucket",
+  "item.createconquer.irradiated_water_bucket": "Irradiated Water Bucket",
+  "item.createconquer.steam_bucket": "Steam Bucket",
+
 
 
   "item.createconquer.graphite": "Graphite",
