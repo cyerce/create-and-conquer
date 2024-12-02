@@ -235,22 +235,28 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                         itemHandler.getStackInSlot(10).getItem() == CCItems.FUEL_ROD.get() && itemHandler.getStackInSlot(11).getItem() == CCItems.FUEL_ROD.get()) {
                     if(itemHandler.getStackInSlot(7).getDamageValue() == itemHandler.getStackInSlot(7).getMaxDamage()){
                         itemHandler.extractItem(7, 1, false);
+
                         itemHandler.insertItem(7, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
                     }
                     if(itemHandler.getStackInSlot(8).getDamageValue() == itemHandler.getStackInSlot(8).getMaxDamage()){
                         itemHandler.extractItem(8, 1, false);
+
                         itemHandler.insertItem(8, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
                     }
                     if(itemHandler.getStackInSlot(9).getDamageValue() == itemHandler.getStackInSlot(9).getMaxDamage()){
+                        if(itemHandler.getStackInSlot(9).getDamageValue() == itemHandler.getStackInSlot(9).getMaxDamage()){
                         itemHandler.extractItem(9, 1, false);
+
                         itemHandler.insertItem(9, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
                     }
                     if(itemHandler.getStackInSlot(10).getDamageValue() == itemHandler.getStackInSlot(10).getMaxDamage()){
                         itemHandler.extractItem(10, 1, false);
+
                         itemHandler.insertItem(10, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
                     }
                     if(itemHandler.getStackInSlot(11).getDamageValue() == itemHandler.getStackInSlot(11).getMaxDamage()){
                         itemHandler.extractItem(11, 1, false);
+
                         itemHandler.insertItem(11, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
                     }
 
@@ -271,7 +277,7 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
         }
     }
 
-    private void tranceferItemFluidTank(int fluidInSlot) {
+    public void tranceferItemFluidTank(int fluidInSlot) {
         this.itemHandler.getStackInSlot(fluidInSlot).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).ifPresent(iFluidHandlerItem -> {
             int drainAmount = Math.min(this.FLUID_TANK.getSpace(), 10000);
 
@@ -284,14 +290,14 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
         });
     }
 
-    private void fillTankWithFluid(FluidStack stack, @NotNull ItemStack container) {
+    public void fillTankWithFluid(FluidStack stack, @NotNull ItemStack container) {
         this.FLUID_TANK.fill(new FluidStack(stack.getFluid(), stack.getAmount()), IFluidHandler.FluidAction.EXECUTE);
 
         this.itemHandler.extractItem(FLUID_IN_SLOT, 1, false);
         this.itemHandler.insertItem(FLUID_IN_SLOT, container, false);
     }
 
-    private boolean hasFluidSourceSlot(int fluidInSlot) {
+    public boolean hasFluidSourceSlot(int fluidInSlot) {
         return this.itemHandler.getStackInSlot(fluidInSlot).getCount() > 0 &&
                 this.itemHandler.getStackInSlot(fluidInSlot).getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
     }
