@@ -596,8 +596,6 @@ public class CCBlocks {
     public static final RegistryObject<Block> HEAT_EXCHANGER = registerBlock("heat_exchanger",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
-    public static final RegistryObject<Block> GENERATOR = registerBlock("generator",
-            () -> new GeneratorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> ARC_FURNACE = registerBlock("arc_furnace",
             () -> new ArcFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> NUCLEAR_REACTOR = registerBlock("nuclear_reactor",
