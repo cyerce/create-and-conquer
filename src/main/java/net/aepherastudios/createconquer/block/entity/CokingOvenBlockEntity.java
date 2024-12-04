@@ -6,7 +6,8 @@ import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class CokingOvenBlockEntity extends FurnaceBlockEntity {
+
     public CokingOvenBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(CCBlockEntities.COKING_OVEN_BE, pPos, pBlockState, CCRecipes.);
+        super(pPos, pBlockState);
     }
 }
