@@ -538,6 +538,12 @@ public class CCBlocks {
             () -> new LiquidBlock(CCFluids.SOURCE_SALINE_WATER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<LiquidBlock> WASH_OIL_BLOCK = BLOCKS.register("wash_oil_block",
             () -> new LiquidBlock(CCFluids.SOURCE_WASH_OIL, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> STEAM_BLOCK = BLOCKS.register("steam_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_STEAM, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> IRRADIATED_WATER_BLOCK = BLOCKS.register("irradiated_water_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_IRRADIATED_WATER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+    public static final RegistryObject<LiquidBlock> SUPERHEATED_IRRADIATED_WATER_BLOCK = BLOCKS.register("superheated_irradiated_water_block",
+            () -> new LiquidBlock(CCFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER, BlockBehaviour.Properties.copy(Blocks.LAVA)));
 
 
 

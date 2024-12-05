@@ -11,7 +11,7 @@ public class CCRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, CreateConquer.MOD_ID);
 
-    public static final RegistryObject<RecipeSerializer<CokingOvenRecipe>> GEM_POLISHING_SERIALIZER =
+    public static final RegistryObject<RecipeSerializer<CokingOvenRecipe>> COKING =
             SERIALIZERS.register("coking", () -> CokingOvenRecipe.Serializer.INSTANCE);
 
     public static void register(IEventBus eventBus) {
