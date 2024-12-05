@@ -9,6 +9,8 @@
     "createconquer:potash_ore",
     "createconquer:deepslate_potash_ore",
     "createconquer:fluorite_ore",
-    "createconquer:deepslate_fluorite_ore"
+    "createconquer:deepslate_fluorite_ore",
+    "createconquer:sulfur_ore",
+    "createconquer:deepslate_sulfur_ore"
   ]
 }

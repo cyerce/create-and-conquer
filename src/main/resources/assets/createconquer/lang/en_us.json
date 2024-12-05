@@ -520,6 +520,7 @@
   "block.createconquer.borax_ore": "Borax Ore",
   "block.createconquer.potash_ore": "Potash Ore",
   "block.createconquer.fluorite_ore": "Fluorite Ore",
+  "block.createconquer.sulfur_ore": "Sulfur Ore",
 
   "block.createconquer.deepslate_alunite_ore": "Deepslate Alunite Ore",
   "block.createconquer.deepslate_corundum_ore": "Deepslate Corundum Ore",
@@ -540,6 +541,7 @@
   "block.createconquer.deepslate_uraninite_ore": "Deepslate Uraninite Ore",
   "block.createconquer.deepslate_potash_ore": "Deepslate Potash Ore",
   "block.createconquer.deepslate_fluorite_ore": "Deepslate Fluorite Ore",
+  "block.createconquer.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
 
   "block.createconquer.raw_alunite_block": "Block of Raw Alunite",
   "block.createconquer.raw_corundum_block": "Block of Raw Corundum",
@@ -761,6 +763,7 @@
 
   "item.createconquer.graphite": "Graphite",
   "item.createconquer.coke": "Coke",
+  "item.createconquer.carbon_powder": "Powdered Carbon",
   "item.createconquer.borax": "Borax",
   "item.createconquer.boron": "Boron",
   "item.createconquer.peat": "Peat",
@@ -769,6 +772,7 @@
   "item.createconquer.potash": "Potash",
   "item.createconquer.fluorite": "Fluorite",
   "item.createconquer.sulfate_crystal": "Sulfate Crystal",
+  "item.createconquer.sulfur_crystal": "Sulfur Crystal",
   "item.createconquer.sulfur": "Sulfur",
   "item.createconquer.sulfur_dioxide": "Sulfur Dioxide",
   "item.createconquer.sulfur_trioxide": "Sulfur Trioxide",

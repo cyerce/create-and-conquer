@@ -35,6 +35,7 @@ public class CCConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SPHALERITE_ORE_KEY = registerKey("sphalerite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_POTASH_ORE_KEY = registerKey("potash_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FLUORITE_ORE_KEY = registerKey("fluorite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SULFUR_ORE_KEY = registerKey("sulfur_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -94,6 +95,9 @@ public class CCConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldFluoriteOres = List.of(OreConfiguration.target(stoneReplaceable,
                         CCBlocks.FLUORITE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, CCBlocks.DEEPSLATE_FLUORITE_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldSulfurOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        CCBlocks.SULFUR_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, CCBlocks.DEEPSLATE_SULFUR_ORE.get().defaultBlockState()));
 
 
 
@@ -115,6 +119,7 @@ public class CCConfiguredFeatures {
         register(context, OVERWORLD_SPHALERITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSphaleriteOres, 9));
         register(context, OVERWORLD_POTASH_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPotashOres, 9));
         register(context, OVERWORLD_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres, 9));
+        register(context, OVERWORLD_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSulfurOres, 9));
 
     }
 

@@ -31,6 +31,7 @@ public class CCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SPHALERITE_ORE = registerKey("add_sphalerite_ore");
     public static final ResourceKey<BiomeModifier> ADD_POTASH_ORE = registerKey("add_potash_ore");
     public static final ResourceKey<BiomeModifier> ADD_FLUORITE_ORE = registerKey("add_fluorite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_SULFUR_ORE = registerKey("add_sulfur_ore");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -107,6 +108,10 @@ public class CCBiomeModifiers {
         context.register(ADD_FLUORITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(CCPlacedFeatures.FLUORITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_SULFUR_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(CCPlacedFeatures.SULFUR_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }

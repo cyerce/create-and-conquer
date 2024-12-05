@@ -352,6 +352,7 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.FLUORITE.get());
                         pOutput.accept(CCItems.POTASH.get());
                         pOutput.accept(CCItems.SULFATE_CRYSTAL.get());
+                        pOutput.accept(CCItems.SULFUR_CRYSTAL.get());
                         pOutput.accept(CCItems.SULFUR.get());
                         pOutput.accept(CCItems.SULFUR_DIOXIDE.get());
                         pOutput.accept(CCItems.SULFUR_TRIOXIDE.get());
@@ -361,6 +362,7 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.PLASTIC.get());
                         pOutput.accept(CCItems.MAGNET.get());
                         pOutput.accept(CCItems.COKE.get());
+                        pOutput.accept(CCItems.CARBON_POWDER.get());
                         pOutput.accept(CCItems.PEAT.get());
                         pOutput.accept(CCItems.LIGNITE.get());
                         pOutput.accept(CCItems.LITHIUM_DEUTERIDE.get());
@@ -516,6 +518,8 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCBlocks.DEEPSLATE_FLUORITE_ORE.get());
                         pOutput.accept(CCBlocks.POTASH_ORE.get());
                         pOutput.accept(CCBlocks.DEEPSLATE_POTASH_ORE.get());
+                        pOutput.accept(CCBlocks.SULFUR_ORE.get());
+                        pOutput.accept(CCBlocks.DEEPSLATE_SULFUR_ORE.get());
 
                         pOutput.accept(CCItems.NATURAL_GAS_BUCKET.get());
                         pOutput.accept(CCItems.RAW_NATURAL_GAS_BUCKET.get());

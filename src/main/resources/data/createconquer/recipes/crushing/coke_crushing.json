@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createconquer:coke"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:carbon_powder"
+    }
+  ],
+  "processingTime": 250
+}

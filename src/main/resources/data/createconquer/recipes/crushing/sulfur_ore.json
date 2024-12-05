@@ -2,17 +2,17 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "createconquer:magnetite_ore"
+      "item": "createconquer:sulfur_ore"
     }
   ],
   "processingTime": 350,
   "results": [
     {
-      "item": "createconquer:crushed_raw_magnetite"
+      "item": "createconquer:sulfur_crystal"
     },
     {
       "chance": 0.25,
-      "item": "createconquer:crushed_raw_magnetite"
+      "item": "createconquer:sulfur_crystal"
     },
     {
       "chance": 0.75,

@@ -18,6 +18,7 @@
     "createconquer:deepslate_sphalerite_ore",
     "createconquer:deepslate_potash_ore",
     "createconquer:deepslate_fluorite_ore",
-    "createconquer:deepslate_galena_ore"
+    "createconquer:deepslate_galena_ore",
+    "createconquer:deepslate_sulfur_ore"
   ]
 }

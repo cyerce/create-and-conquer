@@ -34,6 +34,7 @@ public class CCPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SPHALERITE_ORE_PLACED_KEY = registerKey("sphalerite_ore_placed");
     public static final ResourceKey<PlacedFeature> POTASH_ORE_PLACED_KEY = registerKey("potash_ore_placed");
     public static final ResourceKey<PlacedFeature> FLUORITE_ORE_PLACED_KEY = registerKey("fluorite_ore_placed");
+    public static final ResourceKey<PlacedFeature> SULFUR_ORE_PLACED_KEY = registerKey("sulfur_ore_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -90,6 +91,9 @@ public class CCPlacedFeatures {
                 CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, FLUORITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_FLUORITE_ORE_KEY),
+                CCOrePlacement.commonOrePlacement(4,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, SULFUR_ORE_PLACED_KEY, configuredFeatures.getOrThrow(CCConfiguredFeatures.OVERWORLD_SULFUR_ORE_KEY),
                 CCOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }

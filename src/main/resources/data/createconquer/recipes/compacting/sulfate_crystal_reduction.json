@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createconquer:sulfate_crystal"
+    },
+    {
+      "item": "createconquer:carbon_powder"
+    }
+  ],
+  "results": [
+    {
+      "item": "createconquer:carbon_powder"
+    },
+    {
+      "fluid": "createconquer:hydrogen_sulfide_fluid",
+      "amount": 25
+    }
+  ]
+}

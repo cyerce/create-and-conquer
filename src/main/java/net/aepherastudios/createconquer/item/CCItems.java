@@ -395,8 +395,10 @@ public class CCItems {
     public static final RegistryObject<Item> URANIUM_SPHERE_CAST = ITEMS.register("uranium_sphere_cast", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> COKE = ITEMS.register("coke", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARBON_POWDER = ITEMS.register("carbon_powder", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BORAX = ITEMS.register("borax", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BORON = ITEMS.register("boron", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SULFUR_CRYSTAL = ITEMS.register("sulfur_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SULFUR = ITEMS.register("sulfur", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SULFUR_DIOXIDE = ITEMS.register("sulfur_dioxide", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SULFUR_TRIOXIDE = ITEMS.register("sulfur_trioxide", () -> new Item(new Item.Properties()));
