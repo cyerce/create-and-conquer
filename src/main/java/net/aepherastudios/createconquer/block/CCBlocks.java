@@ -2,6 +2,7 @@ package net.aepherastudios.createconquer.block;
 
 import net.aepherastudios.createconquer.CreateConquer;
 import net.aepherastudios.createconquer.block.custom.ArcFurnaceBlock;
+import net.aepherastudios.createconquer.block.custom.CokingOvenBlock;
 import net.aepherastudios.createconquer.block.custom.NuclearReactorBlock;
 import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.aepherastudios.createconquer.item.CCItems;
@@ -594,8 +595,7 @@ public class CCBlocks {
     public static final RegistryObject<Block> NAPALM_BOMB = registerBlock("napalm_bomb",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> COKING_OVEN = registerBlock("coking_oven",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> RTG_GENERATOR = registerBlock("rtg_generator",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> BREEDER_REACTOR = registerBlock("breeder_reactor",
@@ -610,6 +610,8 @@ public class CCBlocks {
             () -> new ArcFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> NUCLEAR_REACTOR = registerBlock("nuclear_reactor",
             () -> new NuclearReactorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final RegistryObject<Block> COKING_OVEN = registerBlock("coking_oven",
+            () -> new CokingOvenBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -9,6 +9,7 @@ import net.aepherastudios.createconquer.item.CCCreativeModeTabs;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.aepherastudios.createconquer.screen.ArcFurnaceScreen;
 import net.aepherastudios.createconquer.screen.CCMenuTypes;
+import net.aepherastudios.createconquer.screen.CokingOvenScreen;
 import net.aepherastudios.createconquer.screen.NuclearReactorScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -272,6 +273,7 @@ public class CreateConquer
 
             MenuScreens.register(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), NuclearReactorScreen::new);
             MenuScreens.register(CCMenuTypes.ARC_FURNACE_MENU.get(), ArcFurnaceScreen::new);
+            MenuScreens.register(CCMenuTypes.COKING_OVEN_MENU.get(), CokingOvenScreen::new);
         }
     }
 }

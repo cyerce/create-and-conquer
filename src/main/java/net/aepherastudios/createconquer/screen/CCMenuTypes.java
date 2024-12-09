@@ -20,6 +20,9 @@ public class CCMenuTypes {
     public static final RegistryObject<MenuType<ArcFurnaceMenu>> ARC_FURNACE_MENU =
             registerMenuType(ArcFurnaceMenu::new, "arc_furnace_menu");
 
+    public static final RegistryObject<MenuType<CokingOvenMenu>> COKING_OVEN_MENU =
+            registerMenuType(CokingOvenMenu::new, "coking_oven_menu");
+
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name){
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }

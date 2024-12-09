@@ -1,13 +1,219 @@
 package net.aepherastudios.createconquer.block.entity;
 
-import net.aepherastudios.createconquer.recipe.CCRecipes;
+import com.simibubi.create.AllTags;
+import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
+import com.simibubi.create.content.processing.recipe.HeatCondition;
+import com.simibubi.create.foundation.utility.BlockHelper;
+import net.aepherastudios.createconquer.item.CCItems;
+import net.aepherastudios.createconquer.screen.CokingOvenMenu;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
+import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.Containers;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-public class CokingOvenBlockEntity extends FurnaceBlockEntity {
+public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(2){
+        @Override
+        protected void onContentsChanged(int slot){
+            setChanged();
+        }
+
+        @Override
+        public boolean isItemValid(int slot, ItemStack stack){
+            return switch(slot) {
+                case 0 -> stack.getItem() == Items.COAL || stack.getItem() == Items.OAK_LOG ||
+                        stack.getItem() == Items.ACACIA_LOG || stack.getItem() == Items.BIRCH_LOG ||
+                        stack.getItem() == Items.CHERRY_LOG || stack.getItem() == Items.JUNGLE_LOG ||
+                        stack.getItem() == Items.DARK_OAK_LOG || stack.getItem() == Items.MANGROVE_LOG ||
+                        stack.getItem() == Items.SPRUCE_LOG || stack.getItem() == Items.STRIPPED_ACACIA_LOG ||
+                        stack.getItem() == Items.STRIPPED_OAK_LOG || stack.getItem() == Items.STRIPPED_BIRCH_LOG ||
+                        stack.getItem() == Items.STRIPPED_CHERRY_LOG || stack.getItem() == Items.STRIPPED_JUNGLE_LOG ||
+                        stack.getItem() == Items.STRIPPED_DARK_OAK_LOG || stack.getItem() == Items.STRIPPED_MANGROVE_LOG ||
+                        stack.getItem() == Items.STRIPPED_SPRUCE_LOG;
+                default -> super.isItemValid(slot, stack);
+            };
+        }
+    };
+
+    public static final int SLOT1 = 0;
+    public static final int SLOT2 = 1;
+
+    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+
+    protected ContainerData data;
+    private int heatedProgress;
+    private int heatedMaxProgress = 200;
+    private int superHeatedProgress;
+    private int superHeatedMaxProgress = 66;
+
 
     public CokingOvenBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(pPos, pBlockState);
+        super(CCBlockEntities.COKING_OVEN_BE.get(), pPos, pBlockState);
+        this.data = new ContainerData() {
+            @Override
+            public int get(int i) {
+                return switch (i){
+                    case 0 -> CokingOvenBlockEntity.this.heatedProgress;
+                    case 1 -> CokingOvenBlockEntity.this.heatedMaxProgress;
+                    case 2 -> CokingOvenBlockEntity.this.superHeatedProgress;
+                    case 3 -> CokingOvenBlockEntity.this.superHeatedMaxProgress;
+                    default -> 0;
+                };
+            }
+
+            @Override
+            public void set(int i, int i1) {
+                switch (i){
+                    case 0 -> CokingOvenBlockEntity.this.heatedProgress = i1;
+                    case 1 -> CokingOvenBlockEntity.this.heatedMaxProgress = i1;
+                    case 2 -> CokingOvenBlockEntity.this.superHeatedProgress = i1;
+                    case 3 -> CokingOvenBlockEntity.this.superHeatedMaxProgress = i1;
+                }
+            }
+
+            @Override
+            public int getCount() {
+                return 2;
+            }
+        };
     }
+
+    public void drops() {
+        SimpleContainer invintory = new SimpleContainer(itemHandler.getSlots());
+        for(int i = 0; i < itemHandler.getSlots(); i++){
+            invintory.setItem(i, itemHandler.getStackInSlot(i));
+        }
+
+        Containers.dropContents(this.level, this.worldPosition, invintory);
+
+    }
+
+    @Override
+    public Component getDisplayName() {
+        return Component.literal("Coking Oven");
+    }
+
+    @Override
+    public @Nullable AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
+        return new CokingOvenMenu(pContainerId, pPlayerInventory, this, this.data);
+    }
+
+    @Override
+    public @NotNull <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
+        if(cap == ForgeCapabilities.ITEM_HANDLER){
+            return lazyItemHandler.cast();
+        }
+
+        return super.getCapability(cap, side);
+    }
+
+    @Override
+    public void onLoad() {
+        super.onLoad();
+        lazyItemHandler = LazyOptional.of(() -> itemHandler);
+    }
+
+    @Override
+    public void invalidateCaps() {
+        super.invalidateCaps();
+        lazyItemHandler.invalidate();
+    }
+
+    @Override
+    protected void saveAdditional(CompoundTag pTag) {
+        pTag.put("inventory", itemHandler.serializeNBT());
+
+        super.saveAdditional(pTag);
+    }
+
+    @Override
+    public void load(CompoundTag pTag) {
+        super.load(pTag);
+
+        itemHandler.deserializeNBT(pTag.getCompound("inventory"));
+    }
+
+    public void tick(Level level, BlockPos pPos, BlockState pState){
+        if(itemHandler.isItemValid(0, new ItemStack(itemHandler.getStackInSlot(0).getItem()))){
+            BlazeBurnerBlock.HeatLevel heat = CokingOvenBlockEntity.getHeatLevelOf(getLevel().getBlockState(getBlockPos().below(1)));
+            if(heat.isAtLeast(HeatCondition.HEATED.visualizeAsBlazeBurner())){
+                if(heatedProgress < heatedMaxProgress){
+                    heatedProgress++;
+                }else if(heatedProgress == heatedMaxProgress){
+                    if(itemHandler.getStackInSlot(0).getItem() == Items.OAK_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.ACACIA_LOG || itemHandler.getStackInSlot(0).getItem() == Items.BIRCH_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.JUNGLE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.MANGROVE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.SPRUCE_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_ACACIA_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_BIRCH_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_JUNGLE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_MANGROVE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_SPRUCE_LOG){
+                        itemHandler.setStackInSlot(1, new ItemStack(Items.CHARCOAL,
+                                itemHandler.getStackInSlot(1).getCount() + 1));
+                    }else if(itemHandler.getStackInSlot(0).getItem() == Items.COAL){
+                        itemHandler.setStackInSlot(1, new ItemStack(CCItems.COKE.get(),
+                                itemHandler.getStackInSlot(1).getCount() + 1));
+                    }
+
+                    itemHandler.extractItem(0, 1, false);
+                    heatedProgress = 0;
+                }
+            }
+            if (heat.isAtLeast(HeatCondition.SUPERHEATED.visualizeAsBlazeBurner())){
+                if(superHeatedProgress < superHeatedMaxProgress){
+                    superHeatedProgress++;
+                }else if(superHeatedProgress == superHeatedMaxProgress){
+                    if(itemHandler.getStackInSlot(0).getItem() == Items.OAK_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.ACACIA_LOG || itemHandler.getStackInSlot(0).getItem() == Items.BIRCH_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.JUNGLE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.MANGROVE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.SPRUCE_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_ACACIA_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_BIRCH_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_JUNGLE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_MANGROVE_LOG ||
+                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_SPRUCE_LOG){
+                        itemHandler.setStackInSlot(1, new ItemStack(Items.CHARCOAL,
+                                itemHandler.getStackInSlot(1).getCount() + 1));
+                    }else if(itemHandler.getStackInSlot(0).getItem() == Items.COAL){
+                        itemHandler.setStackInSlot(1, new ItemStack(CCItems.COKE.get(),
+                                itemHandler.getStackInSlot(1).getCount() + 1));
+                    }
+                    itemHandler.extractItem(0, 1, false);
+
+                    superHeatedProgress = 0;
+                }
+            }
+        }
+
+    }
+
+    public static BlazeBurnerBlock.HeatLevel getHeatLevelOf(BlockState state) {
+        if (state.hasProperty(BlazeBurnerBlock.HEAT_LEVEL))
+            return state.getValue(BlazeBurnerBlock.HEAT_LEVEL);
+        return AllTags.AllBlockTags.PASSIVE_BOILER_HEATERS.matches(state) && BlockHelper.isNotUnheated(state)
+                ? BlazeBurnerBlock.HeatLevel.SMOULDERING
+                : BlazeBurnerBlock.HeatLevel.NONE;
+    }
+
+
 }
