@@ -3,7 +3,7 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "fluid": "createconquer:ethylene_fluid",
+      "fluid": "createconquer:naptha_fluid",
       "amount": 500
     },
     {
