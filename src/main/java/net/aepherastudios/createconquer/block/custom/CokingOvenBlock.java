@@ -61,8 +61,8 @@ public class CokingOvenBlock extends BaseEntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof ArcFurnaceBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)pPlayer), (CokingOvenBlockEntity)entity, pPos);
+            if(entity instanceof CokingOvenBlockEntity) {
+                NetworkHooks.openScreen(((ServerPlayer)pPlayer), ((CokingOvenBlockEntity)entity), pPos);
             } else {
                 throw new IllegalStateException("WHO IN THE WORLD TOOK OUR CONTAINER PROVIDER!!");
             }
@@ -72,9 +72,9 @@ public class CokingOvenBlock extends BaseEntityBlock {
     }
 
     @Override
-    public @org.jetbrains.annotations.Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
+    public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
 
-        return new ArcFurnaceBlockEntity(blockPos, blockState);
+        return new CokingOvenBlockEntity(blockPos, blockState);
     }
 
     @javax.annotation.Nullable

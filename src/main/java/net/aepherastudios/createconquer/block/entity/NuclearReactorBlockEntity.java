@@ -236,28 +236,33 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
                     if (itemHandler.getStackInSlot(7).getDamageValue() == itemHandler.getStackInSlot(7).getMaxDamage()) {
                         itemHandler.extractItem(7, 1, false);
 
-                        itemHandler.insertItem(7, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                        itemHandler.setStackInSlot(7, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                itemHandler.getStackInSlot(1).getCount() + 1));
                     }
                     if (itemHandler.getStackInSlot(8).getDamageValue() == itemHandler.getStackInSlot(8).getMaxDamage()) {
                         itemHandler.extractItem(8, 1, false);
 
-                        itemHandler.insertItem(8, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                        itemHandler.setStackInSlot(8, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                itemHandler.getStackInSlot(1).getCount() + 1));
                     }
                     if (itemHandler.getStackInSlot(9).getDamageValue() == itemHandler.getStackInSlot(9).getMaxDamage()) {
                         if (itemHandler.getStackInSlot(9).getDamageValue() == itemHandler.getStackInSlot(9).getMaxDamage()) {
                             itemHandler.extractItem(9, 1, false);
 
-                            itemHandler.insertItem(9, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                            itemHandler.setStackInSlot(9, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                    itemHandler.getStackInSlot(1).getCount() + 1));
                         }
                         if (itemHandler.getStackInSlot(10).getDamageValue() == itemHandler.getStackInSlot(10).getMaxDamage()) {
                             itemHandler.extractItem(10, 1, false);
 
-                            itemHandler.insertItem(10, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                            itemHandler.setStackInSlot(10, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                    itemHandler.getStackInSlot(1).getCount() + 1));
                         }
                         if (itemHandler.getStackInSlot(11).getDamageValue() == itemHandler.getStackInSlot(11).getMaxDamage()) {
                             itemHandler.extractItem(11, 1, false);
 
-                            itemHandler.insertItem(11, new ItemStack(CCItems.SPENT_FUEL_ROD.get(), 1), false);
+                            itemHandler.setStackInSlot(11, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                    itemHandler.getStackInSlot(1).getCount() + 1));
                         }
 
                         itemHandler.getStackInSlot(7).setDamageValue(itemHandler.getStackInSlot(7).getDamageValue() + 1);
