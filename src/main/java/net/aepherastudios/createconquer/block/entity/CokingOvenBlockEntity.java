@@ -61,9 +61,8 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
 
     protected ContainerData data;
     private int heatedProgress;
-    private int heatedMaxProgress = 200;
-    private int superHeatedProgress;
-    private int superHeatedMaxProgress = 66;
+    // (mentiy werse here =3> <- does haves moosetach)
+    private int heatedMaxProgress = 195;
 
 
     public CokingOvenBlockEntity(BlockPos pPos, BlockState pBlockState) {
@@ -74,8 +73,6 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                 return switch (i){
                     case 0 -> CokingOvenBlockEntity.this.heatedProgress;
                     case 1 -> CokingOvenBlockEntity.this.heatedMaxProgress;
-                    case 2 -> CokingOvenBlockEntity.this.superHeatedProgress;
-                    case 3 -> CokingOvenBlockEntity.this.superHeatedMaxProgress;
                     default -> 0;
                 };
             }
@@ -85,8 +82,6 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                 switch (i){
                     case 0 -> CokingOvenBlockEntity.this.heatedProgress = i1;
                     case 1 -> CokingOvenBlockEntity.this.heatedMaxProgress = i1;
-                    case 2 -> CokingOvenBlockEntity.this.superHeatedProgress = i1;
-                    case 3 -> CokingOvenBlockEntity.this.superHeatedMaxProgress = i1;
                 }
             }
 
@@ -177,30 +172,6 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
 
                     itemHandler.extractItem(0, 1, false);
                     heatedProgress = 0;
-                }
-            }
-            if (heat.isAtLeast(HeatCondition.SUPERHEATED.visualizeAsBlazeBurner())){
-                if(superHeatedProgress < superHeatedMaxProgress){
-                    superHeatedProgress++;
-                }else if(superHeatedProgress == superHeatedMaxProgress){
-                    if(itemHandler.getStackInSlot(0).getItem() == Items.OAK_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.ACACIA_LOG || itemHandler.getStackInSlot(0).getItem() == Items.BIRCH_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.JUNGLE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.MANGROVE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.SPRUCE_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_ACACIA_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_BIRCH_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_JUNGLE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_MANGROVE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_SPRUCE_LOG){
-                        itemHandler.setStackInSlot(1, new ItemStack(Items.CHARCOAL,
-                                itemHandler.getStackInSlot(1).getCount() + 1));
-                    }else if(itemHandler.getStackInSlot(0).getItem() == Items.COAL){
-                        itemHandler.setStackInSlot(1, new ItemStack(CCItems.COKE.get(),
-                                itemHandler.getStackInSlot(1).getCount() + 1));
-                    }
-                    itemHandler.extractItem(0, 1, false);
-
-                    superHeatedProgress = 0;
                 }
             }
         }

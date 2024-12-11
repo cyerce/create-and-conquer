@@ -34,11 +34,12 @@ public class ArcFurnaceMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 44, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 62, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 80, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 98, 17));
-            this.addSlot(new SlotItemHandler(iItemHandler, 4, 116, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 8, 27));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 26, 27));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 44, 27));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 8, 44));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4, 26, 44));
+            this.addSlot(new SlotItemHandler(iItemHandler, 5, 44, 44));
         });
 
         addDataSlots(data);
