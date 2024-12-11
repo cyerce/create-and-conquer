@@ -20,9 +20,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.capability.IFluidHandler;
+import net.minecraftforge.fluids.capability.templates.FluidTank;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
@@ -44,18 +48,40 @@ public class ArcFurnaceBlockEntity extends BlockEntity implements MenuProvider {
         }
     };
 
+
     public static final int SLOT1 = 0;
     public static final int SLOT2 = 1;
     public static final int SLOT3 = 2;
     public static final int SLOT4 = 3;
     public static final int SLOT5 = 4;
     public static final int SLOT6 = 6;
+    public static final int FLUID_OUT = 7;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
+    private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
 
     protected ContainerData data;
     private int progress;
     private int maxProgress = 78;
+
+    private final FluidTank FLUID_TANK = createFluidTank();
+
+    private FluidTank createFluidTank() {
+        return new FluidTank(10000) {
+            @Override
+            protected void onContentsChanged() {
+                setChanged();
+                if (!level.isClientSide) {
+                    level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+                }
+            }
+
+            @Override
+            public boolean isFluidValid(FluidStack stack) {
+                return stack.getFluid() == Fluids.WATER;
+            }
+        };
+    }
 
 
     public ArcFurnaceBlockEntity(BlockPos pPos, BlockState pBlockState) {
@@ -118,6 +144,7 @@ public class ArcFurnaceBlockEntity extends BlockEntity implements MenuProvider {
     public void onLoad() {
         super.onLoad();
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyFluidHandler = LazyOptional.of(() -> FLUID_TANK);
     }
 
     @Override

@@ -34,7 +34,7 @@ public class CokingOvenMenu extends AbstractContainerMenu {
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
             this.addSlot(new SlotItemHandler(iItemHandler, 0, 56, 35));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 62, 17));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 116, 35));
         });
 
         addDataSlots(data);
