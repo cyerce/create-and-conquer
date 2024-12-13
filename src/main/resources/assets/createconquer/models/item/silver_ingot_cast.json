@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "createconquer:item/silver_ingot_cast"
+    "layer0": "createconquer:item/ingot_cast",
+    "layer1": "createconquer:item/silver_ingot"
   }
 }
