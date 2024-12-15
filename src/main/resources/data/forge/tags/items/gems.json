@@ -1,10 +1,19 @@
 {
   "values": [
     "createconquer:ruby",
+    "createconquer:polished_ruby",
     "createconquer:sapphire",
+    "createconquer:polished_sapphire",
     "createconquer:citrine",
+    "createconquer:polished_citrine",
     "createconquer:smoky_quartz",
+    "createconquer:polished_smoky_quartz",
+    "createconquer:polished_quartz",
+    "createconquer:polished_lapis",
+    "createconquer:polished_diamond",
+    "createconquer:polished_emerald",
     "createconquer:borax",
-    "createconquer:sulfur_crystal"
+    "createconquer:sulfur_crystal",
+    "createconquer:fluorite"
   ]
 }

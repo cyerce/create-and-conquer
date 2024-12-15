@@ -866,6 +866,10 @@
   "block.createconquer.small_polished_smoky_quartz_tiles": "Small Polished Smoky Quartz Tiles",
   "block.createconquer.polished_citrine_tiles": "Polished Citrine Tiles",
   "block.createconquer.small_polished_citrine_tiles": "Small Polished Citrine Tiles",
+  "block.createconquer.fluorite_tiles": "Fluorite Tiles",
+  "block.createconquer.small_fluorite_tiles": "Small Fluorite Tiles",
+  "block.createconquer.citrine_block": "Citrine Block",
+  "block.createconquer.smoky_quartz_block": "Smoky Quartz Block",
 
   "item.createconquer.ingot_cast": "Brass Ingot Cast",
   "item.createconquer.plate_cast": "Brass Sheet Cast",

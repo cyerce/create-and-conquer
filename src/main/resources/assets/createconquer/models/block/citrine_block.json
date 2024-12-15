@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "createconquer:block/citrine_block_top",
+    "side": "createconquer:block/citrine_block_side"
+  }
+}

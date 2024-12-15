@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "tag": "forge:gems/smoky_quartz"
+  },
+  "result": "createconquer:smoky_quartz_block"
+}

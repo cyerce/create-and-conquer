@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "createconquer:block/smoky_quartz_block_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "createconquer:block/smoky_quartz_block"
+    },
+    "axis=z": {
+      "model": "createconquer:block/smoky_quartz_block_horizontal",
+      "x": 90
+    }
+  }
+}

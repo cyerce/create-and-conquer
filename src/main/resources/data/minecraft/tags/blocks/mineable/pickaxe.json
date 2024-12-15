@@ -109,6 +109,10 @@
     "createconquer:polished_smoky_quartz_tiles",
     "createconquer:small_polished_smoky_quartz_tiles",
     "createconquer:polished_citrine_tiles",
-    "createconquer:small_polished_citrine_tiles"
+    "createconquer:small_polished_citrine_tiles",
+    "createconquer:fluorite_tiles",
+    "createconquer:small_fluorite_tiles",
+    "createconquer:citrine_block",
+    "createconquer:smoky_quartz_block"
   ]
 }

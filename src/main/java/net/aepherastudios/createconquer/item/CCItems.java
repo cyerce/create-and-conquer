@@ -488,7 +488,7 @@ public class CCItems {
     public static final RegistryObject<Item> TRANSISTOR = ITEMS.register("transistor", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MOTOR = ITEMS.register("motor", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GENERATOR = ITEMS.register("generator", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> COMPUTING_MECHANISM = ITEMS.register("computing_mechanism", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COMPUTING_MECHANISM = ITEMS.register("computing_mechanism", () -> new Item(new Item.Properties().food(CCFoods.COMPUTING_MECHANISM)));
     public static final RegistryObject<Item> GYRO = ITEMS.register("gyro", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GYROSCOPE = ITEMS.register("gyroscope", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ROCKET_CONTROL_MECHANISM = ITEMS.register("rocket_control_mechanism", () -> new Item(new Item.Properties()));

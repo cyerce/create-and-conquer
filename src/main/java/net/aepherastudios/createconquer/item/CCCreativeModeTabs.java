@@ -660,6 +660,10 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCBlocks.SMALL_POLISHED_CITRINE_TILES.get());
                         pOutput.accept(CCBlocks.REDSTONE_CRYSTAL_TILES.get());
                         pOutput.accept(CCBlocks.SMALL_REDSTONE_CRYSTAL_TILES.get());
+                        pOutput.accept(CCBlocks.FLUORITE_TILES.get());
+                        pOutput.accept(CCBlocks.SMALL_FLUORITE_TILES.get());
+                        pOutput.accept(CCBlocks.CITRINE_BLOCK.get());
+                        pOutput.accept(CCBlocks.SMOKY_QUARTZ_BLOCK.get());
 
                     })
                     .build());

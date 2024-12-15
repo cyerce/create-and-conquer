@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "createconquer:small_fluorite_tiles"
+    }
+  ],
+  "result": {
+    "item": "createconquer:fluorite_tiles"
+  }
+}
