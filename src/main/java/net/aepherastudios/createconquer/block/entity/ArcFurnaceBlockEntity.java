@@ -42,7 +42,8 @@ public class ArcFurnaceBlockEntity extends BlockEntity implements MenuProvider {
         @Override
         public boolean isItemValid(int slot, ItemStack stack){
             return switch(slot) {
-                case 0 -> stack.getItem() == CCItems.LEAD_POWDER.get();
+                case 0,1,2,3,4,5 -> stack.getItem() == CCItems.LEAD_POWDER.get()
+                ;
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -54,8 +55,8 @@ public class ArcFurnaceBlockEntity extends BlockEntity implements MenuProvider {
     public static final int SLOT3 = 2;
     public static final int SLOT4 = 3;
     public static final int SLOT5 = 4;
-    public static final int SLOT6 = 6;
-    public static final int FLUID_OUT = 7;
+    public static final int SLOT6 = 5;
+    public static final int FLUID_OUT = 6;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
@@ -78,7 +79,7 @@ public class ArcFurnaceBlockEntity extends BlockEntity implements MenuProvider {
 
             @Override
             public boolean isFluidValid(FluidStack stack) {
-                return stack.getFluid() == Fluids.WATER;
+                return isFluidValid(stack);
             }
         };
     }
@@ -151,6 +152,7 @@ public class ArcFurnaceBlockEntity extends BlockEntity implements MenuProvider {
     public void invalidateCaps() {
         super.invalidateCaps();
         lazyItemHandler.invalidate();
+        lazyFluidHandler.invalidate();
     }
 
     @Override

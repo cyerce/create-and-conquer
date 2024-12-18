@@ -49,6 +49,7 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                         stack.getItem() == Items.STRIPPED_CHERRY_LOG || stack.getItem() == Items.STRIPPED_JUNGLE_LOG ||
                         stack.getItem() == Items.STRIPPED_DARK_OAK_LOG || stack.getItem() == Items.STRIPPED_MANGROVE_LOG ||
                         stack.getItem() == Items.STRIPPED_SPRUCE_LOG;
+                case 1 -> stack.getItem() == CCItems.COKE.get()  || stack.getItem() == Items.CHARCOAL;
                 default -> super.isItemValid(slot, stack);
             };
         }
@@ -61,7 +62,7 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
 
     protected ContainerData data;
     private int heatedProgress;
-    // (mentiy werse here =3> <- does haves moosetach)
+    // (mentiy werse here =}> <- does haves moosetach)
     private int heatedMaxProgress = 195;
 
 
@@ -148,29 +149,29 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos pPos, BlockState pState){
-        if(itemHandler.isItemValid(0, new ItemStack(itemHandler.getStackInSlot(0).getItem()))){
+        if(itemHandler.isItemValid(SLOT1, new ItemStack(itemHandler.getStackInSlot(SLOT1).getItem()))){
             BlazeBurnerBlock.HeatLevel heat = CokingOvenBlockEntity.getHeatLevelOf(getLevel().getBlockState(getBlockPos().below(1)));
             if(heat.isAtLeast(HeatCondition.HEATED.visualizeAsBlazeBurner())){
                 if(heatedProgress < heatedMaxProgress){
                     heatedProgress++;
                 }else if(heatedProgress == heatedMaxProgress){
-                    if(itemHandler.getStackInSlot(0).getItem() == Items.OAK_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.ACACIA_LOG || itemHandler.getStackInSlot(0).getItem() == Items.BIRCH_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.JUNGLE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.MANGROVE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.SPRUCE_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_ACACIA_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_BIRCH_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_CHERRY_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_JUNGLE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_DARK_OAK_LOG || itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_MANGROVE_LOG ||
-                            itemHandler.getStackInSlot(0).getItem() == Items.STRIPPED_SPRUCE_LOG){
-                        itemHandler.setStackInSlot(1, new ItemStack(Items.CHARCOAL,
-                                itemHandler.getStackInSlot(1).getCount() + 1));
-                    }else if(itemHandler.getStackInSlot(0).getItem() == Items.COAL){
-                        itemHandler.setStackInSlot(1, new ItemStack(CCItems.COKE.get(),
-                                itemHandler.getStackInSlot(1).getCount() + 1));
+                    if(itemHandler.getStackInSlot(SLOT1).getItem() == Items.OAK_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.ACACIA_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.BIRCH_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.CHERRY_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.JUNGLE_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.DARK_OAK_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.MANGROVE_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.SPRUCE_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_ACACIA_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_OAK_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_BIRCH_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_CHERRY_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_JUNGLE_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_DARK_OAK_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_MANGROVE_LOG ||
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_SPRUCE_LOG){
+                        itemHandler.setStackInSlot(SLOT2, new ItemStack(Items.CHARCOAL,
+                                itemHandler.getStackInSlot(SLOT2).getCount() + 1));
+                    }else if(itemHandler.getStackInSlot(SLOT1).getItem() == Items.COAL){
+                        itemHandler.setStackInSlot(SLOT2, new ItemStack(CCItems.COKE.get(),
+                                itemHandler.getStackInSlot(SLOT2).getCount() + 1));
                     }
 
-                    itemHandler.extractItem(0, 1, false);
+                    itemHandler.extractItem(SLOT1, 1, false);
                     heatedProgress = 0;
                 }
             }

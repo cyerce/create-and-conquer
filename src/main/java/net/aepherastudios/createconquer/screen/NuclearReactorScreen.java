@@ -2,7 +2,6 @@ package net.aepherastudios.createconquer.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.aepherastudios.createconquer.CreateConquer;
-import net.aepherastudios.createconquer.block.entity.NuclearReactorBlockEntity;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
@@ -21,8 +20,6 @@ public class NuclearReactorScreen extends AbstractContainerScreen<NuclearReactor
     @Override
     protected void init() {
         super.init();
-        this.inventoryLabelY = 10000;
-        this.titleLabelY = 10000;
     }
 
     @Override
