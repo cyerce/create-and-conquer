@@ -1,5 +1,6 @@
 package net.aepherastudios.createconquer.block.entity;
 
+import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.aepherastudios.createconquer.screen.NuclearReactorMenu;
 import net.minecraft.core.BlockPos;
@@ -41,7 +42,6 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
             return switch(slot){
                 case 0, 1, 3, 4 -> stack.getItem() == CCItems.BORON_ROD.get();
                 case 2 -> stack.getItem() == CCItems.POLONIUM_ROD.get();
-                case 5, 6 -> stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
                 case 7, 8, 9, 10, 11 -> stack.getItem() == CCItems.FUEL_ROD.get();
                 default -> super.isItemValid(slot, stack);
             };
@@ -87,8 +87,12 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
             }
 
             @Override
-            public boolean isFluidValid(FluidStack stack) {
-                return stack.getFluid() == Fluids.WATER;
+            public boolean isFluidValid(int slot, FluidStack stack) {
+                return switch (slot){
+                  case 5 -> stack.getFluid() == Fluids.WATER || stack.getFluid() == CCFluids.SOURCE_IRRADIATED_WATER.get();
+                  case 6 -> stack.getFluid() == CCFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER.get();
+                    default -> super.isFluidValid(slot, stack);
+                };
             }
         };
 
