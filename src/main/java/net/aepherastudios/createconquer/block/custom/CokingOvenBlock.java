@@ -1,6 +1,5 @@
 package net.aepherastudios.createconquer.block.custom;
 
-import com.google.j2objc.annotations.Property;
 import net.aepherastudios.createconquer.block.entity.ArcFurnaceBlockEntity;
 import net.aepherastudios.createconquer.block.entity.CCBlockEntities;
 import net.aepherastudios.createconquer.block.entity.CokingOvenBlockEntity;
@@ -14,17 +13,18 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityTicker;
-import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -33,12 +33,35 @@ import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 public class CokingOvenBlock extends BaseEntityBlock {
+    public static final DirectionProperty FACING;
+    public static final BooleanProperty LIT;
 
     public static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
 
     public CokingOvenBlock(Properties pProperties) {
-
         super(pProperties);
+        this.registerDefaultState((BlockState)((BlockState)((BlockState)this.stateDefinition.any()).setValue(FACING, Direction.NORTH)).setValue(LIT, false));
+    }
+
+    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+        return (BlockState)this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection().getOpposite());
+    }
+
+    public BlockState rotate(BlockState pState, Rotation pRotation) {
+        return (BlockState)pState.setValue(FACING, pRotation.rotate((Direction)pState.getValue(FACING)));
+    }
+
+    public BlockState mirror(BlockState pState, Mirror pMirror) {
+        return pState.rotate(pMirror.getRotation((Direction)pState.getValue(FACING)));
+    }
+
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        pBuilder.add(new Property[]{FACING, LIT});
+    }
+
+    static {
+        FACING = HorizontalDirectionalBlock.FACING;
+        LIT = BlockStateProperties.LIT;
     }
 
     @Override
@@ -92,6 +115,27 @@ public class CokingOvenBlock extends BaseEntityBlock {
         }
 
         return createTickerHelper(pBlockEntityType, CCBlockEntities.COKING_OVEN_BE.get(),
-                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
+                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1, pBlockEntity));
+    }
+
+    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
+        if ((Boolean)pState.getValue(LIT)) {
+            double $$4 = (double)pPos.getX() + 0.5;
+            double $$5 = (double)pPos.getY();
+            double $$6 = (double)pPos.getZ() + 0.5;
+            if (pRandom.nextDouble() < 0.1) {
+                pLevel.playLocalSound($$4, $$5, $$6, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1.0F, 1.0F, false);
+            }
+
+            Direction $$7 = (Direction)pState.getValue(FACING);
+            Direction.Axis $$8 = $$7.getAxis();
+            double $$9 = 0.52;
+            double $$10 = pRandom.nextDouble() * 0.6 - 0.3;
+            double $$11 = $$8 == Direction.Axis.X ? (double)$$7.getStepX() * 0.52 : $$10;
+            double $$12 = pRandom.nextDouble() * 6.0 / 16.0;
+            double $$13 = $$8 == Direction.Axis.Z ? (double)$$7.getStepZ() * 0.52 : $$10;
+            pLevel.addParticle(ParticleTypes.SMOKE, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
+            pLevel.addParticle(ParticleTypes.FLAME, $$4 + $$11, $$5 + $$12, $$6 + $$13, 0.0, 0.0, 0.0);
+        }
     }
 }

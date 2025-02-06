@@ -348,7 +348,7 @@ public class CCItems {
     public static final RegistryObject<Item> CASSITERITE_BLEND = ITEMS.register("cassiterite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SPHALERITE_BLEND = ITEMS.register("sphalerite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> KIMBERLITE_BLEND = ITEMS.register("kimberlite_blend", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> EMERALD_BERYL_BLEND = ITEMS.register("sphalerite_blend", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_BERYL_BLEND = ITEMS.register("emerald_beryl_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LAZURITE_BLEND = ITEMS.register("lazurite_blend", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_NUGGET_CAST = ITEMS.register("uranium_nugget_cast", () -> new Item(new Item.Properties()));

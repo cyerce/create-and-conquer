@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "createconquer:block/coking_oven_front_on",
+    "side": "createconquer:block/coking_oven_side",
+    "top": "createconquer:block/coking_oven_top"
+  }
+}

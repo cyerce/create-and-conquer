@@ -2,6 +2,7 @@ package net.aepherastudios.createconquer.block.entity;
 
 import net.aepherastudios.createconquer.CreateConquer;
 import net.aepherastudios.createconquer.block.CCBlocks;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
