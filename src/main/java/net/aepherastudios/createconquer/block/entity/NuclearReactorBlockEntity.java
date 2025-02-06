@@ -1,5 +1,6 @@
 package net.aepherastudios.createconquer.block.entity;
 
+import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.aepherastudios.createconquer.screen.NuclearReactorMenu;
 import net.minecraft.core.BlockPos;
@@ -41,25 +42,24 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
             return switch(slot){
                 case 0, 1, 3, 4 -> stack.getItem() == CCItems.BORON_ROD.get();
                 case 2 -> stack.getItem() == CCItems.POLONIUM_ROD.get();
-                case 5, 6 -> stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).isPresent();
                 case 7, 8, 9, 10, 11 -> stack.getItem() == CCItems.FUEL_ROD.get();
                 default -> super.isItemValid(slot, stack);
             };
         }
     };
 
-    private static final int CONTROL_SLOT = 0;
+    private static final int CONTROL_SLOT_1 = 0;
     private static final int CONTROL_SLOT_2 = 1;
     private static final int POLONIUM_SLOT = 2;
     private static final int CONTROL_SLOT_3 = 3;
     private static final int CONTROL_SLOT_4 = 4;
     private static final int FLUID_IN_SLOT = 5;
     private static final int FLUID_OUT_SLOT = 6;
-    private static final int FUEL1_SLOT = 7;
-    private static final int FUEL2_SLOT = 8;
-    private static final int FUEL3_SLOT = 9;
-    private static final int FUEl4_SLOT = 10;
-    private static final int FUEl5_SLOT = 11;
+    private static final int FUEL_SLOT_1 = 7;
+    private static final int FUEL_SLOT_2 = 8;
+    private static final int FUEL_SLOT_3 = 9;
+    private static final int FUEL_SLOT_4 = 10;
+    private static final int FUEL_SLOT_5 = 11;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     private LazyOptional<IFluidHandler> lazyFluidHandler = LazyOptional.empty();
@@ -87,8 +87,12 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
             }
 
             @Override
-            public boolean isFluidValid(FluidStack stack) {
-                return stack.getFluid() == Fluids.WATER;
+            public boolean isFluidValid(int slot, FluidStack stack) {
+                return switch (slot){
+                  case 5 -> stack.getFluid() == Fluids.WATER || stack.getFluid() == CCFluids.SOURCE_IRRADIATED_WATER.get();
+                  case 6 -> stack.getFluid() == CCFluids.SOURCE_SUPERHEATED_IRRADIATED_WATER.get();
+                    default -> super.isFluidValid(slot, stack);
+                };
             }
         };
 
@@ -191,85 +195,85 @@ public class NuclearReactorBlockEntity extends BlockEntity implements MenuProvid
     public void tick(Level level, BlockPos pPos, BlockState pState) {
         fillFluid();
 
-        if (itemHandler.getStackInSlot(2).getItem() == CCItems.POLONIUM_ROD.get()) {
+        if (itemHandler.getStackInSlot(POLONIUM_SLOT).getItem() == CCItems.POLONIUM_ROD.get()) {
             if (controlDurProgress < controlDurMaxProgress) {
-                if (!itemHandler.getStackInSlot(0).isEmpty() && !itemHandler.getStackInSlot(1).isEmpty() &&
-                        !itemHandler.getStackInSlot(3).isEmpty() && !itemHandler.getStackInSlot(4).isEmpty()) {
+                if (!itemHandler.getStackInSlot(CONTROL_SLOT_1).isEmpty() && !itemHandler.getStackInSlot(CONTROL_SLOT_2).isEmpty() &&
+                        !itemHandler.getStackInSlot(CONTROL_SLOT_3).isEmpty() && !itemHandler.getStackInSlot(CONTROL_SLOT_4).isEmpty()) {
                     setIsMeltdown(false);
                     controlDurProgress++;
                 } else {
                     setIsMeltdown(true);
                 }
             } else if (controlDurProgress == controlDurMaxProgress) {
-                if (itemHandler.getStackInSlot(0).getDamageValue() >= itemHandler.getStackInSlot(0).getMaxDamage()) {
-                    itemHandler.extractItem(0, 1, false);
+                if (itemHandler.getStackInSlot(CONTROL_SLOT_1).getDamageValue() >= itemHandler.getStackInSlot(CONTROL_SLOT_1).getMaxDamage()) {
+                    itemHandler.extractItem(CONTROL_SLOT_1, 1, false);
                 }
-                if (itemHandler.getStackInSlot(1).getDamageValue() >= itemHandler.getStackInSlot(1).getMaxDamage()) {
-                    itemHandler.extractItem(1, 1, false);
+                if (itemHandler.getStackInSlot(CONTROL_SLOT_2).getDamageValue() >= itemHandler.getStackInSlot(CONTROL_SLOT_2).getMaxDamage()) {
+                    itemHandler.extractItem(CONTROL_SLOT_2, 1, false);
                 }
-                if (itemHandler.getStackInSlot(3).getDamageValue() >= itemHandler.getStackInSlot(3).getMaxDamage()) {
-                    itemHandler.extractItem(3, 1, false);
+                if (itemHandler.getStackInSlot(CONTROL_SLOT_3).getDamageValue() >= itemHandler.getStackInSlot(CONTROL_SLOT_3).getMaxDamage()) {
+                    itemHandler.extractItem(CONTROL_SLOT_3, 1, false);
                 }
-                if (itemHandler.getStackInSlot(4).getDamageValue() >= itemHandler.getStackInSlot(4).getMaxDamage()) {
-                    itemHandler.extractItem(4, 1, false);
+                if (itemHandler.getStackInSlot(CONTROL_SLOT_4).getDamageValue() >= itemHandler.getStackInSlot(CONTROL_SLOT_4).getMaxDamage()) {
+                    itemHandler.extractItem(CONTROL_SLOT_4, 1, false);
                 }
-                itemHandler.getStackInSlot(0).setDamageValue(itemHandler.getStackInSlot(0).getDamageValue() + 1);
-                itemHandler.getStackInSlot(1).setDamageValue(itemHandler.getStackInSlot(1).getDamageValue() + 1);
-                itemHandler.getStackInSlot(3).setDamageValue(itemHandler.getStackInSlot(3).getDamageValue() + 1);
-                itemHandler.getStackInSlot(4).setDamageValue(itemHandler.getStackInSlot(4).getDamageValue() + 1);
+                itemHandler.getStackInSlot(CONTROL_SLOT_1).setDamageValue(itemHandler.getStackInSlot(CONTROL_SLOT_1).getDamageValue() + 1);
+                itemHandler.getStackInSlot(CONTROL_SLOT_2).setDamageValue(itemHandler.getStackInSlot(CONTROL_SLOT_2).getDamageValue() + 1);
+                itemHandler.getStackInSlot(CONTROL_SLOT_3).setDamageValue(itemHandler.getStackInSlot(CONTROL_SLOT_3).getDamageValue() + 1);
+                itemHandler.getStackInSlot(CONTROL_SLOT_4).setDamageValue(itemHandler.getStackInSlot(CONTROL_SLOT_4).getDamageValue() + 1);
                 controlDurProgress = 0;
             }
 
             if (fuelDurProgress < fuelDurMaxProgress) {
-                if (!itemHandler.getStackInSlot(7).isEmpty() && !itemHandler.getStackInSlot(8).isEmpty() &&
-                        !itemHandler.getStackInSlot(9).isEmpty() &&
-                        !itemHandler.getStackInSlot(10).isEmpty() && !itemHandler.getStackInSlot(11).isEmpty()) {
+                if (!itemHandler.getStackInSlot(FUEL_SLOT_1).isEmpty() && !itemHandler.getStackInSlot(FUEL_SLOT_2).isEmpty() &&
+                        !itemHandler.getStackInSlot(FUEL_SLOT_3).isEmpty() &&
+                        !itemHandler.getStackInSlot(FUEL_SLOT_4).isEmpty() && !itemHandler.getStackInSlot(FUEL_SLOT_5).isEmpty()) {
                     setIsMeltdown(false);
                     fuelDurProgress++;
                 } else {
                     setIsMeltdown(true);
                 }
             } else if (fuelDurProgress == fuelDurMaxProgress) {
-                if (itemHandler.getStackInSlot(7).getItem() == CCItems.FUEL_ROD.get() && itemHandler.getStackInSlot(8).getItem() == CCItems.FUEL_ROD.get() &&
-                        itemHandler.getStackInSlot(9).getItem() == CCItems.FUEL_ROD.get() &&
-                        itemHandler.getStackInSlot(10).getItem() == CCItems.FUEL_ROD.get() && itemHandler.getStackInSlot(11).getItem() == CCItems.FUEL_ROD.get()) {
-                    if (itemHandler.getStackInSlot(7).getDamageValue() == itemHandler.getStackInSlot(7).getMaxDamage()) {
-                        itemHandler.extractItem(7, 1, false);
+                if (itemHandler.getStackInSlot(FUEL_SLOT_1).getItem() == CCItems.FUEL_ROD.get() && itemHandler.getStackInSlot(FUEL_SLOT_2).getItem() == CCItems.FUEL_ROD.get() &&
+                        itemHandler.getStackInSlot(FUEL_SLOT_3).getItem() == CCItems.FUEL_ROD.get() &&
+                        itemHandler.getStackInSlot(FUEL_SLOT_4).getItem() == CCItems.FUEL_ROD.get() && itemHandler.getStackInSlot(FUEL_SLOT_5).getItem() == CCItems.FUEL_ROD.get()) {
+                    if (itemHandler.getStackInSlot(FUEL_SLOT_1).getDamageValue() == itemHandler.getStackInSlot(FUEL_SLOT_1).getMaxDamage()) {
+                        itemHandler.extractItem(FUEL_SLOT_1, 1, false);
 
-                        itemHandler.setStackInSlot(7, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
-                                itemHandler.getStackInSlot(1).getCount() + 1));
+                        itemHandler.setStackInSlot(FUEL_SLOT_1, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                itemHandler.getStackInSlot(FUEL_SLOT_1).getCount() + 1));
                     }
-                    if (itemHandler.getStackInSlot(8).getDamageValue() == itemHandler.getStackInSlot(8).getMaxDamage()) {
-                        itemHandler.extractItem(8, 1, false);
+                    if (itemHandler.getStackInSlot(FUEL_SLOT_2).getDamageValue() == itemHandler.getStackInSlot(FUEL_SLOT_2).getMaxDamage()) {
+                        itemHandler.extractItem(FUEL_SLOT_2, 1, false);
 
-                        itemHandler.setStackInSlot(8, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
-                                itemHandler.getStackInSlot(1).getCount() + 1));
+                        itemHandler.setStackInSlot(FUEL_SLOT_2, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                itemHandler.getStackInSlot(FUEL_SLOT_2).getCount() + 1));
                     }
-                    if (itemHandler.getStackInSlot(9).getDamageValue() == itemHandler.getStackInSlot(9).getMaxDamage()) {
-                        if (itemHandler.getStackInSlot(9).getDamageValue() == itemHandler.getStackInSlot(9).getMaxDamage()) {
-                            itemHandler.extractItem(9, 1, false);
+                    if (itemHandler.getStackInSlot(FUEL_SLOT_3).getDamageValue() == itemHandler.getStackInSlot(FUEL_SLOT_3).getMaxDamage()) {
+                        if (itemHandler.getStackInSlot(FUEL_SLOT_3).getDamageValue() == itemHandler.getStackInSlot(FUEL_SLOT_3).getMaxDamage()) {
+                            itemHandler.extractItem(FUEL_SLOT_3, 1, false);
 
-                            itemHandler.setStackInSlot(9, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
-                                    itemHandler.getStackInSlot(1).getCount() + 1));
+                            itemHandler.setStackInSlot(FUEL_SLOT_3, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                    itemHandler.getStackInSlot(FUEL_SLOT_3).getCount() + 1));
                         }
-                        if (itemHandler.getStackInSlot(10).getDamageValue() == itemHandler.getStackInSlot(10).getMaxDamage()) {
-                            itemHandler.extractItem(10, 1, false);
+                        if (itemHandler.getStackInSlot(FUEL_SLOT_4).getDamageValue() == itemHandler.getStackInSlot(FUEL_SLOT_4).getMaxDamage()) {
+                            itemHandler.extractItem(FUEL_SLOT_4, 1, false);
 
-                            itemHandler.setStackInSlot(10, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
-                                    itemHandler.getStackInSlot(1).getCount() + 1));
+                            itemHandler.setStackInSlot(FUEL_SLOT_4, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                    itemHandler.getStackInSlot(FUEL_SLOT_4).getCount() + 1));
                         }
-                        if (itemHandler.getStackInSlot(11).getDamageValue() == itemHandler.getStackInSlot(11).getMaxDamage()) {
-                            itemHandler.extractItem(11, 1, false);
+                        if (itemHandler.getStackInSlot(FUEL_SLOT_5).getDamageValue() == itemHandler.getStackInSlot(FUEL_SLOT_5).getMaxDamage()) {
+                            itemHandler.extractItem(FUEL_SLOT_5, 1, false);
 
-                            itemHandler.setStackInSlot(11, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
-                                    itemHandler.getStackInSlot(1).getCount() + 1));
+                            itemHandler.setStackInSlot(FUEL_SLOT_5, new ItemStack(CCItems.SPENT_FUEL_ROD.get(),
+                                    itemHandler.getStackInSlot(FUEL_SLOT_5).getCount() + 1));
                         }
 
-                        itemHandler.getStackInSlot(7).setDamageValue(itemHandler.getStackInSlot(7).getDamageValue() + 1);
-                        itemHandler.getStackInSlot(8).setDamageValue(itemHandler.getStackInSlot(8).getDamageValue() + 1);
-                        itemHandler.getStackInSlot(9).setDamageValue(itemHandler.getStackInSlot(9).getDamageValue() + 1);
-                        itemHandler.getStackInSlot(10).setDamageValue(itemHandler.getStackInSlot(10).getDamageValue() + 1);
-                        itemHandler.getStackInSlot(11).setDamageValue(itemHandler.getStackInSlot(11).getDamageValue() + 1);
+                        itemHandler.getStackInSlot(FUEL_SLOT_1).setDamageValue(itemHandler.getStackInSlot(FUEL_SLOT_1).getDamageValue() + 1);
+                        itemHandler.getStackInSlot(FUEL_SLOT_2).setDamageValue(itemHandler.getStackInSlot(FUEL_SLOT_2).getDamageValue() + 1);
+                        itemHandler.getStackInSlot(FUEL_SLOT_3).setDamageValue(itemHandler.getStackInSlot(FUEL_SLOT_3).getDamageValue() + 1);
+                        itemHandler.getStackInSlot(FUEL_SLOT_4).setDamageValue(itemHandler.getStackInSlot(FUEL_SLOT_4).getDamageValue() + 1);
+                        itemHandler.getStackInSlot(FUEL_SLOT_5).setDamageValue(itemHandler.getStackInSlot(FUEL_SLOT_5).getDamageValue() + 1);
                     }
                     fuelDurProgress = 0;
                 }
