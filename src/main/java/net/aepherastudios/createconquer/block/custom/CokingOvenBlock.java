@@ -1,24 +1,30 @@
 package net.aepherastudios.createconquer.block.custom;
 
+import com.google.j2objc.annotations.Property;
 import net.aepherastudios.createconquer.block.entity.ArcFurnaceBlockEntity;
 import net.aepherastudios.createconquer.block.entity.CCBlockEntities;
 import net.aepherastudios.createconquer.block.entity.CokingOvenBlockEntity;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.FurnaceBlock;
-import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -27,6 +33,7 @@ import net.minecraftforge.network.NetworkHooks;
 import javax.annotation.Nullable;
 
 public class CokingOvenBlock extends BaseEntityBlock {
+
     public static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
 
     public CokingOvenBlock(Properties pProperties) {
@@ -77,7 +84,7 @@ public class CokingOvenBlock extends BaseEntityBlock {
         return new CokingOvenBlockEntity(blockPos, blockState);
     }
 
-    @javax.annotation.Nullable
+    @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
         if(pLevel.isClientSide()) {

@@ -568,8 +568,20 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.SALT.get());
 
                         pOutput.accept(CCItems.RAW_KIMBERLITE.get());
+                        pOutput.accept(CCItems.CRUSHED_RAW_KIMBERLITE.get());
+                        pOutput.accept(CCItems.KIMBERLITE_SULFATE_CRYSTAL.get());
+                        pOutput.accept(CCItems.KIMBERLITE_SULFIDE.get());
+                        pOutput.accept(CCItems.KIMBERLITE_BLEND.get());
                         pOutput.accept(CCItems.RAW_EMERALD_BERYL.get());
+                        pOutput.accept(CCItems.CRUSHED_RAW_EMERALD_BERYL.get());
+                        pOutput.accept(CCItems.EMERALD_BERYL_SULFATE_CRYSTAL.get());
+                        pOutput.accept(CCItems.EMERALD_BERYL_SULFIDE.get());
+                        pOutput.accept(CCItems.EMERALD_BERYL_BLEND.get());
                         pOutput.accept(CCItems.RAW_LAZURITE.get());
+                        pOutput.accept(CCItems.CRUSHED_RAW_LAZURITE.get());
+                        pOutput.accept(CCItems.LAZURITE_SULFATE_CRYSTAL.get());
+                        pOutput.accept(CCItems.LAZURITE_SULFIDE.get());
+                        pOutput.accept(CCItems.LAZURITE_BLEND.get());
                         pOutput.accept(CCItems.RUBY_BLEND.get());
                         pOutput.accept(CCItems.SAPPHIRE_BLEND.get());
                         pOutput.accept(CCItems.RUBY.get());

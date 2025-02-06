@@ -180,6 +180,9 @@ public class CCItems {
     public static final RegistryObject<Item> GOLD_SULFIDE = ITEMS.register("gold_sulfide", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLONIUM_SULFIDE = ITEMS.register("polonium_sulfide", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COPPER_SULFIDE = ITEMS.register("copper_sulfide", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KIMBERLITE_SULFIDE = ITEMS.register("kimberlite_sulfide", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_BERYL_SULFIDE = ITEMS.register("emerald_beryl_sulfide", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LAZURITE_SULFIDE = ITEMS.register("lazurite_sulfide", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_SULFATE_CRYSTAL = ITEMS.register("uranium_sulfate_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_SULFATE_CRYSTAL = ITEMS.register("plutonium_sulfate_crystal", () -> new Item(new Item.Properties()));
@@ -202,6 +205,9 @@ public class CCItems {
     public static final RegistryObject<Item> POLONIUM_SULFATE_CRYSTAL = ITEMS.register("polonium_sulfate_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COPPER_SULFATE_CRYSTAL = ITEMS.register("copper_sulfate_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SULFATE_CRYSTAL = ITEMS.register("sulfate_crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KIMBERLITE_SULFATE_CRYSTAL = ITEMS.register("kimberlite_sulfate_crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_BERYL_SULFATE_CRYSTAL = ITEMS.register("emerald_beryl_sulfate_crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LAZURITE_SULFATE_CRYSTAL = ITEMS.register("lazurite_sulfate_crystal", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_INGOT_CAST = ITEMS.register("uranium_ingot_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_INGOT_CAST = ITEMS.register("plutonium_ingot_cast", () -> new Item(new Item.Properties()));
@@ -321,6 +327,9 @@ public class CCItems {
     public static final RegistryObject<Item> CRUSHED_RAW_LEPIDOLITE = ITEMS.register("crushed_raw_lepidolite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_CASSITERITE = ITEMS.register("crushed_raw_cassiterite", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CRUSHED_RAW_SPHALERITE = ITEMS.register("crushed_raw_sphalerite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRUSHED_RAW_KIMBERLITE = ITEMS.register("crushed_raw_kimberlite", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRUSHED_RAW_EMERALD_BERYL = ITEMS.register("crushed_raw_emerald_beryl", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRUSHED_RAW_LAZURITE = ITEMS.register("crushed_raw_lazurite", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ALUNITE_BLEND = ITEMS.register("alunite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BAUXITE_BLEND = ITEMS.register("bauxite_blend", () -> new Item(new Item.Properties()));
@@ -338,6 +347,9 @@ public class CCItems {
     public static final RegistryObject<Item> LEPIDOLITE_BLEND = ITEMS.register("lepidolite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CASSITERITE_BLEND = ITEMS.register("cassiterite_blend", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SPHALERITE_BLEND = ITEMS.register("sphalerite_blend", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KIMBERLITE_BLEND = ITEMS.register("kimberlite_blend", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_BERYL_BLEND = ITEMS.register("sphalerite_blend", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LAZURITE_BLEND = ITEMS.register("lazurite_blend", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> URANIUM_NUGGET_CAST = ITEMS.register("uranium_nugget_cast", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_NUGGET_CAST = ITEMS.register("plutonium_nugget_cast", () -> new Item(new Item.Properties()));
