@@ -39,6 +39,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Properties;
 
+import static org.openjdk.nashorn.internal.objects.Global.print;
+
 public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
     public CokingOvenBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState){
         super(pType, pPos, pBlockState);
@@ -192,7 +194,11 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                     heatedProgress = 0;
                 } else {
                     level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
+                    print("CODE RUNS!");
                 }
+            }
+            else {
+                level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
             }
         }
 
