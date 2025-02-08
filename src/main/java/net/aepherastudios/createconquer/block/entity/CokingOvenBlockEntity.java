@@ -22,7 +22,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AbstractFurnaceBlock;
+import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -35,7 +37,12 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Properties;
+
 public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
+    public CokingOvenBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState){
+        super(pType, pPos, pBlockState);
+    }
     private final ItemStackHandler itemHandler = new ItemStackHandler(2){
         @Override
         protected void onContentsChanged(int slot){
@@ -163,8 +170,7 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
             if(heat.isAtLeast(HeatCondition.HEATED.visualizeAsBlazeBurner())){
                 if(heatedProgress < heatedMaxProgress){
                     heatedProgress++;
-                    boolean isLit = true;
-                    pState = (BlockState)pState.setValue(CokingOvenBlock.LIT, pBlockEntity.isLit());
+                    pState.setValue(CokingOvenBlock.LIT, true);
 
                 }else if(heatedProgress == heatedMaxProgress){
                     if(itemHandler.getStackInSlot(SLOT1).getItem() == Items.OAK_LOG ||
@@ -185,8 +191,7 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
 
                     itemHandler.extractItem(SLOT1, 1, false);
                     heatedProgress = 0;
-                    boolean isLit = true;
-                    pState = (BlockState)pState.setValue(CokingOvenBlock.LIT, pBlockEntity.isLit());
+//                    pState = (BlockState)pState.setValue(CokingOvenBlock.LIT, pBlockEntity.isLit());
 
                 }
             }

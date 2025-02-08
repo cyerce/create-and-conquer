@@ -55,6 +55,10 @@ public class CokingOvenBlock extends BaseEntityBlock {
         return pState.rotate(pMirror.getRotation((Direction)pState.getValue(FACING)));
     }
 
+    public int getLightValue(BlockState state) {
+        return state.getValue(LIT) ? 14 : 0;
+    }
+
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(new Property[]{FACING, LIT});
     }
