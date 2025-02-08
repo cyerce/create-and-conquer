@@ -170,10 +170,9 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
             if(heat.isAtLeast(HeatCondition.HEATED.visualizeAsBlazeBurner())){
                 if(heatedProgress < heatedMaxProgress){
                     heatedProgress++;
-                    pState.setValue(CokingOvenBlock.LIT, true);
-
-                }else if(heatedProgress == heatedMaxProgress){
-                    if(itemHandler.getStackInSlot(SLOT1).getItem() == Items.OAK_LOG ||
+                    level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, true));
+                }else if(heatedProgress == heatedMaxProgress) {
+                    if (itemHandler.getStackInSlot(SLOT1).getItem() == Items.OAK_LOG ||
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.ACACIA_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.BIRCH_LOG ||
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.CHERRY_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.JUNGLE_LOG ||
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.DARK_OAK_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.MANGROVE_LOG ||
@@ -181,18 +180,18 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_OAK_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_BIRCH_LOG ||
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_CHERRY_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_JUNGLE_LOG ||
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_DARK_OAK_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_MANGROVE_LOG ||
-                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_SPRUCE_LOG){
+                            itemHandler.getStackInSlot(SLOT1).getItem() == Items.STRIPPED_SPRUCE_LOG) {
                         itemHandler.setStackInSlot(SLOT2, new ItemStack(Items.CHARCOAL,
                                 itemHandler.getStackInSlot(SLOT2).getCount() + 1));
-                    }else if(itemHandler.getStackInSlot(SLOT1).getItem() == Items.COAL){
+                    } else if (itemHandler.getStackInSlot(SLOT1).getItem() == Items.COAL) {
                         itemHandler.setStackInSlot(SLOT2, new ItemStack(CCItems.COKE.get(),
                                 itemHandler.getStackInSlot(SLOT2).getCount() + 1));
                     }
 
                     itemHandler.extractItem(SLOT1, 1, false);
                     heatedProgress = 0;
-//                    pState = (BlockState)pState.setValue(CokingOvenBlock.LIT, pBlockEntity.isLit());
-
+                } else {
+                    level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
                 }
             }
         }
