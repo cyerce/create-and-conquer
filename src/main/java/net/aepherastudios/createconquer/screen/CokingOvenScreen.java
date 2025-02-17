@@ -4,12 +4,10 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import net.aepherastudios.createconquer.CreateConquer;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.screens.inventory.FurnaceScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.FurnaceMenu;
 
 public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
     private static final ResourceLocation TEXTURE =
@@ -34,5 +32,13 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
 
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
+        renderProgressArrow(guiGraphics, x, y);
+
+    }
+
+    private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
+        if(menu.isCrafting()) {
+            guiGraphics.blit(TEXTURE, x + 79, y + 35, 176, 14, menu.getScaledProgress(), 16);
+        }
     }
 }
