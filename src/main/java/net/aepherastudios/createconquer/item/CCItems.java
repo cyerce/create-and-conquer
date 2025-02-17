@@ -1,7 +1,9 @@
 package net.aepherastudios.createconquer.item;
 
 import net.aepherastudios.createconquer.CreateConquer;
+import net.aepherastudios.createconquer.entity.CCEntities;
 import net.aepherastudios.createconquer.fluid.CCFluids;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -675,6 +677,7 @@ public class CCItems {
     public static final RegistryObject<Item> POLISHED_EMERALD = ITEMS.register("polished_emerald", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLISHED_LAPIS = ITEMS.register("polished_lapis", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REDSTONE_CRYSTAL = ITEMS.register("redstone_crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SUPERHEATED_BLAZE_SPAWN_EGG = ITEMS.register("superheated_blaze_spawn_egg", () -> new SpawnEggItem(CCEntities.SUPERHEATED_BLAZE.get(), 16167425, 16775294, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
