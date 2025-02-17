@@ -677,7 +677,6 @@ public class CCItems {
     public static final RegistryObject<Item> POLISHED_EMERALD = ITEMS.register("polished_emerald", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLISHED_LAPIS = ITEMS.register("polished_lapis", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REDSTONE_CRYSTAL = ITEMS.register("redstone_crystal", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SUPERHEATED_BLAZE_SPAWN_EGG = ITEMS.register("superheated_blaze_spawn_egg", () -> new SpawnEggItem(CCEntities.SUPERHEATED_BLAZE.get(), 16167425, 16775294, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

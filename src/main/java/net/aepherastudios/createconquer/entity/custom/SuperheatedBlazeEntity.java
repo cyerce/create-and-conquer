@@ -3,6 +3,8 @@ package net.aepherastudios.createconquer.entity.custom;
 import net.aepherastudios.createconquer.CreateConquer;
 import net.aepherastudios.createconquer.entity.CCEntities;
 import net.minecraft.MethodsReturnNonnullByDefault;
+import net.minecraft.client.model.BlazeModel;
+import net.minecraft.client.renderer.entity.BlazeRenderer;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -37,10 +39,15 @@ public class SuperheatedBlazeEntity extends Blaze {
     private int nextHeightOffsetChangeTick;
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(SuperheatedBlazeEntity.class, EntityDataSerializers.BYTE);
 
-    public SuperheatedBlazeEntity(EntityType<? extends Blaze> pEntityType, Level pLevel) {
+    public SuperheatedBlazeEntity(EntityType<? extends SuperheatedBlazeEntity> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-
+        this.setPathfindingMalus(BlockPathTypes.WATER, -1.0F);
+        this.setPathfindingMalus(BlockPathTypes.LAVA, 8.0F);
+        this.setPathfindingMalus(BlockPathTypes.DANGER_FIRE, 0.0F);
+        this.setPathfindingMalus(BlockPathTypes.DAMAGE_FIRE, 0.0F);
+        this.xpReward = 10;
     }
+
 
     @Override
     protected void registerGoals() {
@@ -53,6 +60,7 @@ public class SuperheatedBlazeEntity extends Blaze {
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
     }
 
+
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
                 .add(Attributes.ATTACK_DAMAGE, 2.0D)
@@ -60,6 +68,7 @@ public class SuperheatedBlazeEntity extends Blaze {
                 .add(Attributes.FOLLOW_RANGE, 100.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.2F);
     }
+
 
     @Override
     protected void defineSynchedData() {
@@ -148,8 +157,8 @@ public class SuperheatedBlazeEntity extends Blaze {
         private int attackTime;
         private int lastSeen;
 
-        public SuperheatedBlazeAttackGoal(SuperheatedBlazeEntity blaze) {
-            this.blaze = blaze;
+        public SuperheatedBlazeAttackGoal(SuperheatedBlazeEntity pBlaze) {
+            this.blaze = pBlaze;
             this.setFlags(EnumSet.of(Goal.Flag.MOVE, Goal.Flag.LOOK));
         }
 
