@@ -23,7 +23,9 @@ import net.minecraft.world.entity.monster.Blaze;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.LargeFireball;
+import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -225,8 +227,8 @@ public class SuperheatedBlazeEntity extends Blaze {
                         if (this.attackStep == 1) {
                             this.attackTime = 60;
                             this.blaze.setCharged(true);
-                        } else if (this.attackStep <= 5) {
-                            this.attackTime = 6;
+                        } else if (this.attackStep <= 30) {
+                            this.attackTime = 2;
                         } else {
                             this.attackTime = 100;
                             this.attackStep = 0;
@@ -240,9 +242,9 @@ public class SuperheatedBlazeEntity extends Blaze {
                             }
 
                             for(int i = 0; i < 1; ++i) {
-                                LargeFireball largeFireball = new LargeFireball(this.blaze.level(), this.blaze, this.blaze.getRandom().triangle(d1, 2.297D * d4), d2, this.blaze.getRandom().triangle(d3, 2.297D * d4), 2);
-                                largeFireball.setPos(largeFireball.getX(), this.blaze.getY(0.5D) + 0.5D, largeFireball.getZ());
-                                this.blaze.level().addFreshEntity(largeFireball);
+                                SmallFireball smallFireball = new SmallFireball(this.blaze.level(), this.blaze, this.blaze.getRandom().triangle(d1, 2.297D * d4), d2, this.blaze.getRandom().triangle(d3, 2.297D * d4));
+                                smallFireball.setPos(smallFireball.getX(), this.blaze.getY(0.5D) + 0.5D, smallFireball.getZ());
+                                this.blaze.level().addFreshEntity(smallFireball);
                             }
                         }
                     }

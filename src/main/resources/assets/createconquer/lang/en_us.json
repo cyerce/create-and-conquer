@@ -964,6 +964,11 @@
 
 
 
+  "entity_type.createconquer.superheated_blaze": "Superheated Blaze",
+  "item.createconquer.superheated_blaze_spawn_egg": "Superheated Blaze Spawn Egg",
+
+
+
   "creativetab.createconquer_tab": "Create & Conquer",
   "creativetab.weapon_tab": "Create & Conquer Weapons",
   "creativetab.incomplete_part_tab": "Create & Conquer Incomplete Parts",

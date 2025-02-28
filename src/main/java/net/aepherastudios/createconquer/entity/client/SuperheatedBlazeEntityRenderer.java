@@ -3,6 +3,7 @@ package net.aepherastudios.createconquer.entity.client;
 import net.aepherastudios.createconquer.CreateConquer;
 import net.minecraft.client.renderer.entity.BlazeRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.TntRenderer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.monster.Blaze;

@@ -4,12 +4,14 @@ import net.aepherastudios.createconquer.CreateConquer;
 import net.aepherastudios.createconquer.block.custom.ArcFurnaceBlock;
 import net.aepherastudios.createconquer.block.custom.CokingOvenBlock;
 import net.aepherastudios.createconquer.block.custom.NuclearReactorBlock;
+import net.aepherastudios.createconquer.block.custom.SuperheatedFireBlock;
 import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.aepherastudios.createconquer.item.CCItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -596,6 +598,11 @@ public class CCBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final RegistryObject<Block> URANIUM_GLASS = registerBlock("uranium_glass",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject<Block> HIGH_POWER_EXPLOSIVE = registerBlock("high_power_explosive",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(0f).sound(SoundType.GRASS)));
+
+    public static final RegistryObject<Block> SUPERHEATED_FIRE = registerBlock("superheated_fire",
+            () -> new SuperheatedFireBlock(BlockBehaviour.Properties.copy(Blocks.FIRE).mapColor(MapColor.FIRE).replaceable().noCollission().instabreak()));
 
     public static final RegistryObject<Block> NAPALM_BOMB = registerBlock("napalm_bomb",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(1f).requiresCorrectToolForDrops().sound(SoundType.STONE)));

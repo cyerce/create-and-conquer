@@ -2,6 +2,7 @@ package net.aepherastudios.createconquer.worldgen;
 
 import net.aepherastudios.createconquer.CreateConquer;
 import net.minecraft.core.HolderSet;
+import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -10,7 +11,9 @@ import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.checkerframework.checker.signature.qual.Identifier;
 
 public class CCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_ALUNITE_ORE = registerKey("add_alunite_ore");
@@ -32,6 +35,8 @@ public class CCBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_POTASH_ORE = registerKey("add_potash_ore");
     public static final ResourceKey<BiomeModifier> ADD_FLUORITE_ORE = registerKey("add_fluorite_ore");
     public static final ResourceKey<BiomeModifier> ADD_SULFUR_ORE = registerKey("add_sulfur_ore");
+
+    public static final ResourceKey<BiomeModifier> SPAWN_SUPERHEATED_BLAZE = registerKey("spawn_superheated_blaze");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
