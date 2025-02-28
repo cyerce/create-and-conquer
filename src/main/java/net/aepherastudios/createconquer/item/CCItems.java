@@ -1,7 +1,9 @@
 package net.aepherastudios.createconquer.item;
 
 import net.aepherastudios.createconquer.CreateConquer;
+import net.aepherastudios.createconquer.entity.CCEntities;
 import net.aepherastudios.createconquer.fluid.CCFluids;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

@@ -4,6 +4,10 @@ import com.mojang.logging.LogUtils;
 import net.aepherastudios.createconquer.block.CCBlocks;
 import net.aepherastudios.createconquer.block.entity.CCBlockEntities;
 import net.aepherastudios.createconquer.effect.CCEffects;
+import net.aepherastudios.createconquer.entity.CCEntities;
+import net.aepherastudios.createconquer.entity.CCEntityDataSerializers;
+import net.aepherastudios.createconquer.entity.client.SuperheatedBlazeEntityRenderer;
+import net.aepherastudios.createconquer.entity.custom.SuperheatedBlazeEntity;
 import net.aepherastudios.createconquer.fluid.*;
 import net.aepherastudios.createconquer.item.CCCreativeModeTabs;
 import net.aepherastudios.createconquer.item.CCItems;
@@ -14,6 +18,7 @@ import net.aepherastudios.createconquer.screen.NuclearReactorScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -44,6 +49,10 @@ public class CreateConquer
         CCCreativeModeTabs.register(modEventBus);
         CCFluids.register(modEventBus);
         CCEffects.register(modEventBus);
+        CCEntities.register(modEventBus);
+        CCEntityDataSerializers.register(modEventBus);
+
+
 
         UraniumFluidType.register(modEventBus);
         UraniumSulfateFluidType.register(modEventBus);
@@ -274,6 +283,8 @@ public class CreateConquer
             MenuScreens.register(CCMenuTypes.NUCLEAR_REACTOR_MENU.get(), NuclearReactorScreen::new);
             MenuScreens.register(CCMenuTypes.ARC_FURNACE_MENU.get(), ArcFurnaceScreen::new);
             MenuScreens.register(CCMenuTypes.COKING_OVEN_MENU.get(), CokingOvenScreen::new);
+
+            EntityRenderers.register(CCEntities.SUPERHEATED_BLAZE.get(), SuperheatedBlazeEntityRenderer::new);
         }
     }
 }

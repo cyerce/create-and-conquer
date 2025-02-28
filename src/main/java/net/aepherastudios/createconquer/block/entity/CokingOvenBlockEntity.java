@@ -21,25 +21,16 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.AbstractFurnaceBlock;
-import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.crafting.conditions.TrueCondition;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Properties;
-
-import static org.openjdk.nashorn.internal.objects.Global.print;
 
 public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
     public CokingOvenBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState){
@@ -166,14 +157,14 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
         return false;
     }
 
-    public void tick(Level level, BlockPos pPos, BlockState pState, CokingOvenBlockEntity pBlockEntity){
-        if(itemHandler.isItemValid(SLOT1, new ItemStack(itemHandler.getStackInSlot(SLOT1).getItem()))){
+    public void tick(Level level, BlockPos pPos, BlockState pState, CokingOvenBlockEntity pBlockEntity) {
+        if (itemHandler.isItemValid(SLOT1, new ItemStack(itemHandler.getStackInSlot(SLOT1).getItem()))) {
             BlazeBurnerBlock.HeatLevel heat = CokingOvenBlockEntity.getHeatLevelOf(getLevel().getBlockState(getBlockPos().below(1)));
-            if(heat.isAtLeast(HeatCondition.HEATED.visualizeAsBlazeBurner())){
-                if(heatedProgress < heatedMaxProgress){
+            if (heat.isAtLeast(HeatCondition.HEATED.visualizeAsBlazeBurner())) {
+                if (heatedProgress < heatedMaxProgress) {
                     heatedProgress++;
                     level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, true));
-                }else if(heatedProgress == heatedMaxProgress) {
+                } else if (heatedProgress == heatedMaxProgress) {
                     if (itemHandler.getStackInSlot(SLOT1).getItem() == Items.OAK_LOG ||
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.ACACIA_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.BIRCH_LOG ||
                             itemHandler.getStackInSlot(SLOT1).getItem() == Items.CHERRY_LOG || itemHandler.getStackInSlot(SLOT1).getItem() == Items.JUNGLE_LOG ||
@@ -188,20 +179,21 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                     } else if (itemHandler.getStackInSlot(SLOT1).getItem() == Items.COAL) {
                         itemHandler.setStackInSlot(SLOT2, new ItemStack(CCItems.COKE.get(),
                                 itemHandler.getStackInSlot(SLOT2).getCount() + 1));
-                    }else{
+                    } else {
                         level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
-                        print("CODE RUNS!");
                     }
 
                     itemHandler.extractItem(SLOT1, 1, false);
                     heatedProgress = 0;
                 } else {
                     level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
-                    print("CODE RUNS!");
                 }
+            } else {
+                level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
             }
+        } else {
+            level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
         }
-
     }
 
     public static BlazeBurnerBlock.HeatLevel getHeatLevelOf(BlockState state) {
@@ -210,6 +202,7 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
         return AllTags.AllBlockTags.PASSIVE_BOILER_HEATERS.matches(state) && BlockHelper.isNotUnheated(state)
                 ? BlazeBurnerBlock.HeatLevel.SMOULDERING
                 : BlazeBurnerBlock.HeatLevel.NONE;
+
     }
 
 
