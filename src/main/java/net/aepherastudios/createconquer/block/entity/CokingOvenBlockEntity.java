@@ -188,6 +188,9 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                     } else if (itemHandler.getStackInSlot(SLOT1).getItem() == Items.COAL) {
                         itemHandler.setStackInSlot(SLOT2, new ItemStack(CCItems.COKE.get(),
                                 itemHandler.getStackInSlot(SLOT2).getCount() + 1));
+                    }else{
+                        level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
+                        print("CODE RUNS!");
                     }
 
                     itemHandler.extractItem(SLOT1, 1, false);
@@ -196,9 +199,6 @@ public class CokingOvenBlockEntity extends BlockEntity implements MenuProvider {
                     level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
                     print("CODE RUNS!");
                 }
-            }
-            else {
-                level.setBlockAndUpdate(pPos, pState.setValue(CokingOvenBlock.LIT, false));
             }
         }
 
