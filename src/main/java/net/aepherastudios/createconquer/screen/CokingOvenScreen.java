@@ -33,6 +33,7 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(guiGraphics, x, y);
+        this.renderTooltip(guiGraphics, pMouseX, pMouseY);
 
     }
 

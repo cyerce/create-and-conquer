@@ -98,7 +98,7 @@ public class CokingOvenBlock extends BaseEntityBlock {
             if(entity instanceof CokingOvenBlockEntity) {
                 NetworkHooks.openScreen(((ServerPlayer)pPlayer), ((CokingOvenBlockEntity)entity), pPos);
             } else {
-                throw new IllegalStateException("WHO IN THE WORLD TOOK OUR CONTAINER PROVIDER!!");
+                throw new IllegalStateException("WHO IN THE FLIPPEN WORLD TOOK OUR FRIGIN CONTAINER PROVIDER, LIKE WHO DOES THAT!!>=<> (also mentiy was here)");
             }
         }
 
