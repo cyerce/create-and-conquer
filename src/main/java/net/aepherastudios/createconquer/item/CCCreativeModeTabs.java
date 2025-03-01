@@ -638,7 +638,7 @@ public class CCCreativeModeTabs {
                         pOutput.accept(CCItems.THERMONUCLEAR_MIRV_HOUSED.get());
                         pOutput.accept(CCItems.URANIUM_CORE.get());
                         pOutput.accept(CCItems.PLUTONIUM_CORE.get());
-                        pOutput.accept(CCItems.HIGH_POWER_EXPLOSIVE.get());
+                        pOutput.accept(CCBlocks.HIGH_POWER_EXPLOSIVE.get());
                         pOutput.accept(CCItems.URANIUM_NUCLEAR_CORE.get());
                         pOutput.accept(CCItems.PLUTONIUM_NUCLEAR_CORE.get());
                         pOutput.accept(CCItems.FUSION_CORE.get());

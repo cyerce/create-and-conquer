@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:biome_modifier",
+  "biomes": [
+    {
+      "type": "minecraft:tag",
+      "value": "minecraft:nether_wastes"
+    }
+  ],
+  "add": {
+    "type": "minecraft:spawn",
+    "entity": {
+      "type": "createconquer:superheated_blaze",
+      "weight": 100,
+      "min_count": 1,
+      "max_count": 1
+    }
+  }
+}

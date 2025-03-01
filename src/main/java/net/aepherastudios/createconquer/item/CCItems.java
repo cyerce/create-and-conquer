@@ -5,6 +5,7 @@ import net.aepherastudios.createconquer.entity.CCEntities;
 import net.aepherastudios.createconquer.fluid.CCFluids;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -482,7 +483,6 @@ public class CCItems {
 
     public static final RegistryObject<Item> PLUTONIUM_CORE = ITEMS.register("plutonium_core", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_CORE = ITEMS.register("uranium_core", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> HIGH_POWER_EXPLOSIVE = ITEMS.register("high_power_explosive", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLUTONIUM_NUCLEAR_CORE = ITEMS.register("plutonium_nuclear_core", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> URANIUM_NUCLEAR_CORE = ITEMS.register("uranium_nuclear_core", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FUSION_CORE = ITEMS.register("fusion_core", () -> new Item(new Item.Properties()));
@@ -677,6 +677,9 @@ public class CCItems {
     public static final RegistryObject<Item> POLISHED_EMERALD = ITEMS.register("polished_emerald", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POLISHED_LAPIS = ITEMS.register("polished_lapis", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REDSTONE_CRYSTAL = ITEMS.register("redstone_crystal", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SUPERHEATED_BLAZE_SPAWN_EGG = ITEMS.register("superheated_blaze_spawn_egg", () -> new ForgeSpawnEggItem(CCEntities.SUPERHEATED_BLAZE, 4567512, 4567512, new Item.Properties()));
+    public static final RegistryObject<Item> SUPERHEATED_BLAZE_ROD = ITEMS.register("superheated_blaze_rod", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
