@@ -20,7 +20,6 @@ public class ArcFurnaceScreen extends AbstractContainerScreen<ArcFurnaceMenu> {
     @Override
     protected void init() {
         super.init();
-        this.hoveredSlot.getContainerSlot();
     }
 
     @Override
@@ -33,5 +32,12 @@ public class ArcFurnaceScreen extends AbstractContainerScreen<ArcFurnaceMenu> {
 
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
+
+    }
+    @Override
+    public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float delta) {
+        renderBackground(guiGraphics);
+        super.render(guiGraphics, mouseX, mouseY, delta);
+        renderTooltip(guiGraphics, mouseX, mouseY);
     }
 }

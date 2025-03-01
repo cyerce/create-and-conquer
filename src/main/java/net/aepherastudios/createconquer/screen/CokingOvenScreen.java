@@ -33,7 +33,6 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
         renderProgressArrow(guiGraphics, x, y);
-        this.renderTooltip(guiGraphics, pMouseX, pMouseY);
 
     }
 
@@ -41,5 +40,12 @@ public class CokingOvenScreen extends AbstractContainerScreen<CokingOvenMenu> {
         if(menu.isCrafting()) {
             guiGraphics.blit(TEXTURE, x + 79, y + 35, 176, 14, menu.getScaledProgress(), 16);
         }
+    }
+
+    @Override
+    public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float delta) {
+        renderBackground(guiGraphics);
+        super.render(guiGraphics, mouseX, mouseY, delta);
+        renderTooltip(guiGraphics, mouseX, mouseY);
     }
 }

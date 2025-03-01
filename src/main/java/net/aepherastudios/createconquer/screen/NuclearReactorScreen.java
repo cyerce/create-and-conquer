@@ -32,5 +32,7 @@ public class NuclearReactorScreen extends AbstractContainerScreen<NuclearReactor
 
         guiGraphics.blit(TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
 
+        this.renderTooltip(guiGraphics, pMouseX, pMouseY);
+
     }
 }
